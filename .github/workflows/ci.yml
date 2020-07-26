@@ -13,11 +13,11 @@ jobs:
       - uses: actions/checkout@v2
       - name: set version number
         run: |
-          $version = (Get-Date -Format "yyyyMMdd")
-          (Get-Content "./theme/partials/head.tmpl.partial")
-          Foreach-Object { $_ -replace "[APPID]", "${{ secrets.APPID }}" }
-          Foreach-Object { $_ -replace "[BuildNumber]", $version.$GITHUB_RUN_NUMBER }
-          (Set-Content "./theme/partials/head.tmpl.partial")
+          $version = Get-Date -Format "yyyyMMdd"
+          $content = Get-Content "./theme/partials/head.tmpl.partial"
+          $newContent = $content -replace "[APPID]", "${{ secrets.APPID }}"
+          $newContent2 = $newContent -replace "[BuildNumber]", "$version.$GITHUB_RUN_NUMBER"
+          $newContent2 | Set-Content "./theme/partials/head.tmpl.partial"
         shell: pwsh
       - name: choco install docfx
         run: |
