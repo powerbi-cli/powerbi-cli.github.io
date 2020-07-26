@@ -93,7 +93,7 @@
     Countly.q = Countly.q || [];
 
     //provide countly initialization parameters
-    Countly.app_key = 'a0f40659d70fb772e96cf69de2172b150071aa57';
+    Countly.app_key = '[APPID]';
     Countly.url = 'https://c.datascenarios.nl';
     Countly.app_version = '[BuildNumber]';
 
