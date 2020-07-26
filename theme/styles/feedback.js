@@ -16,7 +16,7 @@ $(document).ready(function () {
         "<div class='feedback-alert choose-feedback-type'>\n" +
         "    <p aria-hidden='true' id='send-feedback-about'>Submit and view feedback for</p>\n" +
         "    <div class='choose-feedback-buttons has-margin-top-medium'>\n" +
-        "        <a class='button feedback-type-product has-margin-bottom-small' aria-label='Send feedback about this product' href='" + feedbackProductRepo + "}' data-bi-name='product-feedback'>\n" +
+        "        <a class='button feedback-type-product has-margin-bottom-small' aria-label='Send feedback about this product' href='" + feedbackProductRepo + "' data-bi-name='product-feedback'>\n" +
         "            <span>This product</span>\n" +
         "            <span aria-hidden='true' class='icon docon docon-navigate-external is-size-h4 has-margin-left-none'></span>\n" +
         "        </a>\n" +
