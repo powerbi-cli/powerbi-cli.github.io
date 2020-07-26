@@ -22,8 +22,9 @@ jobs:
       - name: commit to gh-pages
         uses: crazy-max/ghaction-github-pages@v2.1.1
         with:
-          # Git branch where assets will be deployed
           allow_empty_commit: |
             false
           build_dir: |
             docs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
