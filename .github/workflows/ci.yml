@@ -14,9 +14,8 @@ jobs:
       - name: set version number
         run: |
           $version = (Get-Date -Format "yyyyMMdd")
-          $appid = ${{ secrets.APPID }}
           (Get-Content "./theme/partials/head.tmpl.partial")
-          Foreach-Object { $_ -replace "[APPID]", $appid }
+          Foreach-Object { $_ -replace "[APPID]", "${{ secrets.APPID }}" }
           Foreach-Object { $_ -replace "[BuildNumber]", $version.$GITHUB_RUN_NUMBER }
           (Set-Content "./theme/partials/head.tmpl.partial")
         shell: pwsh
