@@ -11,8 +11,6 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Calculate new version number
-        run: versiondate=$(date +'%y%m%d');echo "::set-env name=version::$versiondate.$GITHUB_RUN_NUMBER.0"
       - name: set version number
         run: |
           $version = (Get-Date -Format "yyyyMMdd) |
