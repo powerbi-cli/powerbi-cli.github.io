@@ -14,9 +14,10 @@ jobs:
       - name: set version number
         run: |
           $version = Get-Date -Format "yyyyMMdd"
+          $runid = "${env:$GITHUB_RUN_NUMBER}"
           $content = Get-Content "./theme/partials/head.tmpl.partial"
           $newContent = $content -replace "\[APPID\]", "${{ secrets.APPID }}"
-          $newContent2 = $newContent -replace "\[BuildNumber\]", "$version.$GITHUB_RUN_NUMBER"
+          $newContent2 = $newContent -replace "\[BuildNumber\]", "$version.$runid"
           Set-Content "./theme/partials/head.tmpl.partial" -Value $newContent2
         shell: pwsh
       - name: choco install docfx
