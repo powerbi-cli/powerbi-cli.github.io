@@ -1,0 +1,30 @@
+name: Build
+
+on:
+  push:
+    branches: [live]
+  pull_request:
+    branches: [live]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: choco install docfx
+        run: |
+          choco install docfx -y
+        env:
+          CI: true
+      - name: build documentation
+        run: |
+          docfx build
+      - name: commit to gh-pages
+      - name: GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v2.1.1
+        with:
+          # Git branch where assets will be deployed
+          allow_empty_commit: |
+            false
+          build_dir: |
+            docs

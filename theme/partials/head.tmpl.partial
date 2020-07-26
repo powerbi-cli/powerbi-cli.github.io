@@ -1,0 +1,90 @@
+{{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{{#title}}{{title}}{{/title}}{{^title}}{{>partials/title}}{{/title}} {{#_appTitle}}| {{_appTitle}} {{/_appTitle}}</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content="{{#title}}{{title}}{{/title}}{{^title}}{{>partials/title}}{{/title}} {{#_appTitle}}| {{_appTitle}} {{/_appTitle}}">
+  <meta name="generator" content="docfx {{_docfxVersion}}">
+  {{#_description}}<meta name="description" content="{{_description}}">{{/_description}}
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="{{_rel}}styles/docfx.vendor.css">
+  <link rel="stylesheet" href="{{_rel}}styles/docfx.css">
+  <link rel="stylesheet" href="{{_rel}}styles/main.css">
+  <meta property="docfx:navrel" content="{{_navRel}}">
+  <meta property="docfx:tocrel" content="{{_tocRel}}">
+  <meta property="docfx:globalrel" content="/global.html">
+  {{#_noindex}}<meta name="searchOption" content="noindex">{{/_noindex}}
+  {{#_enableSearch}}<meta property="docfx:rel" content="{{_rel}}">{{/_enableSearch}}
+  {{#_enableNewTab}}<meta property="docfx:newtab" content="true">{{/_enableNewTab}}
+
+  <link rel="canonical" href="https://{{_FQDNs}}/{{_path}}" />
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+  
+  <meta property="og:site_name" content="Azure BI" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{#title}}{{title}}" />
+  <meta property="og:description" content="{{description}}" />
+  <meta property="og:url" content="https://{{_FQDNs}}/{{_path}}" />
+{{#tags}}
+  <meta property="article:tag" content="{{name}}" />
+{{/tags}}
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="{{#title}}{{title}}" />
+  <meta name="twitter:description" content="{{description}}" />
+  <meta name="twitter:url" content="https://{{_FQDNs}}/{{_path}}" />
+  <meta name="twitter:label1" content="Written by" />
+  <meta name="twitter:data1" content="Jan Pieter Posthuma" />
+  <meta name="twitter:label2" content="Filed under" />
+{{#tags}}
+  <meta name="twitter:data2" content="{{name}}" />
+{{/tags}}
+  <meta name="twitter:site" content="@jppp" />
+  <meta name="twitter:creator" content="@jppp" />
+
+  <script type="application/ld+json">
+  {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "publisher": {
+          "@type": "Organization",
+          "name": "Azure BI",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "https://{{_FQDNs}}/favicon.ico",
+              "width": 60,
+              "height": 60
+          }
+      },
+      "author": {
+          "@type": "Person",
+          "name": "Jan Pieter Posthuma",
+          "image": {
+              "@type": "ImageObject",
+              "url": "https://azurebi.jppp.org/content/images/2018/04/jppp-5-highres.jpg",
+              "width": 3300,
+              "height": 3300
+          },
+          "sameAs": [
+              "https://datascenarios.nl",
+              "https://twitter.com/jppp"
+          ]
+      },
+      "headline": "{{#title}}{{title}}",
+      "url": "https://{{_FQDNs}}/{{_path}}",
+      "keywords": "{{#tags}}{{name}},{{/tags}}",
+      "description": "{{description}}",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://{{_FQDNs}}/"
+      }
+  }
+  </script>
+  <script  type='text/javascript'>
+    const documentId = '{{documentId}}';
+    const documentUrl = 'https://{{_FQDNs}}/{{_path}}';
+    const feedbackDocRepo = '{{_feedbackDocRepo}}'
+    const feedbackProductRepo = '{{_feedbackProductRepo}}';
+  </script>
+</head>

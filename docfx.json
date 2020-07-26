@@ -1,0 +1,31 @@
+{
+    "build": {
+        "content": [
+            {
+                "files": ["content/**.md", "content/**/toc.yml", "toc.yml", "*.md"]
+            }
+        ],
+        "resource": [
+            {
+                "files": ["images/**"]
+            }
+        ],
+        "dest": "docs",
+        "globalMetadataFiles": [],
+        "globalMetadata": {
+            "_enableSearch": true,
+            "_disableBreadcrumb": true,
+            "_FQDNs": "powerbi-cli.github.io",
+            "_feedbackProductRepo": "https://github.com/powerbi-cli/powerbi-cli",
+            "_feedbackDocRepo": "https://github.com/powerbi-cli/powerbi-cli"
+        },
+        "fileMetadataFiles": [],
+        "template": ["default", "theme"],
+        "postProcessors": [],
+        "markdownEngineName": "markdig",
+        "noLangKeyword": false,
+        "keepFileLink": false,
+        "cleanupCacheHistory": false,
+        "disableGitFeatures": false
+    }
+}

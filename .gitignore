@@ -1,0 +1,12 @@
+###############
+#    folder   #
+###############
+/**/DROP/
+/**/TEMP/
+/**/packages/
+/**/bin/
+/**/obj/
+
+# DocFx
+docs/
+_exported_templates/
