@@ -14,10 +14,10 @@ jobs:
       - name: set version number
         run: |
           $version = Get-Date -Format "yyyyMMdd"
-          $content = Get-Content "./theme/partials/head.tmpl.partial" -Encoding utf8
+          $content = Get-Content "./theme/partials/head.tmpl.partial" -Encoding ascii
           $newContent = $content -replace "[APPID]", "${{ secrets.APPID }}"
           $newContent2 = $newContent -replace "[BuildNumber]", "$version.$GITHUB_RUN_NUMBER"
-          Set-Content "./theme/partials/head.tmpl.partial" -Value $newContent2 -Encoding utf8
+          Set-Content "./theme/partials/head.tmpl.partial" -Value $newContent2 -Encoding ascii
         shell: pwsh
       - name: choco install docfx
         run: |
