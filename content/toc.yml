@@ -3,22 +3,30 @@ items:
     href: ../index.md
   - name: Overview
     items:
-      - name: What is Power BI CLI
+      - name: What is Power BI CLI?
         href: whatis.md
-      - name: Get started with Power BI CLI
+      - name: Get started
         href: getstarted.md
   - name: Install and run
     items:
-      - name: Sign in with Power BI CLI
+      - name: Install
+        href: install.md
+      - name: Sign in
         href: signin.md
   - name: Reference
     items:
       - name: Overview
-        href: reference-index.md
-      - name: Group
+        href: reference-index.md#
+      - name: login
+        href: reference-index.md#pbicli-login
+      - name: logout
+        href: reference-index.md#pbicli-logout
+      - name: version
+        href: reference-index.md#pbicli-version
+      - name: group
         items:
           - name: Overview
-            href: reference-group.md
+            href: reference-group.md#
           - name: create
             href: reference-group.md#pbicli-group-create
           - name: delete

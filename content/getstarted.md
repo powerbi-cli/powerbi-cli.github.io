@@ -19,7 +19,7 @@ After installing the CLI for the first time, check that it's installed and you'v
 
 ## Sign In
 
-Before using any CLI commands with a local install, you need to sign in with [pbicli login](xref:pbicli/login).
+Before using any CLI commands with a local install, you need to sign in with [pbicli login](xref:reference/index#pbicli-login).
 
 1. Run the login command of the Azure CLI
 

@@ -640,3 +640,7 @@ li code {
 .global-parameters.expanded > p > a:before {
     transform: rotate(90deg);
 }
+
+.lang-bash {
+    color: #0101fd;
+}
