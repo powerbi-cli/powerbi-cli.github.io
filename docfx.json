@@ -10,6 +10,11 @@
                 "files": ["images/**"]
             }
         ],
+        "sitemap": {
+            "baseUrl": "https://powerbi-cli.github.io",
+            "priority": 0.8,
+            "changefreq": "weekly"
+        },
         "dest": "docs",
         "globalMetadataFiles": [],
         "globalMetadata": {
