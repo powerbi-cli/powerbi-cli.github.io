@@ -35,3 +35,13 @@ items:
             href: reference-group.md#pbicli-group-list
           - name: show
             href: reference-group.md#pbicli-group-show
+          - name: user
+            items:
+              - name: add
+                href: reference-group.md#pbicli-group-user-add
+              - name: delete
+                href: reference-group.md#pbicli-group-user-delete
+              - name: list
+                href: reference-group.md#pbicli-group-user-list
+              - name: update
+                href: reference-group.md#pbicli-group-user-update

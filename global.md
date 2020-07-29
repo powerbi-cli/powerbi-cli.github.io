@@ -1,3 +1,7 @@
+---
+uid: global
+---
+
 -   `--debug`<br/>Increase logging verbosity to show debug logs
 -   `--help -h`<br/>Show this help message and exit
 -   `--output -o [output]`<br/>Output format. Allowed values: json, tsv, yml. Default: json
