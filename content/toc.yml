@@ -45,3 +45,31 @@ items:
                 href: reference-group.md#pbicli-group-user-list
               - name: update
                 href: reference-group.md#pbicli-group-user-update
+      - name: report
+        items:
+          - name: Overview
+            href: reference-report.md#
+          - name: clone
+            href: reference-report.md#pbicli-report-clone
+          - name: datasource
+            href: reference-report.md#pbicli-report-datasource
+          - name: delete
+            href: reference-report.md#pbicli-report-delete
+          - name: list
+            href: reference-report.md#pbicli-report-list
+          - name: page
+            href: reference-report.md#pbicli-report-page
+          - name: rebind
+            href: reference-report.md#pbicli-report-rebind
+          - name: show
+            href: reference-report.md#pbicli-report-show
+          - name: update
+            href: reference-report.md#pbicli-report-update
+          - name: export
+            items:
+              - name: download
+                href: reference-report.md#pbicli-report-export-download
+              - name: start
+                href: reference-report.md#pbicli-report-export-start
+              - name: status
+                href: reference-report.md#pbicli-report-export-status
