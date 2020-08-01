@@ -27,7 +27,7 @@ Creates a Power BI group
 pbicli group create [--group] [-g]
 ```
 
-### Required parameters
+### Parameters
 
 -   `--group -g <name>`<br/>Name or ID of the Power BI group
 
@@ -43,7 +43,7 @@ Delete a Power BI group
 pbicli group delete [--group] [-g]
 ```
 
-### Required parameters
+### Parameters
 
 -   `--group -g <name>`<br/>Name or ID of the Power BI group
 
@@ -71,7 +71,7 @@ Get detials of a Power BI group
 pbicli group show [--group] [-g]
 ```
 
-### Required parameters
+### Parameters
 
 -   `--group -g <name>`<br/>Name or ID of the Power BI group
 
@@ -89,7 +89,7 @@ pbicli group user add [--group] [-g]
                       [--principal-type]
 ```
 
-### Required parameters
+### Parameters
 
 -   `--group -g <name>`<br/>Name or ID of the Power BI group
 
@@ -113,7 +113,7 @@ pbicli group user delete [--group] [-g]
                          [--identifier]
 ```
 
-### Required parameters
+### Parameters
 
 -   `--group -g <name>`<br/>Name or ID of the Power BI group
 
@@ -131,7 +131,7 @@ pbicli group user delete [--group] [-g]
 pbicli group user list [--group] [-g]
 ```
 
-### Required parameters
+### Parameters
 
 -   `--group -g <name>`<br/>Name or ID of the Power BI group
 
@@ -149,7 +149,7 @@ pbicli group user update [--group] [-g]
                          [--principal-type]
 ```
 
-### Required parameters
+### Parameters
 
 -   `--group -g <name>`<br/>Name or ID of the Power BI group
 

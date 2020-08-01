@@ -45,7 +45,7 @@ Log in with a service principal using client secret
 pbicli login --service-principal -p 7105d380-a699-4d0a-aeb4-ad3e6f4db865 -s VerySecret -t contoso.onmicrosoft.com
 ```
 
-### Optional Parameters
+### Parameters
 
 -   `--interactive`<br/>Login interactively
 
