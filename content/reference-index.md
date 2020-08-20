@@ -8,10 +8,10 @@ documentId: 1c64785e-a725-4830-98e8-5b9aa2b6c4c3
 
 ## Commands
 
-|                                        |                            |
-| -------------------------------------- | -------------------------- |
-| [pbicli group](xref:reference/group)   | Manage Power BI workspaces |
-| [pbicli report](xref:reference/report) | Manage Power BI reports    |
+|                                              |                            |
+| -------------------------------------------- | -------------------------- |
+| [pbicli workspace](xref:reference/workspace) | Manage Power BI workspaces |
+| [pbicli report](xref:reference/report)       | Manage Power BI reports    |
 
 ## pbicli login
 

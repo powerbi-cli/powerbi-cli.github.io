@@ -8,35 +8,35 @@ documentId: 98dcb314-d14b-4a8d-8b52-591594df9171
 
 ## Commands
 
-|                                                                 |                                               |
-| --------------------------------------------------------------- | --------------------------------------------- |
-| [pbicli report clone](#pbicli-report-clone)                     | Clones a Power BI report from a group         |
-| [pbicli report datasource](#pbicli-report-datasource)           | Datasources of a Power BI report from a group |
-| [pbicli report delete](#pbicli-report-delete)                   | Deletes a Power BI report from a group        |
-| [pbicli report list](#pbicli-report-list)                       | List Power BI reports in a group              |
-| [pbicli report page](#pbicli-report-page)                       | Get the details of a Power BI report page     |
-| [pbicli report rebind](#pbicli-report-rebind)                   | Rebind a Power BI report to a dataset         |
-| [pbicli report show](#pbicli-report-show)                       | Get the details of a Power BI report          |
-| [pbicli report update](#pbicli-report-update)                   | Updates a Power BI report with to a dataset   |
-| [pbicli report export download](#pbicli-report-export-download) | Download the exported Power BI reports        |
-| [pbicli report export start](#pbicli-report-export-start)       | Start a Power BI report export                |
-| [pbicli report export status](#pbicli-report-export-status)     | Get the status of a Power BI report export    |
+|                                                                 |                                                   |
+| --------------------------------------------------------------- | ------------------------------------------------- |
+| [pbicli report clone](#pbicli-report-clone)                     | Clones a Power BI report from a workspace         |
+| [pbicli report datasource](#pbicli-report-datasource)           | Datasources of a Power BI report from a workspace |
+| [pbicli report delete](#pbicli-report-delete)                   | Deletes a Power BI report from a workspace        |
+| [pbicli report list](#pbicli-report-list)                       | List Power BI reports in a workspace              |
+| [pbicli report page](#pbicli-report-page)                       | Get the details of a Power BI report page         |
+| [pbicli report rebind](#pbicli-report-rebind)                   | Rebind a Power BI report to a dataset             |
+| [pbicli report show](#pbicli-report-show)                       | Get the details of a Power BI report              |
+| [pbicli report update](#pbicli-report-update)                   | Updates a Power BI report with to a dataset       |
+| [pbicli report export download](#pbicli-report-export-download) | Download the exported Power BI reports            |
+| [pbicli report export start](#pbicli-report-export-start)       | Start a Power BI report export                    |
+| [pbicli report export status](#pbicli-report-export-status)     | Get the status of a Power BI report export        |
 
 ## pbicli report clone
 
-Clones a Power BI report from a group
+Clones a Power BI report from a workspace
 
 ```bash
-pbicli report clone [--group] [-g]
+pbicli report clone [--workspace] [-w]
                     [--report] [-r]
                     [--name]
                     [--target-dataset]
-                    [--target-group]
+                    [--target-workspace]
 ```
 
 ### Parameters
 
--   `--group -g <name>`<br/>Name or ID of the Power BI group. If not provided it uses 'My workspace'
+-   `--workspace -w <name>`<br/>Name or ID of the Power BI workspace. If not provided it uses 'My workspace'
 
 -   `--report -r <report>`<br/>Name or ID of the Power BI report
 
@@ -44,7 +44,7 @@ pbicli report clone [--group] [-g]
 
 -   `--target-dataset <dataset>`<br/>ID of the Power BI dataset for the cloned report. If not provided, the same dataset is used
 
--   `--target-group [group]`<br/>ID of the Power BI group for the cloned report. If not provided, the same group is used and if [workspaceId] is not provided 'My workspace' is used
+-   `--target-workspace [workspace]`<br/>ID of the Power BI workspace for the cloned report. If not provided, the same workspace is used and if [workspaceId] is not provided 'My workspace' is used
 
 > [!div class="global-parameters"]
 >
@@ -52,16 +52,16 @@ pbicli report clone [--group] [-g]
 
 ## pbicli report datasource
 
-Datasources of a Power BI report from a group
+Datasources of a Power BI report from a workspace
 
 ```bash
-pbicli report datasource [--group] [-g]
+pbicli report datasource [--workspace] [-w]
                          [--report] [-r]
 ```
 
 ### Parameters
 
--   `--group -g <name>`<br/>Name or ID of the Power BI group. If not provided it uses 'My workspace'
+-   `--workspace -w <name>`<br/>Name or ID of the Power BI workspace. If not provided it uses 'My workspace'
 
 -   `--report -r <report>`<br/>Name or ID of the Power BI report
 
@@ -71,16 +71,16 @@ pbicli report datasource [--group] [-g]
 
 ## pbicli report delete
 
-Deletes a Power BI report from a group
+Deletes a Power BI report from a workspace
 
 ```bash
-pbicli report delete [--group] [-g]
+pbicli report delete [--workspace] [-w]
                      [--report] [-r]
 ```
 
 ### Parameters
 
--   `--group -g <name>`<br/>Name or ID of the Power BI group. If not provided it uses 'My workspace'
+-   `--workspace -w <name>`<br/>Name or ID of the Power BI workspace. If not provided it uses 'My workspace'
 
 -   `--report -r <report>`<br/>Name or ID of the Power BI report
 
@@ -90,15 +90,15 @@ pbicli report delete [--group] [-g]
 
 ## pbicli report list
 
-List Power BI reports in a group
+List Power BI reports in a workspace
 
 ```bash
-pbicli report list [--group] [-g]
+pbicli report list [--workspace] [-w]
 ```
 
 ### Parameters
 
--   `--group -g <name>`<br/>Name or ID of the Power BI group. If not provided it uses 'My workspace'
+-   `--workspace -w <name>`<br/>Name or ID of the Power BI workspace. If not provided it uses 'My workspace'
 
 > [!div class="global-parameters"]
 >
@@ -109,14 +109,14 @@ pbicli report list [--group] [-g]
 Get the details of a Power BI report page
 
 ```bash
-pbicli report page [--group] [-g]
+pbicli report page [--workspace] [-w]
                    [--report] [-r]
                    [--page-name]
 ```
 
 ### Parameters
 
--   `--group -g <name>`<br/>Name or ID of the Power BI group. If not provided it uses 'My workspace'
+-   `--workspace -w <name>`<br/>Name or ID of the Power BI workspace. If not provided it uses 'My workspace'
 
 -   `--report -r <report>`<br/>Name or ID of the Power BI report
 
@@ -131,14 +131,14 @@ pbicli report page [--group] [-g]
 Rebind a Power BI report to a dataset
 
 ```bash
-pbicli report rebind [--group] [-g]
+pbicli report rebind [--workspace] [-w]
                      [--report] [-r]
                      [--target-dataset]
 ```
 
 ### Parameters
 
--   `--group -g <name>`<br/>Name or ID of the Power BI group. If not provided it uses 'My workspace'
+-   `--workspace -w <name>`<br/>Name or ID of the Power BI workspace. If not provided it uses 'My workspace'
 
 -   `--report -r <report>`<br/>Name or ID of the Power BI report
 
@@ -153,13 +153,13 @@ pbicli report rebind [--group] [-g]
 Get the details of a Power BI report
 
 ```bash
-pbicli report show [--group] [-g]
+pbicli report show [--workspace] [-w]
                    [--report] [-r]
 ```
 
 ### Parameters
 
--   `--group -g <name>`<br/>Name or ID of the Power BI group. If not provided it uses 'My workspace'
+-   `--workspace -w <name>`<br/>Name or ID of the Power BI workspace. If not provided it uses 'My workspace'
 
 -   `--report -r <report>`<br/>Name or ID of the Power BI report
 
@@ -172,19 +172,19 @@ pbicli report show [--group] [-g]
 Updates a Power BI report with to a dataset
 
 ```bash
-pbicli report update [--group] [-g]
+pbicli report update [--workspace] [-w]
                      [--report] [-r]
-                     [--source-group]
+                     [--source-workspace]
                      [--source-report]
 ```
 
 ### Parameters
 
--   `--group -g <name>`<br/>Name or ID of the Power BI group. If not provided it uses 'My workspace'
+-   `--workspace -w <name>`<br/>Name or ID of the Power BI workspace. If not provided it uses 'My workspace'
 
 -   `--report -r <report>`<br/>Name or ID of the Power BI report
 
--   `--source-group <group>`<br/>ID of the source Power BI group
+-   `--source-workspace <workspace>`<br/>ID of the source Power BI workspace
 
 -   `--source-report <report>`<br/>ID of the source Power BI report
 
@@ -197,14 +197,14 @@ pbicli report update [--group] [-g]
 Download the exported Power BI report
 
 ```bash
-pbicli report export download [--group] [-g]
+pbicli report export download [--workspace] [-w]
                               [--report] [-r]
                               [--export]
 ```
 
 ### Parameters
 
--   `--group -g <name>`<br/>Name or ID of the Power BI group. If not provided it uses 'My workspace'
+-   `--workspace -w <name>`<br/>Name or ID of the Power BI workspace. If not provided it uses 'My workspace'
 
 -   `--report -r <report>`<br/>Name or ID of the Power BI report
 
@@ -219,7 +219,7 @@ pbicli report export download [--group] [-g]
 Start a Power BI report export
 
 ```bash
-pbicli report export start [--group] [-g]
+pbicli report export start [--workspace] [-w]
                            [--report] [-r]
                            [--format]
                            [--config]
@@ -228,7 +228,7 @@ pbicli report export start [--group] [-g]
 
 ### Parameters
 
--   `--group -g <name>`<br/>Name or ID of the Power BI group. If not provided it uses 'My workspace'
+-   `--workspace -w <name>`<br/>Name or ID of the Power BI workspace. If not provided it uses 'My workspace'
 
 -   `--report -r <report>`<br/>Name or ID of the Power BI report
 
@@ -253,14 +253,14 @@ pbicli report export start [--group] [-g]
 Get the status of a Power BI report export
 
 ```bash
-pbicli report export status [--group] [-g]
+pbicli report export status [--workspace] [-w]
                             [--report] [-r]
                             [--export]
 ```
 
 ### Parameters
 
--   `--group -g <name>`<br/>Name or ID of the Power BI group. If not provided it uses 'My workspace'
+-   `--workspace -w <name>`<br/>Name or ID of the Power BI workspace. If not provided it uses 'My workspace'
 
 -   `--report -r <report>`<br/>Name or ID of the Power BI report
 

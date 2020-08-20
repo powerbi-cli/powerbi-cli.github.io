@@ -23,28 +23,28 @@ items:
         href: reference-index.md#pbicli-logout
       - name: version
         href: reference-index.md#pbicli-version
-      - name: group
+      - name: workspace
         items:
           - name: Overview
-            href: reference-group.md#
+            href: reference-workspace.md#
           - name: create
-            href: reference-group.md#pbicli-group-create
+            href: reference-workspace.md#pbicli-workspace-create
           - name: delete
-            href: reference-group.md#pbicli-group-delete
+            href: reference-workspace.md#pbicli-workspace-delete
           - name: list
-            href: reference-group.md#pbicli-group-list
+            href: reference-workspace.md#pbicli-workspace-list
           - name: show
-            href: reference-group.md#pbicli-group-show
+            href: reference-workspace.md#pbicli-workspace-show
           - name: user
             items:
               - name: add
-                href: reference-group.md#pbicli-group-user-add
+                href: reference-workspace.md#pbicli-workspace-user-add
               - name: delete
-                href: reference-group.md#pbicli-group-user-delete
+                href: reference-workspace.md#pbicli-workspace-user-delete
               - name: list
-                href: reference-group.md#pbicli-group-user-list
+                href: reference-workspace.md#pbicli-workspace-user-list
               - name: update
-                href: reference-group.md#pbicli-group-user-update
+                href: reference-workspace.md#pbicli-workspace-user-update
       - name: report
         items:
           - name: Overview
