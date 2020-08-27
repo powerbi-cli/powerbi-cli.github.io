@@ -10,8 +10,13 @@ documentId: 1c64785e-a725-4830-98e8-5b9aa2b6c4c3
 
 |                                              |                            |
 | -------------------------------------------- | -------------------------- |
-| [pbicli workspace](xref:reference/workspace) | Manage Power BI workspaces |
+| [pbicli dataflow](xref:reference/dataflow)   | Manage Power BI dataflows  |
+| [pbicli dataset](xref:reference/dataset)     | Manage Power BI datasets   |
+| [pbicli feature](xref:reference/feature)     | Manage Power BI features   |
+| [pbicli gateway](xref:reference/gateway)     | Manage Power BI gateways   |
+| [pbicli import](xref:reference/import)       | Manage Power BI imports    |
 | [pbicli report](xref:reference/report)       | Manage Power BI reports    |
+| [pbicli workspace](xref:reference/workspace) | Manage Power BI workspaces |
 
 ## pbicli login
 
