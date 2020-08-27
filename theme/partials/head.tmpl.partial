@@ -21,7 +21,7 @@
 
   <link rel="canonical" href="https://{{_FQDNs}}/{{_path}}" />
   <meta name="referrer" content="no-referrer-when-downgrade" />
-  
+  <meta property="og:image" content="https://{{_FQDNs}}/logo.png">
   <meta property="og:site_name" content="Azure BI" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="{{#title}}{{title}}" />
