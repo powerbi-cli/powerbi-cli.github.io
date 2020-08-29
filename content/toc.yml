@@ -23,6 +23,125 @@ items:
         href: reference-index.md#pbicli-logout
       - name: version
         href: reference-index.md#pbicli-version
+      - name: admin
+        items:
+          - name: Overview
+            href: reference-admin.md#
+          - name: activity
+            href: reference-admin.md#pbicli-admin-activity
+          - name: import
+            href: reference-admin.md#pbicli-admin-import
+          - name: refresh
+            href: reference-admin.md#pbicli-admin-refresh
+          - name: capacity
+            items:
+              - name: assign
+                href: reference-admin.md#pbicli-admin-capacity-assign
+              - name: list
+                href: reference-admin.md#pbicli-admin-capacity-list
+              - name: update
+                href: reference-admin.md#pbicli-admin-capacity-update
+              - name: unassign
+                href: reference-admin.md#pbicli-admin-capacity-unassign
+          - name: dashboard
+            items:
+              - name: list
+                href: reference-admin.md#pbicli-admin-dashboard-list
+              - name: tile
+                href: reference-admin.md#pbicli-admin-dashboard-tile
+          - name: dataflow
+            items:
+              - name: datasource
+                href: reference-admin.md#pbicli-admin-dataflow-datasource
+              - name: list
+                href: reference-admin.md#pbicli-admin-dataflow-list
+              - name: show
+                href: reference-admin.md#pbicli-admin-dataflow-show
+              - name: upstream
+                href: reference-admin.md#pbicli-admin-dataflow-upstream
+          - name: dataset
+            items:
+              - name: dataflow
+                href: reference-admin.md#pbicli-admin-dataset-dataflow
+              - name: datasource
+                href: reference-admin.md#pbicli-admin-dataset-datasource
+              - name: list
+                href: reference-admin.md#pbicli-admin-dataset-list
+          - name: key
+            items:
+              - name: add](#pbicli-admin-key-add
+              - name: list](#pbicli-admin-key-list
+              - name: rotate](#pbicli-admin-key-rotate
+          - name: report
+            items:
+              - name: list](#pbicli-admin-report-list
+          - name: workspace
+            items:
+              - name: add](#pbicli-admin-workspace-add
+              - name: delete](#pbicli-admin-workspace-delete
+              - name: list](#pbicli-admin-workspace-list
+              - name: restore](#pbicli-admin-workspace-restore
+              - name: update](#pbicli-admin-workspace-update
+      - name: app
+        items:
+          - name: Overview
+            href: reference-app.md#
+          - name: list
+            href: reference-app.md#pbicli-app-list
+          - name: show
+            href: reference-app.md#pbicli-app-show
+          - name: dashboard
+            items:
+              - name: list
+                href: reference-app.md#pbicli-app-dashboard-list
+              - name: show
+                href: reference-app.md#pbicli-app-dashboard-show
+              - name: tile
+                items:
+                  - name: list
+                    href: reference-app.md#pbicli-app-dashboard-tile-list
+                  - name: show
+                    href: reference-app.md#pbicli-app-dashboard-tile-show
+          - name: report
+            items:
+              - name: list
+                href: reference-app.md#pbicli-app-report-list
+              - name: show
+                href: reference-app.md#pbicli-app-report-show
+      - name: capacity
+        items:
+          - name: Overview
+            href: reference-capacity.md#
+          - name: assign
+            href: reference-capacity.md#pbicli-capacity-assign
+          - name: list
+            href: reference-capacity.md#pbicli-capacity-list
+          - name: refresh
+            href: reference-capacity.md#pbicli-capacity-refresh
+          - name: status
+            href: reference-capacity.md#pbicli-capacity-status
+          - name: unassign
+            href: reference-capacity.md#pbicli-capacity-unassign
+          - name: workload
+            href: reference-capacity.md#pbicli-capacity-workload
+      - name: dashboard
+        items:
+          - name: Overview
+            href: reference-dashboard.md#
+          - name: create
+            href: reference-dashboard.md#pbicli-dashboard-create
+          - name: list
+            href: reference-dashboard.md#pbicli-dashboard-list
+          - name: show
+            href: reference-dashboard.md#pbicli-dashboard-show
+          - name: tile
+            items:
+              - name: create
+                href: reference-dashboard.md#pbicli-dashboard-tile-create
+              - name: list
+                href: reference-dashboard.md#pbicli-dashboard-tile-list
+              - name: show
+                href: reference-dashboard.md#pbicli-dashboard-tile-show
       - name: dataflow
         items:
           - name: Overview
