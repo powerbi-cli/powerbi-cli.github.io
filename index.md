@@ -59,6 +59,7 @@ The Power BI command-line interface (Power BI CLI) is a set of commands used to 
 ---
 
 -   [Reference](xref:reference/index)
+-   [Release notes](xref:overview/releasenotes)
 
 :::zone-end
 

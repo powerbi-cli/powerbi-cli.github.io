@@ -443,8 +443,12 @@ table * th:empty {
 /* OTHER */
 
 ul {
-    list-style: none;
     padding-left: 24px;
+}
+
+article[data-uid="index"] ul,
+article[data-uid^="reference/"] > ul {
+    list-style: none;
 }
 
 .zone > ul {
@@ -615,7 +619,8 @@ ul {
     margin-top: 24px;
 }
 
-li code {
+article[data-uid="index"] li code,
+article[data-uid^="reference/"] li code {
     margin-left: -24px;
 }
 

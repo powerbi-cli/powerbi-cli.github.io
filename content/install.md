@@ -34,10 +34,10 @@ After installing NodeJS follow these steps to install the Power BI CLI
 
 ## Azure CLI (optional)
 
-The Power BI CLI can use the autorisation flow of [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/what-is-azure-cli?view=azure-cli-latest). To install the Azure CLI see the documentation: [Install the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
+The Power BI CLI can use the autorisation flow of [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/what-is-azure-cli?view=azure-cli-latest&WT.mc_id=DP-MVP-5003419). To install the Azure CLI see the documentation: [Install the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=DP-MVP-5003419)
 
 ## Next steps
 
-See [What is Power BI CLI]() for the key characteristics.
+See [What is Power BI CLI](xref:overview/whatis) for the key characteristics.
 
 ## Feedback

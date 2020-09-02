@@ -38,7 +38,7 @@ Otherwise, open a browser page at https://aka.ms/devicelogin and enter the autho
 pbicli login --azurecli
 ```
 
-See the [Azure CLI documentation](https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli?view=azure-cli-latest#sign-in) for more info.
+See the [Azure CLI documentation](https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli?view=azure-cli-latest&WT.mc_id=DP-MVP-5003419#sign-in) for more info.
 
 There are other ways to sign, which are covered in detail in [Sign in with Power BI CLI](xref:install/signin).
 

@@ -29,7 +29,7 @@ Otherwise, open a browser page at https://aka.ms/devicelogin and enter the autho
 pbicli login --azurecli
 ```
 
-See the [Azure CLI documentation](https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli?view=azure-cli-latest#sign-in) for more info.
+See the [Azure CLI documentation](https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli?view=azure-cli-latest&WT.mc_id=DP-MVP-5003419#sign-in) for more info.
 
 ## Sign in interactively
 
@@ -47,7 +47,7 @@ Open a browser page at https://aka.ms/devicelogin and enter the authorization co
 
 ## Sign in with a service principal
 
-Service principals are accounts not tied to any particular user, which can have permissions on them assigned through pre-defined roles. Authenticating with a service principal is the best way to write secure scripts or programs, allowing you to apply both permissions restrictions and locally stored static credential information. To learn more about service principals, see [Create an Azure service principal with the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest#sign-in-using-a-service-principal).
+Service principals are accounts not tied to any particular user, which can have permissions on them assigned through pre-defined roles. Authenticating with a service principal is the best way to write secure scripts or programs, allowing you to apply both permissions restrictions and locally stored static credential information. To learn more about service principals, see [Create an Azure service principal with the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest&WT.mc_id=DP-MVP-5003419#sign-in-using-a-service-principal).
 
 To sign in with a service principal, you need:
 
