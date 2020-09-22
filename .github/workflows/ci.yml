@@ -31,7 +31,7 @@ jobs:
       - name: commit to gh-pages
         uses: crazy-max/ghaction-github-pages@v2.1.1
         with:
-          target_branch: master
+          target_branch: gh-pages
           allow_empty_commit: |
             false
           build_dir: |
