@@ -6,6 +6,14 @@ documentId: 80cb43a5-4a0a-4f60-9690-d41cca745bb0
 
 # Power BI CLI release notes
 
+## September 22, 2020
+
+v1.0.2
+
+**Workspace**
+
+-   Fixed option `--workspace` to be required for command `workspace add list`
+
 ## August 27, 2020
 
 v1.0.1
