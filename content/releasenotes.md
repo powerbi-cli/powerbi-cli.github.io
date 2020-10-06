@@ -6,6 +6,14 @@ documentId: 80cb43a5-4a0a-4f60-9690-d41cca745bb0
 
 # Power BI CLI release notes
 
+## October 6, 2020
+
+v1.0.4
+
+**General**
+
+-   fix login issue: not correctly store auth token
+
 ## September 22, 2020
 
 v1.0.2
