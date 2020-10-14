@@ -33,6 +33,10 @@ The Power BI command-line interface (Power BI CLI) is a set of commands used to 
 -   [Get started with Power BI CLI](xref:overview/getstarted)
 -   [Sign in with Power BI CLI](xref:install/signin)
 
+---
+
+-   [Samples](xref:samples/overview)
+
 :::zone-end
 
 :::column-end:::

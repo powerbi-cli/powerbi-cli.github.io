@@ -9,6 +9,26 @@ items:
         href: getstarted.md
       - name: Release notes
         href: releasenotes.md
+  - name: Samples
+    items:
+      - name: Overview
+        href: samples-index.md
+      - name: Reports
+        items:
+          - name: Overview
+            href: samples-report.md#
+          - name: List reports
+            href: samples-report.md#list-reports
+          - name: List all reports
+            href: samples-report.md#list-all-reports
+      - name: Workspaces
+        items:
+          - name: Overview
+            href: samples-workspace.md#
+          - name: List workspaces
+            href: samples-workspace.md#list-workspaces
+          - name: Add user
+            href: samples-workspace.md#add-user
   - name: Install and run
     items:
       - name: Install
