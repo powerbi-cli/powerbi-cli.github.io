@@ -99,12 +99,12 @@
 
     Countly.q.push(['track_sessions']);
     Countly.q.push(['track_pageview']);
-    Countly.q.push(['track_clicks']);
-    Countly.q.push(['track_scrolls']);
     Countly.q.push(['track_errors']);
     Countly.q.push(['track_links']);
-    Countly.q.push(['track_forms']);
-    Countly.q.push(['collect_from_forms']);
+    
+    const urlParams = new URLSearchParams(window.location.search);
+    const myRef = urlParams.get('ref');
+    if (myRef) Countly.q.push(['report_conversion', myRef])
 
     //load countly script asynchronously
     (function() {
