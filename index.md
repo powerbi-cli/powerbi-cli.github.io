@@ -19,6 +19,7 @@ The Power BI command-line interface (Power BI CLI) is a set of commands used to 
 ---
 
 -   [Installation overview](xref:install/install)
+-   [Setup a Service Principal](xref:install/serviceprincipal)
 
 :::zone-end
 
