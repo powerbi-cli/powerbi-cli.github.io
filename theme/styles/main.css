@@ -134,8 +134,7 @@ a:focus {
     color: var(--font-color);
 }
 
-.toc .nav > li.active > a:hover,
-.toc .nav > li.active > a:focus {
+.toc .nav:not(.level1) > li > a[href]:hover {
     color: var(--font-color);
     text-decoration: underline;
 }
