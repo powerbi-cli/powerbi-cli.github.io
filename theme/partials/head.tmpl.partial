@@ -104,7 +104,7 @@
     
     const urlParams = new URLSearchParams(window.location.search);
     const myRef = urlParams.get('ref');
-    if (myRef) Countly.q.push(['report_conversion', myRef])
+    if (myRef) Countly.q.push(['report_conversion', myRef]);
 
     //load countly script asynchronously
     (function() {
