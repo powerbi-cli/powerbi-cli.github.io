@@ -20,6 +20,7 @@
     --danger-background-glow-high-contrast: rgba(254, 180, 154, 1);
     --info-background: rgba(198, 181, 227, 1);
     --info-background-glow-high-contrast: rgba(198, 181, 227, 1);
+    --weight-semibold: 600;
 }
 
 @font-face {
@@ -645,6 +646,90 @@ article[data-uid^="reference/"] li code {
     transform: rotate(90deg);
 }
 
-.lang-bash {
+/*
+Visual Studio-like style based on original C# coloring by Jason Diamond <jason@diamond.name>
+*/
+.tabGroup section[role="tabpanel"] {
+    background-color: var(--body-background-medium);
+}
+
+pre > code mark {
+    background-color: var(--body-background-medium);
+}
+
+.line-highlight {
+    background-color: #ffc;
+}
+
+.hljs-comment {
+    color: #008000;
+}
+
+.hljs-pscommand,
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-built_in,
+.hljs-name,
+.hljs-tag {
     color: #0101fd;
+}
+
+.hljs-literal {
+    color: darken(#09885a, 5%);
+}
+
+.hljs-string,
+.hljs-string .hljs-subst .hljs-string,
+.hljs-section,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-deletion,
+.hljs-code {
+    color: #a31515;
+}
+
+.hljs-parameter,
+.hljs-type,
+.hljs-attribute,
+.hljs-title,
+.hljs-addition,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-meta {
+    color: #007d9a;
+}
+
+.hljs-doctag {
+    color: #737373;
+}
+
+.hljs-attr {
+    color: #0451a5;
+}
+
+.hljs-control {
+    color: #af00db;
+}
+
+.hljs-helper {
+    color: #795e26;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link {
+    color: #0071e1;
+}
+
+.hljs-emphasis {
+    font-style: italic;
+}
+
+.hljs-strong {
+    font-weight: var(--weight-semibold);
+}
+
+.hljs-reserved,
+.hljs-constant {
+    color: #cd3131;
 }

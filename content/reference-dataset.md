@@ -255,7 +255,7 @@ pbicli dataset parameter list [--workspace] [-w]
 
 -   `--dataset -d <dataset>`<br/>Name or ID of the Power BI dataset
 
--   `---parameter <data>`<br/>String with the parameters in JSON format
+-   `--parameter <data>`<br/>String with the parameters in JSON format
 
 -   `--parameter-file <file>`<br/>File with the parameters in JSON format
 
