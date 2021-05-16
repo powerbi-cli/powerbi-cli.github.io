@@ -6,6 +6,26 @@ documentId: 80cb43a5-4a0a-4f60-9690-d41cca745bb0
 
 # Power BI CLI release notes
 
+## May 16, 2021
+
+v1.1.0
+
+**General**
+
+-   change of the default login behaviour
+
+**embedded**
+
+-   Added functionality
+
+**report**
+
+-   fix issue with the `rebind` command
+
+**xmla**
+
+-   Added functionality, but in preview
+
 ## October 6, 2020
 
 v1.0.4
@@ -18,7 +38,7 @@ v1.0.4
 
 v1.0.2
 
-**Workspace**
+**workspace**
 
 -   Fixed option `--workspace` to be required for command `workspace add list`
 
@@ -30,11 +50,11 @@ v1.0.1
 
 -   Multiple description are updated
 
-**Dataflow**
+**dataflow**
 
 -   Fixed missing commands `refresh` and `storage`
 
-**Version**
+**version**
 
 -   Fixed incorrect version reference
 
@@ -47,19 +67,19 @@ v1.0.0
 -   [BREAKING CHANGE] `group` commands and options are renamed to `workspace`
 -   `version` changed to command
 
-**Admin**
+**admin**
 
 -   Added functionality
 
-**Capacity**
+**capacity**
 
 -   Added functionality
 
-**Feature**
+**feature**
 
 -   Added functionality
 
-**Workspace**
+**workspace**
 
 -   Renamed from `group`
 

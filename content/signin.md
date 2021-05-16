@@ -6,48 +6,26 @@ documentId: 8857b440-b4ca-443c-99b5-9cb1b6730adc
 
 # Sign in with Power BI CLI
 
-There are several authentication types for the Power BI CLI. The prefered way is to leverage the Azure CLI login flow
+Before using any CLI commands with a local install, you need to sign in with [pbicli login](xref:reference/index#pbicli-login).
 
-None of your sign-in information is stored by the CLI. Only the gathered access token which is valid for maximal 1 hour is locally stored by the CLI.
-
-## Sign in via Azure CLI
-
-1. Run the login command of the Azure CLI
+1. Run the `login` command
 
 ```bash
 az login
 ```
 
-If the Azure CLI can open your default browser, it will do so and load an Azure sign-in page.
+If CLI can open your default browser, it will do so and load an Azure sign-in page.
 
 Otherwise, open a browser page at https://aka.ms/devicelogin and enter the authorization code displayed in your terminal.
+
+If no web browser is available or the web browser fails to open, use device code flow with `pbicli login --use-device-code`.
 
 2. Sign in with your account credentials in the browser.
 3. After a successfull login run the login command of the Power BI CLI
 
-```bash
-pbicli login --azurecli
-```
-
-See the [Azure CLI documentation](https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli?view=azure-cli-latest&WT.mc_id=DP-MVP-5003419#sign-in) for more info.
-
-## Sign in interactively
-
-The Power BI CLI's default authentication method uses a web browser and access token to sign in.
-
-1. Run the `login` command
-
-```bash
-pbicli login
-```
-
-Open a browser page at https://aka.ms/devicelogin and enter the authorization code displayed in your terminal.
-
-2. Sign in with your account credentials in the browser.
-
 ## Sign in with a service principal
 
-Service principals are accounts not tied to any particular user, which can have permissions on them assigned through pre-defined roles. Authenticating with a service principal is the best way to write secure scripts or programs, allowing you to apply both permissions restrictions and locally stored static credential information. To learn more about service principals, see [Create an Azure service principal with the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest&WT.mc_id=DP-MVP-5003419#sign-in-using-a-service-principal).
+Service principals are accounts not tied to any particular user, which can have permissions on them assigned through pre-defined roles. Authenticating with a service principal is the best way to write secure scripts or programs, allowing you to apply both permissions restrictions and locally stored static credential information. To learn more about service principals, see [Setup a Service Principal](xref:install/serviceprincipal).
 
 To sign in with a service principal, you need:
 

@@ -356,3 +356,9 @@ items:
                 href: reference-workspace.md#pbicli-workspace-user-list
               - name: update
                 href: reference-workspace.md#pbicli-workspace-user-update
+      - name: xmla
+        items:
+          - name: Overview
+            href: reference-xmla.md
+          - name: query
+            href: reference-xmla.md#pbicli-xmla-query
