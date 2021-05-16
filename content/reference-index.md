@@ -21,6 +21,7 @@ documentId: 1c64785e-a725-4830-98e8-5b9aa2b6c4c3
 | [pbicli import](xref:reference/import)       | Manage Power BI imports                          |
 | [pbicli report](xref:reference/report)       | Manage Power BI reports                          |
 | [pbicli workspace](xref:reference/workspace) | Manage Power BI workspaces                       |
+| [pbicli xmla](xref:reference/xmla)           | [PREVIEW] Manage Power BI XMLA endpoint          |
 
 ## pbicli login
 
@@ -37,16 +38,16 @@ pbicli login [--interactive]
 
 ### Examples
 
+Login interactive
+
+```bash
+pbicli login
+```
+
 Login with Azure CLI credentials
 
 ```bash
 pbicli login --azurecli
-```
-
-Login interactive
-
-```bash
-pbicli login --interactive
 ```
 
 Log in with a service principal using client secret
@@ -57,7 +58,7 @@ pbicli login --service-principal -p 7105d380-a699-4d0a-aeb4-ad3e6f4db865 -s Very
 
 ### Parameters
 
--   `--interactive`<br/>Login interactively
+-   `--interactive`<br/>Login interactively. Default value if no parameter is given
 
 -   `--azurecli`<br/>Login via Azure CLI
 
@@ -68,6 +69,10 @@ pbicli login --service-principal -p 7105d380-a699-4d0a-aeb4-ad3e6f4db865 -s Very
 -   `--secret -s <secret>`<br/>Client secret of a service principal. Will prompt if not given.
 
 -   `--tenant -t <tenant>`<br/>The AAD tenant, must provide when using service principal and interactive login.
+
+-   `--no-azure`<br/>Do not authenticate against Azure for 'embedded' commands
+
+-   `--xmla`<br/>Authenticate against the XMLA endpoints for 'xmla' commands
 
 ## pbicli logout
 

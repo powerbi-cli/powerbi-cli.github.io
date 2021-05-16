@@ -18,7 +18,7 @@ items:
       - name: Reports
         items:
           - name: Overview
-            href: samples-report.md#
+            href: samples-report.md
           - name: List reports
             href: samples-report.md#list-reports
           - name: List all reports
@@ -26,7 +26,7 @@ items:
       - name: Workspaces
         items:
           - name: Overview
-            href: samples-workspace.md#
+            href: samples-workspace.md
           - name: List workspaces
             href: samples-workspace.md#list-workspaces
           - name: Add user
@@ -40,7 +40,7 @@ items:
   - name: Reference
     items:
       - name: Overview
-        href: reference-index.md#
+        href: reference-index.md
       - name: login
         href: reference-index.md#pbicli-login
       - name: logout
@@ -50,7 +50,7 @@ items:
       - name: admin
         items:
           - name: Overview
-            href: reference-admin.md#
+            href: reference-admin.md
           - name: activity
             href: reference-admin.md#pbicli-admin-activity
           - name: import
@@ -93,23 +93,23 @@ items:
                 href: reference-admin.md#pbicli-admin-dataset-list
           - name: key
             items:
-              - name: add](#pbicli-admin-key-add
-              - name: list](#pbicli-admin-key-list
-              - name: rotate](#pbicli-admin-key-rotate
+              - name: add#pbicli-admin-key-add
+              - name: list#pbicli-admin-key-list
+              - name: rotate#pbicli-admin-key-rotate
           - name: report
             items:
-              - name: list](#pbicli-admin-report-list
+              - name: list#pbicli-admin-report-list
           - name: workspace
             items:
-              - name: add](#pbicli-admin-workspace-add
-              - name: delete](#pbicli-admin-workspace-delete
-              - name: list](#pbicli-admin-workspace-list
-              - name: restore](#pbicli-admin-workspace-restore
-              - name: update](#pbicli-admin-workspace-update
+              - name: add#pbicli-admin-workspace-add
+              - name: delete#pbicli-admin-workspace-delete
+              - name: list#pbicli-admin-workspace-list
+              - name: restore#pbicli-admin-workspace-restore
+              - name: update#pbicli-admin-workspace-update
       - name: app
         items:
           - name: Overview
-            href: reference-app.md#
+            href: reference-app.md
           - name: list
             href: reference-app.md#pbicli-app-list
           - name: show
@@ -135,7 +135,7 @@ items:
       - name: capacity
         items:
           - name: Overview
-            href: reference-capacity.md#
+            href: reference-capacity.md
           - name: assign
             href: reference-capacity.md#pbicli-capacity-assign
           - name: list
@@ -151,7 +151,7 @@ items:
       - name: dashboard
         items:
           - name: Overview
-            href: reference-dashboard.md#
+            href: reference-dashboard.md
           - name: create
             href: reference-dashboard.md#pbicli-dashboard-create
           - name: list
@@ -169,7 +169,7 @@ items:
       - name: dataflow
         items:
           - name: Overview
-            href: reference-dataflow.md#
+            href: reference-dataflow.md
           - name: datasource
             href: reference-dataflow.md#pbicli-dataflow-datasource
           - name: delete
@@ -197,7 +197,7 @@ items:
       - name: dataset
         items:
           - name: Overview
-            href: reference-dataset.md#
+            href: reference-dataset.md
           - name: dataflow
             href: reference-dataset.md#pbicli-dataset-dataflow
           - name: delete
@@ -236,10 +236,24 @@ items:
                 href: reference-dataset.md#pbicli-dataset-refresh-update
               - name: show
                 href: reference-dataset.md#pbicli-dataset-refresh-show
+      - name: embedded
+        items:
+          - name: Overview
+            href: reference-embedded.md
+          - name: list
+            href: reference-embedded.md#pbicli-embedded-list
+          - name: show
+            href: reference-embedded.md#pbicli-embedded-show
+          - name: start
+            href: reference-embedded.md#pbicli-embedded-start
+          - name: stop
+            href: reference-embedded.md#pbicli-embedded-stop
+          - name: update
+            href: reference-embedded.md#pbicli-embedded-update
       - name: feature
         items:
           - name: Overview
-            href: reference-feature.md#
+            href: reference-feature.md
           - name: list
             href: reference-feature.md#pbicli-feature-list
           - name: show
@@ -247,7 +261,7 @@ items:
       - name: gateway
         items:
           - name: Overview
-            href: reference-gateway.md#
+            href: reference-gateway.md
           - name: list
             href: reference-gateway.md#pbicli-gateway-list
           - name: show
@@ -277,7 +291,7 @@ items:
       - name: import
         items:
           - name: Overview
-            href: reference-import.md#
+            href: reference-import.md
           - name: dataflow
             href: reference-import.md#pbicli-import-dataflow
           - name: list
@@ -295,7 +309,7 @@ items:
       - name: report
         items:
           - name: Overview
-            href: reference-report.md#
+            href: reference-report.md
           - name: clone
             href: reference-report.md#pbicli-report-clone
           - name: datasource
@@ -323,7 +337,7 @@ items:
       - name: workspace
         items:
           - name: Overview
-            href: reference-workspace.md#
+            href: reference-workspace.md
           - name: create
             href: reference-workspace.md#pbicli-workspace-create
           - name: delete
@@ -342,3 +356,9 @@ items:
                 href: reference-workspace.md#pbicli-workspace-user-list
               - name: update
                 href: reference-workspace.md#pbicli-workspace-user-update
+      - name: xmla
+        items:
+          - name: Overview
+            href: reference-xmla.md
+          - name: query
+            href: reference-xmla.md#pbicli-xmla-query
