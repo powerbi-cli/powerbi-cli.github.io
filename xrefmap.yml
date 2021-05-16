@@ -1,0 +1,78 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: global
+  name: global
+  href: global.html
+- uid: index
+  name: Overview of the Power BI CLI
+  href: index.html
+- uid: install/install
+  name: Install the Power BI CLI
+  href: content/install.html
+- uid: install/serviceprincipal
+  name: Setup a Service Principal
+  href: content/serviceprincipal.html
+- uid: install/signin
+  name: Sign in with Power BI CLI
+  href: content/signin.html
+- uid: overview/getstarted
+  name: Get started with Power BI CLI
+  href: content/getstarted.html
+- uid: overview/releasenotes
+  name: Power BI CLI release notes
+  href: content/releasenotes.html
+- uid: overview/whatis
+  name: What is Power BI CLI
+  href: content/whatis.html
+- uid: reference/admin
+  name: pbicli admin
+  href: content/reference-admin.html
+- uid: reference/app
+  name: pbicli app
+  href: content/reference-app.html
+- uid: reference/capacity
+  name: pbicli capacity
+  href: content/reference-capacity.html
+- uid: reference/dashboard
+  name: pbicli dashboard
+  href: content/reference-dashboard.html
+- uid: reference/dataflow
+  name: pbicli dataflow
+  href: content/reference-dataflow.html
+- uid: reference/dataset
+  name: pbicli dataset
+  href: content/reference-dataset.html
+- uid: reference/embedded
+  name: pbicli embedded
+  href: content/reference-embedded.html
+- uid: reference/feature
+  name: pbicli feature
+  href: content/reference-feature.html
+- uid: reference/gateway
+  name: pbicli gateway
+  href: content/reference-gateway.html
+- uid: reference/import
+  name: pbicli import
+  href: content/reference-import.html
+- uid: reference/index
+  name: pbicli
+  href: content/reference-index.html
+- uid: reference/report
+  name: pbicli report
+  href: content/reference-report.html
+- uid: reference/workspace
+  name: pbicli workspace
+  href: content/reference-workspace.html
+- uid: reference/xmla
+  name: pbicli xmla
+  href: content/reference-xmla.html
+- uid: samples/overview
+  name: Power BI CLI Samples
+  href: content/samples-index.html
+- uid: samples/report
+  name: Power BI CLI Samples for Power BI reports
+  href: content/samples-report.html
+- uid: samples/workspace
+  name: Power BI CLI Samples for Power BI workspaces
+  href: content/samples-workspace.html

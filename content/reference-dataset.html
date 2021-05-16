@@ -1,0 +1,524 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>pbicli dataset </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="pbicli dataset ">
+    <meta name="generator" content="docfx 2.57.2.0">
+    
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:globalrel" content="/global.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  
+    <link rel="canonical" href="https://powerbi-cli.github.io/content/reference-dataset.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta property="og:image" content="https://powerbi-cli.github.io/logo.png">
+    <meta property="og:site_name" content="Azure BI">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="pbicli dataset">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://powerbi-cli.github.io/content/reference-dataset.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="pbicli dataset">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:url" content="https://powerbi-cli.github.io/content/reference-dataset.html">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Jan Pieter Posthuma">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:site" content="@jppp">
+    <meta name="twitter:creator" content="@jppp">
+  
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Azure BI",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://powerbi-cli.github.io/favicon.ico",
+                "width": 60,
+                "height": 60
+            }
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Jan Pieter Posthuma",
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://azurebi.jppp.org/content/images/2018/04/jppp-5-highres.jpg",
+                "width": 3300,
+                "height": 3300
+            },
+            "sameAs": [
+                "https://datascenarios.nl",
+                "https://twitter.com/jppp"
+            ]
+        },
+        "headline": "pbicli dataset",
+        "url": "https://powerbi-cli.github.io/content/reference-dataset.html",
+        "keywords": "",
+        "description": "",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://powerbi-cli.github.io/"
+        }
+    }
+    </script>
+    <script type='text/javascript'>
+      const documentId = '97583c27-9f85-493f-8b3f-e6e02184ef38';
+      const documentUrl = 'https://powerbi-cli.github.io/content/reference-dataset.html';
+      const feedbackDocRepo = 'https://github.com/powerbi-cli/powerbi-cli'
+      const feedbackProductRepo = 'https://github.com/powerbi-cli/powerbi-cli';
+    </script>
+    <script type='text/javascript'>
+      //some default pre init
+      var Countly = Countly || {};
+      Countly.q = Countly.q || [];
+  
+      //provide countly initialization parameters
+      Countly.app_key = 'a0f40659d70fb772e96cf69de2172b150071aa57';
+      Countly.url = 'https://c.datascenarios.nl';
+      Countly.app_version = '20210516.30';
+  
+      Countly.q.push(['track_sessions']);
+      Countly.q.push(['track_pageview']);
+      Countly.q.push(['track_errors']);
+      Countly.q.push(['track_links']);
+      
+      const urlParams = new URLSearchParams(window.location.search);
+      const myRef = urlParams.get('ref');
+      if (myRef) Countly.q.push(['report_conversion', myRef]);
+  
+      //load countly script asynchronously
+      (function() {
+        var cly = document.createElement('script'); cly.type = 'text/javascript';
+        cly.async = true;
+        //enter url of script here
+        cly.src = 'https://c.datascenarios.nl/sdk/web/countly.min.js';
+        cly.onload = function(){Countly.init()};
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(cly, s);
+      })();
+    </script>
+    <meta name="google-site-verification" content="wVVhU305Yl9X20TELl13YXn37o9vu9cDLDskaoFH9pU">
+    <meta name="msvalidate.01" content="7ABDCD6E8CD2402845D5FDF35E6ADCC6">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="reference/dataset">
+<h1 id="pbicli-dataset">pbicli dataset</h1>
+
+<h2 id="commands">Commands</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#pbicli-dataset-dataflow">pbicli dataset dataflow</a></td>
+<td>Get the dataflows uplinks of a Power BI dataset</td>
+</tr>
+<tr>
+<td><a href="#pbicli-dataset-delete">pbicli dataset delete</a></td>
+<td>Deletes a Power BI dataset from a group</td>
+</tr>
+<tr>
+<td><a href="#pbicli-dataset-list">pbicli dataset list</a></td>
+<td>List Power BI datasets in a group</td>
+</tr>
+<tr>
+<td><a href="#pbicli-dataset-set-owner">pbicli dataset set-owner</a></td>
+<td>Set the owner of a Power BI dataset to the current user / service principal</td>
+</tr>
+<tr>
+<td><a href="#pbicli-dataset-show">pbicli dataset show</a></td>
+<td>Get the details of a Power BI dataset</td>
+</tr>
+<tr>
+<td><a href="#pbicli-dataset-datasource-list">pbicli dataset datasource list</a></td>
+<td>List the datasources of a Power BI dataset</td>
+</tr>
+<tr>
+<td><a href="#pbicli-dataset-datasource-gateway">pbicli dataset datasource gateway</a></td>
+<td>List the datasource of a gateways linked to a Power BI dataset</td>
+</tr>
+<tr>
+<td><a href="#pbicli-dataset-gateway-datasource">pbicli dataset gateway datasource</a></td>
+<td>List the datasource of a gateways linked to a Power BI dataset</td>
+</tr>
+<tr>
+<td><a href="#pbicli-dataset-gateway-list">pbicli dataset gateway list</a></td>
+<td>List the gateways of a Power BI dataset</td>
+</tr>
+<tr>
+<td><a href="#pbicli-dataset-gateway-update">pbicli dataset gateway update</a></td>
+<td>Bind a gatweay of a Power BI dataset</td>
+</tr>
+<tr>
+<td><a href="#pbicli-dataset-parameter-list">pbicli dataset parameter list</a></td>
+<td>List the parameters of a Power BI dataset</td>
+</tr>
+<tr>
+<td><a href="#pbicli-dataset-parameter-update">pbicli dataset parameter update</a></td>
+<td>Update the parameters of a Power BI dataset</td>
+</tr>
+<tr>
+<td><a href="#pbicli-dataset-refresh-history">pbicli dataset refresh history</a></td>
+<td>Get the history of a Power BI refresh schedule</td>
+</tr>
+<tr>
+<td><a href="#pbicli-dataset-refresh-update">pbicli dataset refresh update</a></td>
+<td>Update a Power BI refresh schedule</td>
+</tr>
+<tr>
+<td><a href="#pbicli-dataset-refresh-show">pbicli dataset refresh show</a></td>
+<td>Get the details of a Power BI refresh schedule</td>
+</tr>
+</tbody>
+</table>
+<h2 id="pbicli-dataset-dataflow">pbicli dataset dataflow</h2>
+<p>Get the dataflows uplinks of a Power BI dataset</p>
+<pre><code class="lang-bash">pbicli dataset delete [--workspace] [-w]
+                      [--dataset] [-d]
+</code></pre>
+<h3 id="parameters">Parameters</h3>
+<ul>
+<li><p><code>--workspace -w &lt;name&gt;</code><br>Name or ID of the Power BI workspace. If not provided it uses 'My workspace'</p>
+</li>
+<li><p><code>--dataset -d &lt;dataset&gt;</code><br>Name or ID of the Power BI dataset</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-dataset-delete">pbicli dataset delete</h2>
+<p>Deletes a Power BI dataset from a group</p>
+<pre><code class="lang-bash">pbicli dataset delete [--workspace] [-w]
+                      [--dataset] [-d]
+</code></pre>
+<h3 id="parameters-1">Parameters</h3>
+<ul>
+<li><p><code>--workspace -w &lt;name&gt;</code><br>Name or ID of the Power BI workspace. If not provided it uses 'My workspace'</p>
+</li>
+<li><p><code>--dataset -d &lt;dataset&gt;</code><br>Name or ID of the Power BI dataset</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-dataset-list">pbicli dataset list</h2>
+<p>List Power BI datasets in a group</p>
+<pre><code class="lang-bash">pbicli dataset list [--workspace] [-w]
+</code></pre>
+<h3 id="parameters-2">Parameters</h3>
+<ul>
+<li><code>--workspace -w &lt;name&gt;</code><br>Name or ID of the Power BI workspace. If not provided it uses 'My workspace'</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-dataset-set-owner">pbicli dataset set-owner</h2>
+<p>Set the owner of a Power BI dataset to the current user / service principal</p>
+<pre><code class="lang-bash">pbicli dataset set-owner [--workspace] [-w]
+                         [--dataset] [-d]
+</code></pre>
+<h3 id="parameters-3">Parameters</h3>
+<ul>
+<li><p><code>--workspace -w &lt;name&gt;</code><br>Name or ID of the Power BI workspace. If not provided it uses 'My workspace'</p>
+</li>
+<li><p><code>--dataset -d &lt;dataset&gt;</code><br>Name or ID of the Power BI dataset</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-dataset-show">pbicli dataset show</h2>
+<p>Get the details of a Power BI dataset</p>
+<pre><code class="lang-bash">pbicli dataset show [--workspace] [-w]
+                    [--dataset] [-d]
+</code></pre>
+<h3 id="parameters-4">Parameters</h3>
+<ul>
+<li><p><code>--workspace -w &lt;name&gt;</code><br>Name or ID of the Power BI workspace. If not provided it uses 'My workspace'</p>
+</li>
+<li><p><code>--dataset -d &lt;dataset&gt;</code><br>Name or ID of the Power BI dataset</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-dataset-datasource-list">pbicli dataset datasource list</h2>
+<p>List the datasources of a Power BI dataset</p>
+<pre><code class="lang-bash">pbicli dataset datasource list [--workspace] [-w]
+                               [--dataset] [-d]
+</code></pre>
+<h3 id="parameters-5">Parameters</h3>
+<ul>
+<li><p><code>--workspace -w &lt;name&gt;</code><br>Name or ID of the Power BI workspace. If not provided it uses 'My workspace'</p>
+</li>
+<li><p><code>--dataset -d &lt;dataset&gt;</code><br>Name or ID of the Power BI dataset</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-dataset-datasource-gateway">pbicli dataset datasource gateway</h2>
+<p>List the datasource of a gateways linked to a Power BI dataset</p>
+<pre><code class="lang-bash">pbicli dataset datasource gateway [--workspace] [-w]
+                                  [--dataset] [-d]
+</code></pre>
+<h3 id="parameters-6">Parameters</h3>
+<ul>
+<li><p><code>--workspace -w &lt;name&gt;</code><br>Name or ID of the Power BI workspace. If not provided it uses 'My workspace'</p>
+</li>
+<li><p><code>--dataset -d &lt;dataset&gt;</code><br>Name or ID of the Power BI dataset</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-dataset-gateway-datasource">pbicli dataset gateway datasource</h2>
+<p>List the datasource of a gateways linked to a Power BI dataset</p>
+<pre><code class="lang-bash">pbicli dataset gateway datasource [--workspace] [-w]
+                                  [--dataset] [-d]
+</code></pre>
+<h3 id="parameters-7">Parameters</h3>
+<ul>
+<li><p><code>--workspace -w &lt;name&gt;</code><br>Name or ID of the Power BI workspace. If not provided it uses 'My workspace'</p>
+</li>
+<li><p><code>--dataset -d &lt;dataset&gt;</code><br>Name or ID of the Power BI dataset</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-dataset-gateway-list">pbicli dataset gateway list</h2>
+<p>List the gateways of a Power BI dataset</p>
+<pre><code class="lang-bash">pbicli dataset gateway list [--workspace] [-w]
+                            [--dataset] [-d]
+</code></pre>
+<h3 id="parameters-8">Parameters</h3>
+<ul>
+<li><p><code>--workspace -w &lt;name&gt;</code><br>Name or ID of the Power BI workspace. If not provided it uses 'My workspace'</p>
+</li>
+<li><p><code>--dataset -d &lt;dataset&gt;</code><br>Name or ID of the Power BI dataset</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-dataset-gateway-update">pbicli dataset gateway update</h2>
+<p>Bind a gatweay of a Power BI dataset</p>
+<pre><code class="lang-bash">pbicli dataset gateway list [--workspace] [-w]
+                            [--dataset] [-d]
+                            [--gatewayId]
+                            [--datasourceIds]
+</code></pre>
+<h3 id="parameters-9">Parameters</h3>
+<ul>
+<li><p><code>--workspace -w &lt;name&gt;</code><br>Name or ID of the Power BI workspace. If not provided it uses 'My workspace'</p>
+</li>
+<li><p><code>--dataset -d &lt;dataset&gt;</code><br>Name or ID of the Power BI dataset</p>
+</li>
+<li><p><code>--gatewayId &lt;gatewayId&gt;</code><br>Name or ID of the Power BI gateway</p>
+</li>
+<li><p><code>--datasourceIds &lt;data&gt;</code><br>Set of datasource Ids. Comma seperated</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-dataset-parameter-list">pbicli dataset parameter list</h2>
+<p>List the parameters of a Power BI dataset</p>
+<pre><code class="lang-bash">pbicli dataset parameter list [--workspace] [-w]
+                              [--dataset] [-d]
+</code></pre>
+<h3 id="parameters-10">Parameters</h3>
+<ul>
+<li><p><code>--workspace -w &lt;name&gt;</code><br>Name or ID of the Power BI workspace. If not provided it uses 'My workspace'</p>
+</li>
+<li><p><code>--dataset -d &lt;dataset&gt;</code><br>Name or ID of the Power BI dataset</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-dataset-parameter-update">pbicli dataset parameter update</h2>
+<p>Update the parameters of a Power BI dataset</p>
+<pre><code class="lang-bash">pbicli dataset parameter list [--workspace] [-w]
+                              [--dataset] [-d]
+                              [--parameter]
+                              [--parameter-file]
+</code></pre>
+<h3 id="parameters-11">Parameters</h3>
+<ul>
+<li><p><code>--workspace -w &lt;name&gt;</code><br>Name or ID of the Power BI workspace. If not provided it uses 'My workspace'</p>
+</li>
+<li><p><code>--dataset -d &lt;dataset&gt;</code><br>Name or ID of the Power BI dataset</p>
+</li>
+<li><p><code>--parameter &lt;data&gt;</code><br>String with the parameters in JSON format</p>
+</li>
+<li><p><code>--parameter-file &lt;file&gt;</code><br>File with the parameters in JSON format</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-dataset-refresh-history">pbicli dataset refresh history</h2>
+<p>Get the history of a Power BI refresh schedule</p>
+<pre><code class="lang-bash">pbicli dataset refresh history [--workspace] [-w]
+                               [--dataset] [-d]
+</code></pre>
+<h3 id="parameters-12">Parameters</h3>
+<ul>
+<li><p><code>--workspace -w &lt;name&gt;</code><br>Name or ID of the Power BI workspace. If not provided it uses 'My workspace'</p>
+</li>
+<li><p><code>--dataset -d &lt;dataset&gt;</code><br>Name or ID of the Power BI dataset</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-dataset-refresh-update">pbicli dataset refresh update</h2>
+<p>Update a Power BI refresh schedule</p>
+<pre><code class="lang-bash">pbicli dataset refresh list [--workspace] [-w]
+                            [--dataset] [-d]
+                            [--refresh-schedule]
+                            [--refresh-schedule-file]
+</code></pre>
+<h3 id="parameters-13">Parameters</h3>
+<ul>
+<li><p><code>--workspace -w &lt;name&gt;</code><br>Name or ID of the Power BI workspace. If not provided it uses 'My workspace'</p>
+</li>
+<li><p><code>--dataset -d &lt;dataset&gt;</code><br>Name or ID of the Power BI dataset</p>
+</li>
+<li><p><code>---refresh-schedule &lt;data&gt;</code><br>String with the refresh schedule in JSON format</p>
+</li>
+<li><p><code>--refresh-schedule-file &lt;file&gt;</code><br>File with the refresh schedule in JSON format</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-dataset-refresh-show">pbicli dataset refresh show</h2>
+<p>Get the details of a Power BI refresh schedule</p>
+<pre><code class="lang-bash">pbicli dataset refresh history [--workspace] [-w]
+                               [--dataset] [-d]
+                               [--direct-query]
+</code></pre>
+<h3 id="parameters-14">Parameters</h3>
+<ul>
+<li><p><code>--workspace -w &lt;name&gt;</code><br>Name or ID of the Power BI workspace. If not provided it uses 'My workspace'</p>
+</li>
+<li><p><code>--dataset -d &lt;dataset&gt;</code><br>Name or ID of the Power BI dataset</p>
+</li>
+<li><p><code>--direct-query</code><br>Dataset is a direct query or live connection</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="feedback">Feedback</h2>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/powerbi-cli/powerbi-cli.github.io/blob/live/content/reference-dataset.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/feedback.js"></script>
+    <script type="text/javascript" src="../styles/global.js"></script>
+  </body>
+</html>

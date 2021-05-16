@@ -1,0 +1,388 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Setup a Service Principal </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Setup a Service Principal ">
+    <meta name="generator" content="docfx 2.57.2.0">
+    
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:globalrel" content="/global.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  
+    <link rel="canonical" href="https://powerbi-cli.github.io/content/serviceprincipal.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta property="og:image" content="https://powerbi-cli.github.io/logo.png">
+    <meta property="og:site_name" content="Azure BI">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Setup a Service Principal">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://powerbi-cli.github.io/content/serviceprincipal.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Setup a Service Principal">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:url" content="https://powerbi-cli.github.io/content/serviceprincipal.html">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Jan Pieter Posthuma">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:site" content="@jppp">
+    <meta name="twitter:creator" content="@jppp">
+  
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Azure BI",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://powerbi-cli.github.io/favicon.ico",
+                "width": 60,
+                "height": 60
+            }
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Jan Pieter Posthuma",
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://azurebi.jppp.org/content/images/2018/04/jppp-5-highres.jpg",
+                "width": 3300,
+                "height": 3300
+            },
+            "sameAs": [
+                "https://datascenarios.nl",
+                "https://twitter.com/jppp"
+            ]
+        },
+        "headline": "Setup a Service Principal",
+        "url": "https://powerbi-cli.github.io/content/serviceprincipal.html",
+        "keywords": "",
+        "description": "",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://powerbi-cli.github.io/"
+        }
+    }
+    </script>
+    <script type='text/javascript'>
+      const documentId = '4a6ed0cc-5b77-4f1f-96d4-550f9688a80e';
+      const documentUrl = 'https://powerbi-cli.github.io/content/serviceprincipal.html';
+      const feedbackDocRepo = 'https://github.com/powerbi-cli/powerbi-cli'
+      const feedbackProductRepo = 'https://github.com/powerbi-cli/powerbi-cli';
+    </script>
+    <script type='text/javascript'>
+      //some default pre init
+      var Countly = Countly || {};
+      Countly.q = Countly.q || [];
+  
+      //provide countly initialization parameters
+      Countly.app_key = 'a0f40659d70fb772e96cf69de2172b150071aa57';
+      Countly.url = 'https://c.datascenarios.nl';
+      Countly.app_version = '20210516.30';
+  
+      Countly.q.push(['track_sessions']);
+      Countly.q.push(['track_pageview']);
+      Countly.q.push(['track_errors']);
+      Countly.q.push(['track_links']);
+      
+      const urlParams = new URLSearchParams(window.location.search);
+      const myRef = urlParams.get('ref');
+      if (myRef) Countly.q.push(['report_conversion', myRef]);
+  
+      //load countly script asynchronously
+      (function() {
+        var cly = document.createElement('script'); cly.type = 'text/javascript';
+        cly.async = true;
+        //enter url of script here
+        cly.src = 'https://c.datascenarios.nl/sdk/web/countly.min.js';
+        cly.onload = function(){Countly.init()};
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(cly, s);
+      })();
+    </script>
+    <meta name="google-site-verification" content="wVVhU305Yl9X20TELl13YXn37o9vu9cDLDskaoFH9pU">
+    <meta name="msvalidate.01" content="7ABDCD6E8CD2402845D5FDF35E6ADCC6">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="install/serviceprincipal">
+<h1 id="setup-a-service-principal">Setup a Service Principal</h1>
+
+<p>To use service principal with the Power BI CLI, follow these steps:</p>
+<h2 id="step-1---create-an-azure-ad-app">Step 1 - Create an Azure AD app</h2>
+<p>Create an Azure AD app using one of these methods and store the following information securely as it is needed:</p>
+<ul>
+<li>Azure app's Application ID</li>
+<li>Azure AD app's secret</li>
+<li>Azure app's Tenant ID</li>
+</ul>
+<h3 id="creating-an-azure-ad-app-in-the-microsoft-azure-portal">Creating an Azure AD app in the Microsoft Azure portal</h3>
+<p>See the <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal&amp;WT.mc_id=DP-MVP-5003419">create an Azure AD app</a> article for the steps. You can skip the 'Role' and 'Policy' parts.</p>
+<h3 id="creating-an-azure-ad-app-using-a-script">Creating an Azure AD app using a script</h3>
+<p>This section includes a sample script to create a new Azure AD app using the Azure CLI or PowerShell.</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_az" role="tab" aria-controls="tabpanel_bHGHmlrG6S_az" data-tab="az" tabindex="0" aria-selected="true">Azure CLI</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_powershell" role="tab" aria-controls="tabpanel_bHGHmlrG6S_powershell" data-tab="powershell" tabindex="-1">PowerShell</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S_az" role="tabpanel" data-tab="az">
+
+<pre><code class="lang-bash"># Result contains the appId, password (secret) and tenant
+# Sign in as a user that's allowed to create an app
+az login
+
+# Creates a new Azure AD web application and service principal
+az ad sp create-for-rbac --name  &lt;ApplicationName&gt;
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S_powershell" role="tabpanel" data-tab="powershell" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-powershell"># The app ID - $app.appid
+# The service principal object ID - $sp.objectId
+# The app key - $key.value
+
+# Sign in as a user that's allowed to create an app
+Connect-AzureAD
+
+# Create a new Azure AD web application
+$app = New-AzureADApplication -DisplayName &lt;ApplicationName&gt; -Homepage &quot;https://localhost:44322&quot; -ReplyUrls &quot;https://localhost:44322&quot;
+
+# Creates a service principal
+$sp = New-AzureADServicePrincipal -AppId $app.AppId
+
+# Get the service principal key
+$key = New-AzureADServicePrincipalPasswordCredential -ObjectId $sp.ObjectId
+</code></pre>
+</section>
+</div>
+<h2 id="step-2---create-an-azure-ad-security-group">Step 2 - Create an Azure AD security group</h2>
+<p>Your service principal doesn't have access to any of your Power BI content and APIs. To give the service principal access, create a security group in Azure AD, and add the service principal you created to that security group.</p>
+<h3 id="creating-an-azure-ad-security-group-in-the-microsoft-azure-portal">Creating an Azure AD security group in the Microsoft Azure portal</h3>
+<p>See the <a href="https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal&amp;WT.mc_id=DP-MVP-5003419">create a basic group and add members using Azure AD</a> article for the steps.</p>
+<h3 id="creating-an-azure-ad-security-group-using-a-script">Creating an Azure AD security group using a script</h3>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-1">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-1_az" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_az" data-tab="az" tabindex="0" aria-selected="true">Azure CLI</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-1_powershell" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_powershell" data-tab="powershell" tabindex="-1">PowerShell</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-1_az" role="tabpanel" data-tab="az">
+
+<pre><code class="lang-bash"># Result contains the appId, password (secret) and tenant
+# Sign in as a user that's allowed to create an app
+az login
+
+# Create an Azure AD security group
+$group = az ad group create --display-name &lt;GroupName&gt; --mail-nickname notSet --query &quot;{objectId:objectId}&quot; --output tsv
+
+# Retrieve correct object ID of the Setivce Principal
+$member = az ad sp show --id &lt;AppID&gt; --query &quot;{objectId:objectId}&quot; --output tsv
+
+# Add the service principal to the group
+az ad group member add --group $group --member-id $member
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S-1_powershell" role="tabpanel" data-tab="powershell" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-powershell"># Required to sign in as admin
+Connect-AzureAD
+
+# Create an Azure AD security group
+$group = New-AzureADGroup -DisplayName &lt;GroupName&gt; -SecurityEnabled $true -MailEnabled $false -MailNickName notSet
+
+# Add the service principal to the group
+Add-AzureADGroupMember -ObjectId $($group.ObjectId) -RefObjectId $($sp.ObjectId)
+</code></pre>
+</section>
+</div>
+<h2 id="step-3---enable-the-power-bi-service-admin-settings">Step 3 - Enable the Power BI service admin settings</h2>
+<p>For an Azure AD app to be able to access the Power BI content and APIs, a Power BI admin needs to enable service principal access in the Power BI admin portal.</p>
+<ol>
+<li>Navigate to to Power BI Admin Portal: <a href="https://app.powerbi.com/admin-portal/tenantSettings">https://app.powerbi.com/admin-portal/tenantSettings</a></li>
+<li>Scroll down to the <code>Developer settings</code> section</li>
+<li>Expand the <code>Allow service principals to use Power BI APIs</code> setting</li>
+<li>Click on the <code>enable</code> toggle to enable the setting</li>
+<li>Choose <code>Specific security groups (Recommended)</code> in the 'Apply to' radio buttons</li>
+<li>Add the security group created in step 2 in the textbox</li>
+<li>Click on <code>Apply</code> button to save the setting</li>
+</ol>
+<p><span class="mx-imgBorder">
+<img src="../images/serviceprincipal-powerbiadminportal.png" alt="Screenshot of the Development settings in the Power BI Admin portal ">
+</span>
+</p>
+<h2 id="step-4---required-api-permissions">Step 4 - Required API permissions</h2>
+<p>To access the Power BI APIs vai the Power BI CLI, the service principal need several scope assigned. In the table below is an overview of the required scopes.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Required scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>admin</td>
+<td>Tenant.Read.All, Tenant.ReadWrite.All</td>
+</tr>
+<tr>
+<td>app</td>
+<td>App.Read.All</td>
+</tr>
+<tr>
+<td>capacity</td>
+<td>Capacity.Read.All, Capacity.ReadWrite.All</td>
+</tr>
+<tr>
+<td>dashboard</td>
+<td>Dashboard.Read.All, Dashboard.ReadWrite.All, Content.Create</td>
+</tr>
+<tr>
+<td>dataflow</td>
+<td>Dataflow.ReadWrite.All, Dataflow.Read.All</td>
+</tr>
+<tr>
+<td>dataset</td>
+<td>Dataset.ReadWrite.All, Dataset.Read.All</td>
+</tr>
+<tr>
+<td>feature</td>
+<td>None</td>
+</tr>
+<tr>
+<td>gateway</td>
+<td>Dataset.Read.All, Dataset.ReadWrite.All</td>
+</tr>
+<tr>
+<td>import</td>
+<td>Dataset.ReadWrite.All</td>
+</tr>
+<tr>
+<td>report</td>
+<td>Report.Read.All, Report.ReadWrite.All, Dataset.Read.All, Dataset.ReadWrite.All</td>
+</tr>
+<tr>
+<td>workspace</td>
+<td>Workspace.Read.All, Workspace.ReadWrite.All</td>
+</tr>
+</tbody>
+</table>
+<p>Adding the scopes as API permissions can be done via the Azure Portal on the management pane of the service principal.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For the <strong>Tenant.Read.All</strong> and <strong>Tenant.ReadWrite.All</strong> scopes <em>Admin consent</em> is needed. This can be applied via the Azure portal.</p>
+</div>
+<p><span class="mx-imgBorder">
+<img src="../images/serviceprincipal-apipermission.png" alt="Screenshot of adding API permissions for the service principal">
+</span>
+</p>
+<h2 id="step-5---add-the-service-principal-to-your-workspace">Step 5 - Add the service principal to your workspace</h2>
+<p>To enable your Azure AD app access artifacts such as reports, dashboards and datasets in the Power BI service, add the service principal entity, or the security group that includes your service principal, as a member or admin to your workspace.</p>
+<p>Alternative you can add the service principal as <code>Power BI administrator</code> via <code>Roles and administrators</code> part of your Azure Active Directory management.</p>
+<h2 id="feedback">Feedback</h2>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/powerbi-cli/powerbi-cli.github.io/blob/live/content/serviceprincipal.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/feedback.js"></script>
+    <script type="text/javascript" src="../styles/global.js"></script>
+  </body>
+</html>
