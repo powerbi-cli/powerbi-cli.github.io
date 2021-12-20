@@ -96,7 +96,7 @@ pbicli import pbix-large [--workspace] [-w]
 
 -   `--workspace -w <name>`<br/>Name or ID of the Power BI workspace. If not provided it uses 'My workspace'
 
--   `--name <name>`<br/>The display name of the dataset with file extension. Default the file name is used
+-   `--name <name>`<br/>The display name of the dataset
 
 -   `--url <url>`<br/>Url of the temporary blob storage
 
@@ -113,17 +113,17 @@ pbicli import pbix-large [--workspace] [-w]
 Upload of Power BI RDL file
 
 ```bash
-pbicli import pbix [--workspace] [-w]
-                   [--file]
-                   [--name]
-                   [--conflict]
+pbicli import rdl [--workspace] [-w]
+                  [--file]
+                  [--name]
+                  [--conflict]
 ```
 
 ### Parameters
 
 -   `--workspace -w <name>`<br/>Name or ID of the Power BI workspace. If not provided it uses 'My workspace'
 
--   `--file <path>`<br/>Path to the RDL file
+-   `--file <file>`<br/>Path to the RDL file
 
 -   `--name <name>`<br/>The display name of the report with file extension. Default the file name is used
 
@@ -157,7 +157,7 @@ pbicli import show [--workspace] [-w]
 Creates a temporaty upload location for a Power BI report
 
 ```bash
-pbicli import show [--workspace] [-w]
+pbicli import temp [--workspace] [-w]
 ```
 
 ### Parameters

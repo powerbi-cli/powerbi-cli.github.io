@@ -7,7 +7,7 @@ documentId: a072d66d-39b1-4566-947b-04bb670877ec
 # pbicli xmla
 
 > [!CAUTION]
-> The XMLA command is currently preview and not supported by Microsoft.
+> The XMLA command is now obsolete and will be removed in future version. Please use [`pbici dataset query`](xref:reference/dataset#pbicli-dataset-query)
 
 ## Commands
 
