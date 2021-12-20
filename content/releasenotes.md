@@ -6,6 +6,49 @@ documentId: 80cb43a5-4a0a-4f60-9690-d41cca745bb0
 
 # Power BI CLI release notes
 
+## DEcember 20, 2011
+
+v1.2.0
+
+**admin**
+
+-   Added missing commands, including workspace scan, get users, and information protection label commands
+
+**cloud**
+
+-   Added functionality (multi cloud)
+
+**configure**
+
+-   Added functionality
+
+**dataflow**
+
+-   Added `transaction` command
+-   Added `update` command
+
+**dataset**
+
+-   Added `query` command to execute DAX queries
+-   Added `refresh` command
+-   Added `user` command
+
+**pipeline**
+
+-   Added functionality
+
+**scorecard**
+
+-   Added functionality
+
+**user**
+
+-   Added functionality
+
+**xmla**
+
+-   Deprecated with this version; will removed in a future version
+
 ## May 16, 2021
 
 v1.1.0
