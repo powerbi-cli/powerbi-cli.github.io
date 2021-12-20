@@ -15,7 +15,7 @@ documentId: acde4004-8731-4463-9ae4-2948ab3ba288
 | [pbicli capacity refresh](#pbicli-capacity-refresh)   | Returns a list of imports for the organization                                     |
 | [pbicli capacity status](#pbicli-capacity-status)     | Gets the status of the assignment to capacity operation of the specified workspace |
 | [pbicli capacity unassign](#pbicli-capacity-unassign) | Unassigns the specified workspace to the specified capacity                        |
-| [pbicli capacity workload](#pbicli-capacity-workload) | Manage the the state of capacity workloads                                         |
+| [pbicli capacity workload](#pbicli-capacity-workload) | Operations for working with the the state of capacity workloads                    |
 
 ## pbicli capacity assign
 
@@ -97,7 +97,7 @@ pbicli capacity status [--workspace] [-w]
 
 ## pbicli capacity unassign
 
-Assigns the specified workspace to the specified capacity
+Unassigns the specified workspace to the specified capacity
 
 ```bash
 pbicli capacity unassign [--workspace] [-w]
@@ -113,7 +113,7 @@ pbicli capacity unassign [--workspace] [-w]
 
 ## pbicli capacity workload
 
-Manage the the state of capacity workloads
+Operations for working with the the state of capacity workloads
 
 ```bash
 pbicli capacity workload [--capacity] [-c]

@@ -41,7 +41,7 @@ pbicli dashboard create [--workspace] [-w]
 List Power BI dashboards in a workspace
 
 ```bash
-pbicli dashboard create [--workspace] [-w]
+pbicli dashboard list [--workspace] [-w]
 ```
 
 ### Parameters
@@ -78,17 +78,19 @@ Clone a Power BI dashboard tile
 ```bash
 pbicli dashboard tile create [--workspace] [-w]
                              [--dashboard] [-d]
+                             [--tile] [-t]
                              [--dest-dashboard]
                              [--dest-workspace]
                              [--dest-model]
                              [--dest-report]
+                             [--abort]
 ```
 
 ### Parameters
 
 -   `--workspace -w <name>`<br/>Name or ID of the Power BI workspace. If not provided it uses 'My workspace'
 
--   `--dashboard -d <dashboard>`<br/>Name or ID of the Power BI dashboard
+-   `--dashboard -d <dashboard>`<br/>Name of the Power BI dashboard
 
 -   `--tile -t <tile>`<br/>Name or ID of the Power BI dashboard tile
 
@@ -100,13 +102,15 @@ pbicli dashboard tile create [--workspace] [-w]
 
 -   `--dest-report [destreport]`<br/>ID of the destination Power BI report
 
+-   `--abort`<br/>If set the clone action will be arborted if the row/column position is not available
+
 > [!div class="global-parameters"]
 >
 > [Global Parameters](xref:global)
 
 ## pbicli dashboard tile list
 
-List Power BI dashboard tiles in a workspace
+List Power BI dashboard tiles in a workplace
 
 ```bash
 pbicli dashboard tile list [--workspace] [-w]
@@ -125,7 +129,7 @@ pbicli dashboard tile list [--workspace] [-w]
 
 ## pbicli dashboard tile show
 
-List Power BI dashboard tiles in a workspace
+Get the details of a Power BI dashboard tile
 
 ```bash
 pbicli dashboard tile show [--workspace] [-w]

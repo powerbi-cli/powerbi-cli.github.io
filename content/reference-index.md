@@ -11,16 +11,22 @@ documentId: 1c64785e-a725-4830-98e8-5b9aa2b6c4c3
 |                                              |                                                  |
 | -------------------------------------------- | ------------------------------------------------ |
 | [pbicli admin](xref:reference/admin)         | Operations for working with administrative tasks |
-| [pbicli app](xref:reference/app)             | Manage Power BI apps                             |
-| [pbicli capacity](xref:reference/capacity)   | Manage Power BI capacities                       |
-| [pbicli dashboard](xref:reference/dashboard) | Manage Power BI dashboards                       |
-| [pbicli dataflow](xref:reference/dataflow)   | Manage Power BI dataflows                        |
-| [pbicli dataset](xref:reference/dataset)     | Manage Power BI datasets                         |
-| [pbicli feature](xref:reference/feature)     | Manage Power BI features                         |
-| [pbicli gateway](xref:reference/gateway)     | Manage Power BI gateways                         |
-| [pbicli import](xref:reference/import)       | Manage Power BI imports                          |
-| [pbicli report](xref:reference/report)       | Manage Power BI reports                          |
-| [pbicli workspace](xref:reference/workspace) | Manage Power BI workspaces                       |
+| [pbicli app](xref:reference/app)             | Operations for working with apps                 |
+| [pbicli capacity](xref:reference/capacity)   | Operations for working with capacities           |
+| [pbicli cloud](xref:reference/cloud)         | Operations for working with clouds               |
+| [pbicli configure](xref:reference/configure) | Operations for working with CLI configuration    |
+| [pbicli dashboard](xref:reference/dashboard) | Operations for working with dashboards           |
+| [pbicli dataflow](xref:reference/dataflow)   | Operations for working with dataflows            |
+| [pbicli dataset](xref:reference/dataset)     | Operations for working with datasets             |
+| [pbicli embedded](xref:reference/embedded)   | Operations for working with Embedded capacity    |
+| [pbicli feature](xref:reference/feature)     | Operations for working with features             |
+| [pbicli gateway](xref:reference/gateway)     | Operations for working with gateways             |
+| [pbicli import](xref:reference/import)       | Operations for working with imports              |
+| [pbicli report](xref:reference/report)       | Operations for working with reports              |
+| [pbicli pipeline](xref:reference/pipeline)   | Operations for working with pipelines            |
+| [pbicli scorecard](xref:reference/scorecard) | Operations for working with scorecards (goals)   |
+| [pbicli workspace](xref:reference/workspace) | Operations for working with workspaces           |
+| [pbicli user](xref:reference/user)           | Operations for working with users                |
 | [pbicli xmla](xref:reference/xmla)           | [PREVIEW] Manage Power BI XMLA endpoint          |
 
 ## pbicli login
@@ -29,11 +35,13 @@ Login to Power BI
 
 ```bash
 pbicli login [--interactive]
+             [--use-device-code]
              [--azurecli]
              [--service-principal]
-             [--principal] [-p] <principal>
-             [--secret] [-s] <secret>
-             [--tenant] [-t] <tenant>
+             [--principal] [-p]
+             [--secret] [-s]
+             [--tenant] [-t]
+             [--no-azure]
 ```
 
 ### Examples
@@ -60,19 +68,19 @@ pbicli login --service-principal -p 7105d380-a699-4d0a-aeb4-ad3e6f4db865 -s Very
 
 -   `--interactive`<br/>Login interactively. Default value if no parameter is given
 
+-   `--use-device-code`<br/>Use CLI's old authentication flow based on device code.
+
 -   `--azurecli`<br/>Login via Azure CLI
 
 -   `--service-principal`<br/>Login with a service principal
 
 -   `--principal -p <principal>`<br/>The service principal ID
 
--   `--secret -s <secret>`<br/>Client secret of a service principal. Will prompt if not given.
+-   `--secret -s <secret>`<br/>Client secret
 
--   `--tenant -t <tenant>`<br/>The AAD tenant, must provide when using service principal and interactive login.
+-   `--tenant -t <tenant>`<br/>The AAD tenant
 
 -   `--no-azure`<br/>Do not authenticate against Azure for 'embedded' commands
-
--   `--xmla`<br/>Authenticate against the XMLA endpoints for 'xmla' commands
 
 ## pbicli logout
 

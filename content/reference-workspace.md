@@ -29,7 +29,7 @@ pbicli workspace create [--workspace] [-w]
 
 ### Parameters
 
--   `--workspace -w <name>`<br/>Name or ID of the Power BI workspace
+-   `--workspace -w <name>`<br/>Name of the Power BI workspace
 
 > [!div class="global-parameters"]
 >
@@ -81,12 +81,14 @@ pbicli workspace show [--workspace] [-w]
 
 ## pbicli workspace user add
 
+Grant access to a user or service pricipal
+
 ```bash
 pbicli workspace user add [--workspace] [-w]
-                      [--email]
-                      [--identifier]
-                      [--access-right]
-                      [--principal-type]
+                          [--email]
+                          [--identifier]
+                          [--access-right]
+                          [--principal-type]
 ```
 
 ### Parameters
@@ -99,7 +101,7 @@ pbicli workspace user add [--workspace] [-w]
 
 -   `--access-right <right>`<br/>Access right. Allowed values: Admin, Contributor, Member
 
--   `--principal-type <type>`<br/>Type of pricipal. Allowed values: App, User, workspace
+-   `--principal-type <type>`<br/>Type of pricipal. Allowed values: App, User, Group, None
 
 > [!div class="global-parameters"]
 >
@@ -107,10 +109,12 @@ pbicli workspace user add [--workspace] [-w]
 
 ## pbicli workspace user delete
 
+Revoke access of a user or service pricipal
+
 ```bash
 pbicli workspace user delete [--workspace] [-w]
-                         [--email]
-                         [--identifier]
+                             [--email]
+                             [--identifier]
 ```
 
 ### Parameters
@@ -127,6 +131,8 @@ pbicli workspace user delete [--workspace] [-w]
 
 ## pbicli workspace user list
 
+List user and service pricipal with access
+
 ```bash
 pbicli workspace user list [--workspace] [-w]
 ```
@@ -141,12 +147,14 @@ pbicli workspace user list [--workspace] [-w]
 
 ## pbicli workspace user update
 
+Update access of a user or service pricipal
+
 ```bash
 pbicli workspace user update [--workspace] [-w]
-                         [--email]
-                         [--identifier]
-                         [--access-right]
-                         [--principal-type]
+                             [--email]
+                             [--identifier]
+                             [--access-right]
+                             [--principal-type]
 ```
 
 ### Parameters
@@ -159,7 +167,7 @@ pbicli workspace user update [--workspace] [-w]
 
 -   `--access-right <right>`<br/>Access right. Allowed values: Admin, Contributor, Member
 
--   `--principal-type <type>`<br/>Type of pricipal. Allowed values: App, User, workspace
+-   `--principal-type <type>`<br/>Type of pricipal. Allowed values: App, User, Group, None
 
 > [!div class="global-parameters"]
 >
