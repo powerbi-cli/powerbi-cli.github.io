@@ -6,9 +6,17 @@ documentId: 80cb43a5-4a0a-4f60-9690-d41cca745bb0
 
 # Power BI CLI release notes
 
-## DEcember 20, 2011
+## v1.2.1 - February 25, 2022
 
-v1.2.0
+### Changed
+
+**admin**
+
+-   Fixed error in parameter `--workspace-file` of `workspace scan` command
+
+## v1.2.0 - December 20, 2011
+
+### Added
 
 **admin**
 
@@ -45,49 +53,53 @@ v1.2.0
 
 -   Added functionality
 
+### Changed
+
 **xmla**
 
 -   Deprecated with this version; will removed in a future version
 
-## May 16, 2021
+## v1.1.0 - May 16, 2021
 
-v1.1.0
-
-**General**
-
--   change of the default login behaviour
+### Added
 
 **embedded**
 
 -   Added functionality
 
-**report**
-
--   fix issue with the `rebind` command
-
 **xmla**
 
 -   Added functionality, but in preview
 
-## October 6, 2020
+### Changed
 
-v1.0.4
+**General**
+
+-   change of the default login behaviour
+
+**report**
+
+-   fix issue with the `rebind` command
+
+## v1.0.4 - October 6, 2020
+
+### Changed
 
 **General**
 
 -   fix login issue: not correctly store auth token
 
-## September 22, 2020
+## v1.0.2 - September 22, 2020
 
-v1.0.2
+### Changed
 
 **workspace**
 
 -   Fixed option `--workspace` to be required for command `workspace add list`
 
-## August 27, 2020
+## v1.0.1 - August 27, 2020
 
-v1.0.1
+### Changed
 
 **General**
 
@@ -101,14 +113,9 @@ v1.0.1
 
 -   Fixed incorrect version reference
 
-## August 27, 2020
+## v1.0.0 - August 27, 2020
 
-v1.0.0
-
-**General**
-
--   [BREAKING CHANGE] `group` commands and options are renamed to `workspace`
--   `version` changed to command
+### Added
 
 **admin**
 
@@ -122,13 +129,18 @@ v1.0.0
 
 -   Added functionality
 
+### Changed
+
+**General**
+
+-   [BREAKING CHANGE] `group` commands and options are renamed to `workspace`
+-   `version` changed to command
+
 **workspace**
 
 -   Renamed from `group`
 
-## June 22, 2020
-
-Version 0.9.0
+## v0.9.0 - June 22, 2020
 
 This version is the first beta release of this Power BI CLI.
 
