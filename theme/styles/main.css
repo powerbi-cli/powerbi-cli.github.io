@@ -15,6 +15,7 @@
     --body-background-dark: rgba(248, 248, 248, 1);
     --box-shadow-light: rgba(0, 0, 0, 0.108);
     --box-shadow-medium: rgba(0, 0, 0, 0.132);
+    --border: rgba(230, 230, 230, 1);
     --border-white-high-contrast: rgba(255, 255, 255, 0);
     --danger-background: rgba(254, 180, 154, 1);
     --danger-background-glow-high-contrast: rgba(254, 180, 154, 1);
@@ -377,7 +378,7 @@ pre {
     font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
     font-smooth: auto;
     padding: 1rem;
-    margin: 1rem 0 0;
+    margin: 1rem 0;
     white-space: pre;
     word-spacing: normal;
     word-break: normal;
@@ -389,10 +390,20 @@ pre {
 
 pre > code {
     position: relative;
-    border: 0;
-    padding: 0;
+    /* border: 0; */
+    /* padding: 0; */
     display: block;
     line-height: 19px;
+}
+
+.tabGroup section[role="tabpanel"] > pre:last-child {
+    margin-bottom: 0px;
+}
+
+.tabGroup section[role="tabpanel"] > .codeHeader,
+.tabGroup section[role="tabpanel"] > pre {
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 /* STYLE FOR IMAGES */
@@ -653,10 +664,6 @@ article[data-uid^="reference/"] li code {
 /*
 Visual Studio-like style based on original C# coloring by Jason Diamond <jason@diamond.name>
 */
-.tabGroup section[role="tabpanel"] {
-    background-color: var(--body-background-medium);
-}
-
 pre > code mark {
     background-color: var(--body-background-medium);
 }
