@@ -10,7 +10,9 @@ The following table includes links to bash and PowerShell scripts built using th
 
 |                                              |     |
 | -------------------------------------------- | --- |
-| [Workspaces samples](xref:samples/workspace) |     |
+| [Dataset samples](xref:samples/dataset)      |     |
 | [Report samples](xref:samples/report)        |     |
+| [Scorecard samples](xref:samples/scorecard)  |     |
+| [Workspaces samples](xref:samples/workspace) |     |
 
 ## Feedback

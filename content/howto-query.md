@@ -178,10 +178,10 @@ The first query demonstrate how to list the names of all Power BI workspaces con
 
 ```bash
 # Boolean values are assumed to be true, so you can directly evaluate the isDefault property.
-pbicli workspace list --query "[?isOnDedicatedCapacity]"
+pbicli workspace list --query [?isOnDedicatedCapacity]
 
 # To check if a Boolean property is false, you can use the comparison operator == or the logical operator !.
-pbicli workspace list --query "[?!isOnDedicatedCapacity].name"
+pbicli workspace list --query '[?!isOnDedicatedCapacity].name'
 pbicli workspace list --query '[?isOnDedicatedCapacity==`false`]'
 ```
 
@@ -393,7 +393,7 @@ Another use case is to use multiple values form a Power BI CLI query in combinat
 
 ```bash
 # Retrieve all workspace ids
-workspaces=`pbicli workspace list --query "[*].{id:id}" --output tsv`
+workspaces=`pbicli workspace list --query [*]id --output tsv`
 
 # Loop thru all the available workspaces
 for workspace in $workspaces
@@ -406,7 +406,7 @@ done
 
 ```powershell
 # Retrieve all workspace ids
-$workspaces=$(pbicli workspace list --query "[*].{id:id}" --output tsv)
+$workspaces=$(pbicli workspace list --query [*]id --output tsv)
 
 # Loop thru all the available workspaces
 foreach ($workspace in $workspaces) {

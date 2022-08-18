@@ -33,6 +33,20 @@ items:
             href: samples-report.md#list-reports
           - name: List all reports
             href: samples-report.md#list-all-reports
+      - name: Scorecards
+        items:
+          - name: Overview
+            href: samples-scorecard.md
+          - name: List scorecards
+            href: samples-scorecard.md#list-scorecards
+          - name: List metrics
+            href: samples-scorecard.md#list-metrics
+          - name: List value check-ins
+            href: samples-scorecard.md#list-value-check-ins
+          - name: List value check-in notes
+            href: samples-scorecard.md#list-value-check-in-notes
+          - name: Add value check-in note
+            href: samples-scorecard.md#add-value-check-in-note
       - name: Workspaces
         items:
           - name: Overview

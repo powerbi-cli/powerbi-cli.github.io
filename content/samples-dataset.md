@@ -57,22 +57,23 @@ Executes a DAX query to a premium dataset
 ### [Bash](#tab/bash)
 
 ```bash
-pbicli dataset refresh update --workspace Demos --dataset Demos --refresh-schedule-file .\refresh-schedule.json
+pbicli dataset refresh update --workspace Demos --dataset Demos --refresh-schedule @refresh-schedule.json
 ```
 
 ### [PowerShell](#tab/powershell)
 
 ```powershell
-pbicli dataset refresh update --workspace Demos --dataset Demos --refresh-schedule-file .\refresh-schedule.json
+pbicli dataset refresh update --workspace Demos --dataset Demos --refresh-schedule @refresh-schedule.json
 ```
 
 ---
 
 ###
 
-Schedule definition (`refresh-schedule.json`) file that enables the schedule for a dataset to be fereshed at Sunday, Tuesday, Friday and Saturday at 7:00, 11:30, 16:00 and 23:30 UTC.
+Schedule definition file that enables the schedule for a dataset to be fereshed at Sunday, Tuesday, Friday and Saturday at 7:00, 11:30, 16:00 and 23:30 UTC.
 
 ```json
+# refresh-schedule.json
 {
     "value": {
         "days": ["Sunday", "Tuesday", "Friday", "Saturday"],
