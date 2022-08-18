@@ -22,12 +22,32 @@ documentId: 1c64785e-a725-4830-98e8-5b9aa2b6c4c3
 | [pbicli feature](xref:reference/feature)     | Operations for working with features             |
 | [pbicli gateway](xref:reference/gateway)     | Operations for working with gateways             |
 | [pbicli import](xref:reference/import)       | Operations for working with imports              |
-| [pbicli report](xref:reference/report)       | Operations for working with reports              |
+| [pbicli interactive](#pbicli-interactive)    | Start interactive mode                           |
+| [pbicli login](#pbicli-login)                | Login to Power BI                                |
+| [pbicli logout](#pbicli-logout)              | Logout of Power BI                               |
 | [pbicli pipeline](xref:reference/pipeline)   | Operations for working with pipelines            |
+| [pbicli report](xref:reference/report)       | Operations for working with reports              |
+| [pbicli rest](#pbicli-rest)                  | Invoke a custom Power BI REST API request        |
 | [pbicli scorecard](xref:reference/scorecard) | Operations for working with scorecards (goals)   |
-| [pbicli workspace](xref:reference/workspace) | Operations for working with workspaces           |
 | [pbicli user](xref:reference/user)           | Operations for working with users                |
-| [pbicli xmla](xref:reference/xmla)           | [PREVIEW] Manage Power BI XMLA endpoint          |
+| [pbicli version](#pbicli-version)            | Show the version of this Power BI CLI            |
+| [pbicli workspace](xref:reference/workspace) | Operations for working with workspaces           |
+
+## pbicli interactive
+
+Start interactive mode
+
+```bash
+pbicli interactive
+```
+
+### Parameters
+
+-   `-h, --help`<br/>display help for command
+
+> [!div class="global-parameters"]
+>
+> [Global Parameters](xref:global)
 
 ## pbicli login
 
@@ -90,9 +110,38 @@ Log out and deletes stored login information for the Power BI REST APIs.
 pbicli logout
 ```
 
+> [!div class="global-parameters"]
+>
+> [Global Parameters](xref:global)
+
+## pbicli rest
+
+Invoke a custom Power BI REST API request
+
+```bash
+pbicli rest [--uri]
+            [--body] [-b]
+            [--headers]
+            [--method] [-m]
+```
+
+### Parameters
+
+-   `--uri <uri>`<br/>Request URL. If it doesn't start with a host, CLI prefixes it with the current cloud endpoint.
+
+-   `--body -b <body>`<br/>Request body. Use @{file} to load from a file
+
+-   `--headers <headers>`<br/>Space-separated headers in KEY=VALUE format or JSON string
+
+-   `--method -m <method>`<br/>HTTP request method, accepted values: delete, get, head, options, patch, post, put
+
+> [!div class="global-parameters"]
+>
+> [Global Parameters](xref:global)
+
 ## pbicli version
 
-Show the versions of Power BI CLI and show a message if a new version is available
+Show the version of this Power BI CLI
 
 ```bash
 pbicli version

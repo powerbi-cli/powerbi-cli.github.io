@@ -96,9 +96,9 @@ pbicli pipeline deploy [--pipeline] [-p]
 
 -   `--partial`<br/>
 
--   `--options <data>`<br/>String with the deploy options in JSON format
+-   `--options <data>`<br/>String with the deploy options in JSON format. Use @{file} to load from a file
 
--   `--options-file <file>`<br/>File with the deploy options in JSON format
+-   `--options-file <file>`<br/>File with the deploy options in JSON format. Deprecated: use --options @{file}
 
 > [!div class="global-parameters"]
 >

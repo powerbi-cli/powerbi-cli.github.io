@@ -99,7 +99,7 @@ pbicli workspace user add [--workspace] [-w]
 
 -   `--identifier <identifier>`<br/>Identifier of the principal
 
--   `--access-right <right>`<br/>Access right. Allowed values: Admin, Contributor, Member
+-   `--access-right <right>`<br/>Access right. Allowed values: Admin, Contributor, Member, Viewer
 
 -   `--principal-type <type>`<br/>Type of pricipal. Allowed values: App, User, Group, None
 
@@ -165,7 +165,7 @@ pbicli workspace user update [--workspace] [-w]
 
 -   `--identifier <identifier>`<br/>Identifier of the principal
 
--   `--access-right <right>`<br/>Access right. Allowed values: Admin, Contributor, Member
+-   `--access-right <right>`<br/>Access right. Allowed values: Admin, Contributor, Member, Viewer
 
 -   `--principal-type <type>`<br/>Type of pricipal. Allowed values: App, User, Group, None
 

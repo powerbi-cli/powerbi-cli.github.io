@@ -121,9 +121,9 @@ pbicli embedded update [--subscription] [-s]
 
 -   `--capacity -c <name>`<br/>Name of the Azure dedicated capacity
 
--   `--parameter <data>`<br/>String with the capacity parameters in JSON format
+-   `--parameter <data>`<br/>String with the capacity parameters in JSON format. Use @{file} to load from a file
 
--   `--parameter-file <file>`<br/>File with the capacity parameters in JSON format
+-   `--parameter-file <file>`<br/>File with the capacity parameters in JSON format. Deprecated: use --parameter @{file}
 
 > [!div class="global-parameters"]
 >

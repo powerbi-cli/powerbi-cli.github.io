@@ -117,9 +117,9 @@ pbicli dataflow refresh update [--workspace] [-w]
 
 -   `--dataflow -f <dataflow>`<br/>Name or ID of the Power BI dataflow
 
--   `--refresh-schedule <data>`<br/>String with the refresh schedule in JSON format
+-   `--refresh-schedule <data>`<br/>String with the refresh schedule in JSON format. Use @{file} to load from a file
 
--   `--refresh-schedule-file <file>`<br/>File with the refresh schedule in JSON format
+-   `--refresh-schedule-file <file>`<br/>File with the refresh schedule in JSON format. Deprecated: use --refresh-schedule @{file}
 
 > [!div class="global-parameters"]
 >
@@ -246,9 +246,9 @@ pbicli dataflow update [--workspace] [-w]
 
 -   `--dataflow -f <dataflow>`<br/>Name or ID of the Power BI dataflow
 
--   `--update <data>`<br/>String with the update dataflow settings in JSON format
+-   `--update <data>`<br/>String with the update dataflow settings in JSON format. Use @{file} to load from a file
 
--   `--update-file <file>`<br/>File with the update dataflow settings in JSON format
+-   `--update-file <file>`<br/>File with the update dataflow settings in JSON format. Deprecated: use --update @{file}
 
 > [!div class="global-parameters"]
 >

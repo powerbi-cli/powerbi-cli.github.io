@@ -87,9 +87,9 @@ pbicli report datasource update [--workspace] [-w]
 
 -   `--report -r <report>`<br/>Name or ID of the Power BI report
 
--   `--update-details <data>`<br/>String with the paginated report datasources details in JSON format
+-   `--update-details <data>`<br/>String with the paginated report datasources details in JSON format. Use @{file} to load from a file
 
--   `--update-details-file <file>`<br/>File with the paginated report datasources details in JSON format
+-   `--update-details-file <file>`<br/>File with the paginated report datasources details in JSON format. Deprecated: use --update-details @{file}
 
 > [!div class="global-parameters"]
 >
@@ -159,9 +159,9 @@ pbicli report export start [--workspace] [-w]
     PBIX (Power BI reports)
     CSV, DOCX, IMAGE, MHTML, PNG, XLSX, XML (Paginated reports)
 
--   `--config <data>`<br/>String with additional export config in JSON format
+-   `--config <data>`<br/>String with additional export config in JSON format. Use @{file} to load from a file
 
--   `--config-file <file>`<br/>File with additional export config in JSON format
+-   `--config-file <file>`<br/>File with additional export config in JSON format. Deprecated: use --config @{file}
 
 > [!div class="global-parameters"]
 >

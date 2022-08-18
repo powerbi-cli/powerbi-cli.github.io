@@ -19,9 +19,8 @@ documentId: b7c29e54-4160-4269-a18f-62d217310694
 | [pbicli gateway datasource user add](#pbicli-gateway-datasource-user-add)       | Add user to a datasource of a Power BI gateway               |
 | [pbicli gateway datasource user delete](#pbicli-gateway-datasource-user-delete) | Delete user from the datasource of a Power BI gateway        |
 | [pbicli gateway datasource user list](#pbicli-gateway-datasource-user-list)     | Retrieve users for the datasource of a Power BI gateway      |
-
-| [pbicli gateway list](#pbicli-gateway-list) | List Power BI gateways |
-| [pbicli gateway show](#pbicli-gateway-show) | Get the details of a Power BI gateway |
+| [pbicli gateway list](#pbicli-gateway-list)                                     | List Power BI gateways                                       |
+| [pbicli gateway show](#pbicli-gateway-show)                                     | Get the details of a Power BI gateway                        |
 
 ## pbicli gateway datasource create
 
@@ -37,9 +36,9 @@ pbicli gateway datasource create [--gateway] [-g]
 
 -   `--gateway -g <gateway>`<br/>Name or ID of the Power BI gateway
 
--   `--datasource <datasource>`<br/>String with the datasource definition in JSON format
+-   `--datasource <datasource>`<br/>String with the datasource definition in JSON format. Use @{file} to load from a file
 
--   `--datasource-file <file>`<br/>File with the datasource definition in JSON format
+-   `--datasource-file <file>`<br/>File with the datasource definition in JSON format. Deprecated: use --datasource @{file}
 
 > [!div class="global-parameters"]
 >
@@ -135,9 +134,9 @@ pbicli gateway datasource update [--gateway] [-g]
 
 -   `--datasource -d <datasource>`<br/>Name or ID of the datasource of the Power BI gateway
 
--   `--credential <credential>`<br/>String with the datasource credential definition in JSON format
+-   `--credential <credential>`<br/>String with the datasource credential definition in JSON format. Use @{file} to load from a file
 
--   `--credential-file <file>`<br/>File with the datasource credential definition in JSON format
+-   `--credential-file <file>`<br/>File with the datasource credential definition in JSON format. Deprecated: use --credential @{file}
 
 > [!div class="global-parameters"]
 >

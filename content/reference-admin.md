@@ -8,55 +8,57 @@ documentId: acde4004-8731-4463-9ae4-2948ab3ba288
 
 ## Commands
 
-|                                                                           |                                                                                                |
-| ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| [pbicli admin activity](#pbicli-admin-activity)                           | Returns a list of audit activity events for a tenant                                           |
-| [pbicli admin app list](#pbicli-admin-app-list)                           | Returns a list of apps in the organization                                                     |
-| [pbicli admin app list-user](#pbicli-admin-app-list-user)                 | Returns a list of users that have access to the specified app                                  |
-| [pbicli admin capacity assign](#pbicli-admin-capacity-assign)             | Assigns the provided workspaces to the specified capacity                                      |
-| [pbicli admin capacity list](#pbicli-admin-capacity-list)                 | Returns a list of capacities for the organization                                              |
-| [pbicli admin capacity list-user](#pbicli-admin-capacity-list-user)       | Returns a list of users that have access to the specified dashboard                            |
-| [pbicli admin capacity unassign](#pbicli-admin-capacity-unassign)         | Unassigns the provided workspaces from capacity                                                |
-| [pbicli admin capacity update](#pbicli-admin-capacity-update)             | Changes the specific capacity information.                                                     |
-| [pbicli admin dashboard list](#pbicli-admin-dashboard-list)               | Returns a list of dashboards for the organization                                              |
-| [pbicli admin dashboard list-user](#pbicli-admin-dashboard-list-user)     | Returns a list of users that have access to the specified dashboard                            |
-| [pbicli admin dashboard tile](#pbicli-admin-dashboard-tile)               | Returns a list of tiles within the specified dashboard                                         |
-| [pbicli admin dataflow datasource](#pbicli-admin-dataflow-datasource)     | Returns a list of datasources for the specified dataflow                                       |
-| [pbicli admin dataflow export](#pbicli-admin-dataflow-export)             | Exports the specified dataflow definition                                                      |
-| [pbicli admin dataflow list](#pbicli-admin-dataflow-list)                 | Returns a list of dataflows for the organization                                               |
-| [pbicli admin dataflow list-user](#pbicli-admin-dataflow-list-user)       | Returns a list of users that have access to the specified dataflow                             |
-| [pbicli admin dataflow upstream](#pbicli-admin-dataflow-upstream)         | Returns a list of upstream dataflows for the specified dataflow in a Power BI workspace        |
-| [pbicli admin dataset dataflow](#pbicli-admin-dataset-dataflow)           | Returns a list of upstream dataflows in a Power BI workspace                                   |
-| [pbicli admin dataset datasource](#pbicli-admin-dataset-datasource)       | Returns a list of datasources for the specified dataset                                        |
-| [pbicli admin dataset list](#pbicli-admin-dataset-list)                   | Returns a list of datasets for the organization                                                |
-| [pbicli admin dataset list-user](#pbicli-admin-dataset-list-user)         | Returns a list of users that have access to the specified dataset                              |
-| [pbicli admin import](#pbicli-admin-import)                               | Returns a list of imports for the organization                                                 |
-| [pbicli admin key add](#pbicli-admin-key-add)                             | Adds an encryption key for Power BI workspaces assigned to a capacity                          |
-| [pbicli admin key list](#pbicli-admin-key-list)                           | Returns the encryption keys for the tenant                                                     |
-| [pbicli admin key rotate](#pbicli-admin-key-rotate)                       | Adds an encryption key for Power BI workspaces assigned to a capacity                          |
-| [pbicli admin label remove](#pbicli-admin-label-remove)                   | Remove sensitivity labels from artifacts                                                       |
-| [pbicli admin label set](#pbicli-admin-label-set)                         | Set sensitivity labels from artifacts                                                          |
-| [pbicli admin pipeline delete-user](#pbicli-admin-pipeline-delete-user)   | Removes user permissions to the specified workspace                                            |
-| [pbicli admin pipeline list](#pbicli-admin-pipeline-list)                 | Returns a list of workspaces for the organization                                              |
-| [pbicli admin pipeline list-user](#pbicli-admin-pipeline-list-user)       | Returns a list of users that have access to the specified workspace                            |
-| [pbicli admin pipeline update-user](#pbicli-admin-pipeline-update-user)   | Updates the specified workspace properties                                                     |
-| [pbicli admin refresh](#pbicli-admin-refresh)                             | Returns a list of imports for the organization                                                 |
-| [pbicli admin report list](#pbicli-admin-report-list)                     | Returns a list of reports for the organization                                                 |
-| [pbicli admin report list-user](#pbicli-admin-report-list-user)           | Returns a list of users that have access to the specified dataset                              |
-| [pbicli admin report subscription](#pbicli-admin-report-subscription)     | Returns a list of users that have access to the specified dataset                              |
-| [pbicli admin user artifact](#pbicli-admin-user-artifact)                 | Returns a list of apps in the organization                                                     |
-| [pbicli admin user subscription](#pbicli-admin-user-subscription)         | Returns a list of subscriptions that the given user has subscribed to                          |
-| [pbicli admin workspace add-user](#pbicli-admin-workspace-add-user)       | Grants user permissions to the specified workspace                                             |
-| [pbicli admin workspace delete-user](#pbicli-admin-workspace-delete-user) | Removes user permissions to the specified workspace                                            |
-| [pbicli admin workspace list](#pbicli-admin-workspace-list)               | Returns a list of workspaces for the organization                                              |
-| [pbicli admin workspace list-user](#pbicli-admin-workspace-list-user)     | Returns a list of users that have access to the specified workspace                            |
-| [pbicli admin workspace modified](#pbicli-admin-workspace-modified)       | Gets a list of workspace IDs in the organization                                               |
-| [pbicli admin workspace restore](#pbicli-admin-workspace-restore)         | Restores a deleted workspace                                                                   |
-| [pbicli admin workspace result](#pbicli-admin-workspace-result)           | Gets the scan result for the specified scan                                                    |
-| [pbicli admin workspace scan](#pbicli-admin-workspace-scan)               | Initiates a scan to receive metadata for the requested list of workspaces                      |
-| [pbicli admin workspace status](#pbicli-admin-workspace-status)           | Gets the scan status for the specified scan                                                    |
-| [pbicli admin workspace unused](#pbicli-admin-workspace-unused)           | Returns a list of artifacts that have not been used within 30 days for the specified workspace |
-| [pbicli admin workspace update-user](#pbicli-admin-workspace-update-user) | Updates the specified workspace properties                                                     |
+|                                                                             |                                                                                                |
+| --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| [pbicli admin activity](#pbicli-admin-activity)                             | Returns a list of audit activity events for a tenant                                           |
+| [pbicli admin app list](#pbicli-admin-app-list)                             | Returns a list of apps in the organization                                                     |
+| [pbicli admin app list-user](#pbicli-admin-app-list-user)                   | Returns a list of users that have access to the specified app                                  |
+| [pbicli admin capacity assign](#pbicli-admin-capacity-assign)               | Assigns the provided workspaces to the specified capacity                                      |
+| [pbicli admin capacity list](#pbicli-admin-capacity-list)                   | Returns a list of capacities for the organization                                              |
+| [pbicli admin capacity list-user](#pbicli-admin-capacity-list-user)         | Returns a list of users that have access to the specified dashboard                            |
+| [pbicli admin capacity unassign](#pbicli-admin-capacity-unassign)           | Unassigns the provided workspaces from capacity                                                |
+| [pbicli admin capacity update](#pbicli-admin-capacity-update)               | Changes the specific capacity information.                                                     |
+| [pbicli admin dashboard list](#pbicli-admin-dashboard-list)                 | Returns a list of dashboards for the organization                                              |
+| [pbicli admin dashboard list-user](#pbicli-admin-dashboard-list-user)       | Returns a list of users that have access to the specified dashboard                            |
+| [pbicli admin dashboard subscription](#pbicli-admin-dashboard-subscription) | Returns a list of subscriptions within the specified dashboard                                 |
+| [pbicli admin dashboard tile](#pbicli-admin-dashboard-tile)                 | Returns a list of tiles within the specified dashboard                                         |
+| [pbicli admin dataflow datasource](#pbicli-admin-dataflow-datasource)       | Returns a list of datasources for the specified dataflow                                       |
+| [pbicli admin dataflow export](#pbicli-admin-dataflow-export)               | Exports the specified dataflow definition                                                      |
+| [pbicli admin dataflow list](#pbicli-admin-dataflow-list)                   | Returns a list of dataflows for the organization                                               |
+| [pbicli admin dataflow list-user](#pbicli-admin-dataflow-list-user)         | Returns a list of users that have access to the specified dataflow                             |
+| [pbicli admin dataflow upstream](#pbicli-admin-dataflow-upstream)           | Returns a list of upstream dataflows for the specified dataflow in a Power BI workspace        |
+| [pbicli admin dataset dataflow](#pbicli-admin-dataset-dataflow)             | Returns a list of upstream dataflows in a Power BI workspace                                   |
+| [pbicli admin dataset datasource](#pbicli-admin-dataset-datasource)         | Returns a list of datasources for the specified dataset                                        |
+| [pbicli admin dataset list](#pbicli-admin-dataset-list)                     | Returns a list of datasets for the organization                                                |
+| [pbicli admin dataset list-user](#pbicli-admin-dataset-list-user)           | Returns a list of users that have access to the specified dataset                              |
+| [pbicli admin import](#pbicli-admin-import)                                 | Returns a list of imports for the organization                                                 |
+| [pbicli admin key add](#pbicli-admin-key-add)                               | Adds an encryption key for Power BI workspaces assigned to a capacity                          |
+| [pbicli admin key list](#pbicli-admin-key-list)                             | Returns the encryption keys for the tenant                                                     |
+| [pbicli admin key rotate](#pbicli-admin-key-rotate)                         | Adds an encryption key for Power BI workspaces assigned to a capacity                          |
+| [pbicli admin label remove](#pbicli-admin-label-remove)                     | Remove sensitivity labels from artifacts                                                       |
+| [pbicli admin label set](#pbicli-admin-label-set)                           | Set sensitivity labels from artifacts                                                          |
+| [pbicli admin pipeline delete-user](#pbicli-admin-pipeline-delete-user)     | Removes user permissions to the specified workspace                                            |
+| [pbicli admin pipeline list](#pbicli-admin-pipeline-list)                   | Returns a list of workspaces for the organization                                              |
+| [pbicli admin pipeline list-user](#pbicli-admin-pipeline-list-user)         | Returns a list of users that have access to the specified workspace                            |
+| [pbicli admin pipeline update-user](#pbicli-admin-pipeline-update-user)     | Updates the specified workspace properties                                                     |
+| [pbicli admin refresh](#pbicli-admin-refresh)                               | Returns a list of imports for the organization                                                 |
+| [pbicli admin report list](#pbicli-admin-report-list)                       | Returns a list of reports for the organization                                                 |
+| [pbicli admin report list-user](#pbicli-admin-report-list-user)             | Returns a list of users that have access to the specified dataset                              |
+| [pbicli admin report subscription](#pbicli-admin-report-subscription)       | Returns a list of users that have access to the specified dataset                              |
+| [pbicli admin shared](#pbicli-admin-shared)                                 | Returns a list of Power BI items that are shared                                               |
+| [pbicli admin user artifact](#pbicli-admin-user-artifact)                   | Returns a list of apps in the organization                                                     |
+| [pbicli admin user subscription](#pbicli-admin-user-subscription)           | Returns a list of subscriptions that the given user has subscribed to                          |
+| [pbicli admin workspace add-user](#pbicli-admin-workspace-add-user)         | Grants user permissions to the specified workspace                                             |
+| [pbicli admin workspace delete-user](#pbicli-admin-workspace-delete-user)   | Removes user permissions to the specified workspace                                            |
+| [pbicli admin workspace list](#pbicli-admin-workspace-list)                 | Returns a list of workspaces for the organization                                              |
+| [pbicli admin workspace list-user](#pbicli-admin-workspace-list-user)       | Returns a list of users that have access to the specified workspace                            |
+| [pbicli admin workspace modified](#pbicli-admin-workspace-modified)         | Gets a list of workspace IDs in the organization                                               |
+| [pbicli admin workspace restore](#pbicli-admin-workspace-restore)           | Restores a deleted workspace                                                                   |
+| [pbicli admin workspace result](#pbicli-admin-workspace-result)             | Gets the scan result for the specified scan                                                    |
+| [pbicli admin workspace scan](#pbicli-admin-workspace-scan)                 | Initiates a scan to receive metadata for the requested list of workspaces                      |
+| [pbicli admin workspace status](#pbicli-admin-workspace-status)             | Gets the scan status for the specified scan                                                    |
+| [pbicli admin workspace unused](#pbicli-admin-workspace-unused)             | Returns a list of artifacts that have not been used within 30 days for the specified workspace |
+| [pbicli admin workspace update-user](#pbicli-admin-workspace-update-user)   | Updates the specified workspace properties                                                     |
 
 ## pbicli admin activity
 
@@ -238,6 +240,22 @@ Returns a list of users that have access to the specified dashboard
 
 ```bash
 pbicli admin dashboard list-user [--dashboard] [-d]
+```
+
+### Parameters
+
+-   `--dashboard -d <name>`<br/>Name or ID of the Power BI dashboard
+
+> [!div class="global-parameters"]
+>
+> [Global Parameters](xref:global)
+
+## pbicli admin dashboard subscription
+
+Returns a list of subscriptions within the specified dashboard
+
+```bash
+pbicli admin dashboard subscription [--dashboard] [-d]
 ```
 
 ### Parameters
@@ -715,6 +733,25 @@ pbicli admin report subscription [--report] [-r]
 >
 > [Global Parameters](xref:global)
 
+## pbicli admin shared
+
+Returns a list of Power BI items that are shared
+
+```bash
+pbicli admin shared [--public]
+                    [--continuation-token]
+```
+
+### Parameters
+
+-   `--public`<br/>Returns only items that are shared via 'published to the web'
+
+-   `--continuation-token <token>`<br/>Token required to get the next chunk of the result set
+
+> [!div class="global-parameters"]
+>
+> [Global Parameters](xref:global)
+
 ## pbicli admin user artifact
 
 Returns a list of apps in the organization
@@ -773,7 +810,7 @@ pbicli admin workspace add-user [--workspace] [-w]
 
 -   `--identifier <identifier>`<br/>Identifier of the principal
 
--   `--access-right <right>`<br/>Access right. Allowed values: Admin, Contributor, Member
+-   `--access-right <right>`<br/>Access right. Allowed values: Admin, Contributor, Member, Viewer
 
 -   `--principal-type <type>`<br/>Type of pricipal. Allowed values: App, User, Group, None
 
@@ -978,9 +1015,9 @@ pbicli admin workspace update-user [--workspace] [-w]
 
 -   `--workspace -w <name>`<br/>Name or ID of the Power BI workspace
 
--   `--update-details <data>`<br/>String with the update details in JSON format
+-   `--update-details <data>`<br/>String with the update details in JSON format. Use @{file} to load from a file
 
--   `--update-details-file <file>`<br/>File with the update details in JSON format
+-   `--update-details-file <file>`<br/>File with the update details in JSON format. Deprecated: use --update-details @{file}
 
 > [!div class="global-parameters"]
 >

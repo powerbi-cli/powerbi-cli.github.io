@@ -11,6 +11,7 @@ documentId: c223e30d-da34-4b43-a5ac-cc8a612fc66d
 |                                                               |                                              |
 | ------------------------------------------------------------- | -------------------------------------------- |
 | [pbicli dashboard create](#pbicli-dashboard-create)           | Create a Power BI dashboard                  |
+| [pbicli dashboard delete](#pbicli-dashboard-delete)           | Delete a Power BI dashboard                  |
 | [pbicli dashboard list](#pbicli-dashboard-list)               | List Power BI dashboards in a workspace      |
 | [pbicli dashboard show](#pbicli-dashboard-show)               | Get the details of a Power BI dashboard      |
 | [pbicli dashboard tile create](#pbicli-dashboard-tile-create) | Clone a Power BI dashboard tile              |
@@ -31,6 +32,25 @@ pbicli dashboard create [--workspace] [-w]
 -   `--workspace -w <name>`<br/>Name or ID of the Power BI workspace. If not provided it uses 'My workspace'
 
 -   `--dashboard -d <dashboard>`<br/>Name of the Power BI dashboard
+
+> [!div class="global-parameters"]
+>
+> [Global Parameters](xref:global)
+
+## pbicli dashboard delete
+
+Delete a Power BI dashboard
+
+```bash
+pbicli dashboard delete [--workspace] [-w]
+                        [--dashboard] [-d]
+```
+
+### Parameters
+
+-   `--workspace -w <name>`<br/>Name or ID of the Power BI workspace. If not provided it uses 'My workspace'
+
+-   `--dashboard -d <dashboard>`<br/>Name or ID of the Power BI dashboard
 
 > [!div class="global-parameters"]
 >
@@ -110,7 +130,7 @@ pbicli dashboard tile create [--workspace] [-w]
 
 ## pbicli dashboard tile list
 
-List Power BI dashboard tiles in a workplace
+List Power BI dashboard tiles in a workspace
 
 ```bash
 pbicli dashboard tile list [--workspace] [-w]
