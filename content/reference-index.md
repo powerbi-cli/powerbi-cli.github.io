@@ -64,26 +64,6 @@ pbicli login [--interactive]
              [--no-azure]
 ```
 
-### Examples
-
-Login interactive
-
-```bash
-pbicli login
-```
-
-Login with Azure CLI credentials
-
-```bash
-pbicli login --azurecli
-```
-
-Log in with a service principal using client secret
-
-```bash
-pbicli login --service-principal -p 7105d380-a699-4d0a-aeb4-ad3e6f4db865 -s VerySecret -t contoso.onmicrosoft.com
-```
-
 ### Parameters
 
 -   `--interactive`<br/>Login interactively. Default value if no parameter is given
@@ -101,6 +81,56 @@ pbicli login --service-principal -p 7105d380-a699-4d0a-aeb4-ad3e6f4db865 -s Very
 -   `--tenant -t <tenant>`<br/>The AAD tenant
 
 -   `--no-azure`<br/>Do not authenticate against Azure for 'embedded' commands
+
+### Examples
+
+Login interactive
+
+### [Bash](#tab/bash)
+
+```bash
+pbicli login
+```
+
+### [PowerShell](#tab/powershell)
+
+```powershell
+pbicli login
+```
+
+---
+
+Login with Azure CLI credentials
+
+### [Bash](#tab/bash)
+
+```bash
+pbicli login --azurecli
+```
+
+### [PowerShell](#tab/powershell)
+
+```powershell
+pbicli login --azurecli
+```
+
+---
+
+Log in with a service principal using client secret
+
+### [Bash](#tab/bash)
+
+```bash
+pbicli login --service-principal -p 7105d380-a699-4d0a-aeb4-ad3e6f4db865 -s VerySecret -t contoso.onmicrosoft.com
+```
+
+### [PowerShell](#tab/powershell)
+
+```powershell
+pbicli login --service-principal -p 7105d380-a699-4d0a-aeb4-ad3e6f4db865 -s VerySecret -t contoso.onmicrosoft.com
+```
+
+---
 
 ## pbicli logout
 

@@ -41,4 +41,38 @@ pbicli configure set [--defaults] [-d]
 >
 > [Global Parameters](xref:global)
 
+### Examples
+
+Set the default for the `--workspace` parameter
+
+### [Bash](#tab/bash)
+
+```bash
+pbicli configure set --defaults workspace=Demos
+```
+
+### [PowerShell](#tab/powershell)
+
+```powershell
+pbicli configure set --defaults workspace=Demos
+```
+
+---
+
+After setting a default, the parameter can be omitted in the next command, like to get all the reports of the 'Demos' workspace:
+
+### [Bash](#tab/bash)
+
+```bash
+pblicli report list
+```
+
+### [PowerShell](#tab/powershell)
+
+```powershell
+pblicli report list
+```
+
+---
+
 ## Feedback
