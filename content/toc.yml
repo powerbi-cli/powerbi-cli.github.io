@@ -11,6 +11,8 @@ items:
         href: serviceprincipal.md
       - name: Release notes
         href: releasenotes.md
+      - name: Privacy terms
+        href: privacy.md
   - name: Samples
     items:
       - name: Overview

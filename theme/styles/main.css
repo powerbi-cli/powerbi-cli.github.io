@@ -24,6 +24,8 @@
     --weight-semibold: 600;
 }
 
+/* FONT VARIABLES*/
+
 @font-face {
     font-family: "Convection";
     src: url("../fonts/convection.woff") format("woff");
@@ -39,6 +41,30 @@
     src: url("../fonts/docons.woff2") format("woff2");
 }
 
+/* Media Queries */
+
+@media screen and (max-width: 767px) {
+    article {
+        max-width: 85vw;
+    }
+    .row {
+        flex-flow: column;
+    }
+    .column {
+        width: "100%";
+    }
+    .table-responsive > .table > tbody > tr > td,
+    .table-responsive > .table > tbody > tr > th,
+    .table-responsive > .table > tfoot > tr > td,
+    .table-responsive > .table > tfoot > tr > th,
+    .table-responsive > .table > thead > tr > td,
+    .table-responsive > .table > thead > tr > th {
+        white-space: unset;
+    }
+}
+
+/* Main CSS */
+
 html {
     font-size: 16px;
 }
@@ -48,8 +74,6 @@ body {
     font-family: Montserrat, Tahoma, Geneva, sans-serif;
     line-height: 1.5;
     font-size: 16px;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
     word-wrap: break-word;
     background-color: hsla(0, 0%, 100%, 0.998);
     background-color: var(--body-background);
@@ -371,12 +395,14 @@ article h4 {
 
 /* CODE HIGHLIGHT */
 pre {
+    -webkit-hyphens: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     font-size: 0.875rem;
     overflow: auto;
     border: 1px solid var(--border);
     background-color: var(--body-background-medium);
     font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
-    font-smooth: auto;
     padding: 1rem;
     margin: 1rem 0;
     white-space: pre;
@@ -385,7 +411,6 @@ pre {
     word-wrap: normal;
     tab-size: 4;
     hyphens: none;
-    -webkit-overflow-scrolling: touch;
 }
 
 pre > code {
@@ -453,6 +478,10 @@ table * th:empty {
 
 table > thead {
     display: none;
+}
+
+article[data-uid^="howto"] table > thead {
+    display: table-header-group;
 }
 
 /* OTHER */
@@ -554,7 +583,6 @@ article[data-uid^="reference/"] > ul {
 .docon {
     font-family: "docons";
     font-size: inherit;
-    speak: none;
     display: inline-block;
     font-style: normal;
     font-weight: 400;

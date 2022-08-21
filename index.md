@@ -21,13 +21,17 @@ The Power BI command-line interface (Power BI CLI) is a set of commands used to 
 -   [Installation overview](xref:install/install)
 -   [Setup a Service Principal](xref:install/serviceprincipal)
 
+---
+
+-   [Privacy statement](xref:overview/privacy)
+
 :::zone-end
 
 :::column-end:::
 :::column:::
 :::zone target="docs" pivot="pivot"
 
-## Learn Power BI features
+## Learn Power BI CLI features
 
 ---
 
@@ -37,6 +41,24 @@ The Power BI command-line interface (Power BI CLI) is a set of commands used to 
 ---
 
 -   [Samples](xref:samples/overview)
+
+:::zone-end
+
+:::column-end:::
+
+:::column:::
+:::zone target="docs" pivot="pivot"
+
+## How-to guides
+
+---
+
+-   [How-to: Using quotes sucessfully](xref:howto/quotes)
+-   [How-to: Query command output](xref:howto/query)
+
+---
+
+-   [How-to: Use the Azure Pipeline task](xref:howto/azure-pipeline)
 
 :::zone-end
 
