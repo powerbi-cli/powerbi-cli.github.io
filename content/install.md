@@ -8,7 +8,7 @@ documentId: 667ea79f-bc44-4c83-8f0c-e4898aac9e9c
 
 The Power BI CLI is available to install in Windows, macOS and Linux environments.
 
-The current version of the Power BI CLI is 1.1.0. For information about the latest release, see the release notes. To find your installed version and see if you need to update, run `pbicli --version`.
+The current version of the Power BI CLI is 1.3.0. For information about the latest release, see the release notes. To find your installed version and see if you need to update, run `pbicli --version`.
 
 ## Prerequisites
 
