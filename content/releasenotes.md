@@ -6,6 +6,14 @@ documentId: 80cb43a5-4a0a-4f60-9690-d41cca745bb0
 
 # Power BI CLI release notes
 
+## v1.3.1 - September 4, 2022
+
+### Changed
+
+**General**
+
+-   Fix bug that prevents to login to a sovereign cloud
+
 ## v1.3.0 - August 18, 2022
 
 ### Changed

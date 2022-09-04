@@ -18,6 +18,6 @@ Power BI CLI capabilities make it easy to work with different programing languag
 
 ## Current Version
 
-The current version of the Power BI CLI is 1.3.0. For information about the latest release, see the release notes. To find your installed version and see if you need to update, run `pbicli --version`.
+The current version of the Power BI CLI is 1.3.1. For information about the latest release, see the release notes. To find your installed version and see if you need to update, run `pbicli --version`.
 
 ## Feedback
