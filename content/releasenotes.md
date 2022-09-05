@@ -6,7 +6,7 @@ documentId: 80cb43a5-4a0a-4f60-9690-d41cca745bb0
 
 # Power BI CLI release notes
 
-## v1.3.1 - September 4, 2022
+## v1.3.2 - September 5, 2022
 
 ### Changed
 
