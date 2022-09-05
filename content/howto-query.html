@@ -1,0 +1,623 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>How-to: Query command output </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="How-to: Query command output ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:globalrel" content="/global.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  
+    <link rel="canonical" href="https://powerbi-cli.github.io/content/howto-query.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta property="og:image" content="https://powerbi-cli.github.io/logo.png">
+    <meta property="og:site_name" content="Azure BI">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="How-to: Query command output">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://powerbi-cli.github.io/content/howto-query.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="How-to: Query command output">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:url" content="https://powerbi-cli.github.io/content/howto-query.html">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Jan Pieter Posthuma">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:site" content="@jppp">
+    <meta name="twitter:creator" content="@jppp">
+  
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Azure BI",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://powerbi-cli.github.io/favicon.ico",
+                "width": 60,
+                "height": 60
+            }
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Jan Pieter Posthuma",
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://azurebi.jppp.org/content/images/2018/04/jppp-5-highres.jpg",
+                "width": 3300,
+                "height": 3300
+            },
+            "sameAs": [
+                "https://datascenarios.nl",
+                "https://twitter.com/jppp"
+            ]
+        },
+        "headline": "How-to: Query command output",
+        "url": "https://powerbi-cli.github.io/content/howto-query.html",
+        "keywords": "",
+        "description": "",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://powerbi-cli.github.io/"
+        }
+    }
+    </script>
+    <script type='text/javascript'>
+      const documentId = 'c5ecf3b3-d851-4a17-99aa-44c0ae9bedbf';
+      const documentUrl = 'https://powerbi-cli.github.io/content/howto-query.html';
+      const feedbackDocRepo = 'https://github.com/powerbi-cli/powerbi-cli'
+      const feedbackProductRepo = 'https://github.com/powerbi-cli/powerbi-cli';
+    </script>
+    <script type="text/javascript">
+      !function (T, l, y) { var S = T.location, k = "script", D = "instrumentationKey", C = "ingestionendpoint", I = "disableExceptionTracking", E = "ai.device.", b = "toLowerCase", w = "crossOrigin", N = "POST", e = "appInsightsSDK", t = y.name || "appInsights"; (y.name || T[e]) && (T[e] = t); var n = T[t] || function (d) { var g = !1, f = !1, m = { initialize: !0, queue: [], sv: "5", version: 2, config: d }; function v(e, t) { var n = {}, a = "Browser"; return n[E + "id"] = a[b](), n[E + "type"] = a, n["ai.operation.name"] = S && S.pathname || "_unknown_", n["ai.internal.sdkVersion"] = "javascript:snippet_" + (m.sv || m.version), { time: function () { var e = new Date; function t(e) { var t = "" + e; return 1 === t.length && (t = "0" + t), t } return e.getUTCFullYear() + "-" + t(1 + e.getUTCMonth()) + "-" + t(e.getUTCDate()) + "T" + t(e.getUTCHours()) + ":" + t(e.getUTCMinutes()) + ":" + t(e.getUTCSeconds()) + "." + ((e.getUTCMilliseconds() / 1e3).toFixed(3) + "").slice(2, 5) + "Z" }(), iKey: e, name: "Microsoft.ApplicationInsights." + e.replace(/-/g, "") + "." + t, sampleRate: 100, tags: n, data: { baseData: { ver: 2 } } } } var h = d.url || y.src; if (h) { function a(e) { var t, n, a, i, r, o, s, c, u, p, l; g = !0, m.queue = [], f || (f = !0, t = h, s = function () { var e = {}, t = d.connectionString; if (t) for (var n = t.split(";"), a = 0; a < n.length; a++) { var i = n[a].split("="); 2 === i.length && (e[i[0][b]()] = i[1]) } if (!e[C]) { var r = e.endpointsuffix, o = r ? e.location : null; e[C] = "https://" + (o ? o + "." : "") + "dc." + (r || "services.visualstudio.com") } return e }(), c = s[D] || d[D] || "", u = s[C], p = u ? u + "/v2/track" : d.endpointUrl, (l = []).push((n = "SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)", a = t, i = p, (o = (r = v(c, "Exception")).data).baseType = "ExceptionData", o.baseData.exceptions = [{ typeName: "SDKLoadFailed", message: n.replace(/\./g, "-"), hasFullStack: !1, stack: n + "\nSnippet failed to load [" + a + "] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: " + (S && S.pathname || "_unknown_") + "\nEndpoint: " + i, parsedStack: [] }], r)), l.push(function (e, t, n, a) { var i = v(c, "Message"), r = i.data; r.baseType = "MessageData"; var o = r.baseData; return o.message = 'AI (Internal): 99 message:"' + ("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) (" + n + ")").replace(/\"/g, "") + '"', o.properties = { endpoint: a }, i }(0, 0, t, p)), function (e, t) { if (JSON) { var n = T.fetch; if (n && !y.useXhr) n(t, { method: N, body: JSON.stringify(e), mode: "cors" }); else if (XMLHttpRequest) { var a = new XMLHttpRequest; a.open(N, t), a.setRequestHeader("Content-type", "application/json"), a.send(JSON.stringify(e)) } } }(l, p)) } function i(e, t) { f || setTimeout(function () { !t && m.core || a() }, 500) } var e = function () { var n = l.createElement(k); n.src = h; var e = y[w]; return !e && "" !== e || "undefined" == n[w] || (n[w] = e), n.onload = i, n.onerror = a, n.onreadystatechange = function (e, t) { "loaded" !== n.readyState && "complete" !== n.readyState || i(0, t) }, n }(); y.ld < 0 ? l.getElementsByTagName("head")[0].appendChild(e) : setTimeout(function () { l.getElementsByTagName(k)[0].parentNode.appendChild(e) }, y.ld || 0) } try { m.cookie = l.cookie } catch (p) { } function t(e) { for (; e.length;)!function (t) { m[t] = function () { var e = arguments; g || m.queue.push(function () { m[t].apply(m, e) }) } }(e.pop()) } var n = "track", r = "TrackPage", o = "TrackEvent"; t([n + "Event", n + "PageView", n + "Exception", n + "Trace", n + "DependencyData", n + "Metric", n + "PageViewPerformance", "start" + r, "stop" + r, "start" + o, "stop" + o, "addTelemetryInitializer", "setAuthenticatedUserContext", "clearAuthenticatedUserContext", "flush"]), m.SeverityLevel = { Verbose: 0, Information: 1, Warning: 2, Error: 3, Critical: 4 }; var s = (d.extensionConfig || {}).ApplicationInsightsAnalytics || {}; if (!0 !== d[I] && !0 !== s[I]) { var c = "onerror"; t(["_" + c]); var u = T[c]; T[c] = function (e, t, n, a, i) { var r = u && u(e, t, n, a, i); return !0 !== r && m["_" + c]({ message: e, url: t, lineNumber: n, columnNumber: a, error: i }), r }, d.autoExceptionInstrumented = !0 } return m }(y.cfg); function a() { y.onInit && y.onInit(n) } (T[t] = n).queue && 0 === n.queue.length ? (n.queue.push(a), n.trackPageView({})) : a() }(window, document, {
+          src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js", // The SDK URL Source
+          crossOrigin: "anonymous", // When supplied this will add the provided value as the cross origin attribute on the script tag
+          cfg: { // Application Insights Configuration
+              instrumentationKey: "08dfbb40-a119-40a1-bcc9-76225ede8c04"
+          }
+      });    
+    </script>
+    <meta name="google-site-verification" content="wVVhU305Yl9X20TELl13YXn37o9vu9cDLDskaoFH9pU">
+    <meta name="msvalidate.01" content="7ABDCD6E8CD2402845D5FDF35E6ADCC6">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="howto/query">
+<h1 id="how-to-query-power-bi-cli-command-output-using-a-jmespath-query">How to query Power BI CLI command output using a JMESPath query</h1>
+
+<p><em>(Content copied and adopted from <a href="https://docs.microsoft.com/en-us/cli/azure/query-azure-cli">Azure CLI documentation</a>)</em></p>
+<p>The Power BI CLI uses the <code>--query</code> parameter to execute a <a href="http://jmespath.org/">JMESPath query</a> on the results of commands. JMESPath is a query language for JSON, giving you the ability to select and modify data from CLI output.</p>
+<p>The <code>--query</code> parameter is supported by all commands in the Power BI CLI. This article covers how to use the features of JMESPath and gives examples of queries.</p>
+<h2 id="dictionary-and-list-cli-results">Dictionary and list CLI results</h2>
+<p>Even when using an output format other than JSON, CLI command results are first treated as JSON for queries. CLI results are mostly a JSON array. Arrays are sequences of objects that can be indexed, and dictionaries are unordered objects accessed with keys.</p>
+<p>The following is an example of an array:</p>
+<pre><code class="lang-json">[1, 2, 3]
+</code></pre>
+<p>The following is an example of a dictionary:</p>
+<pre><code class="lang-json">{
+    &quot;isRunning&quot;: false,
+    &quot;time&quot;: &quot;12:00&quot;,
+    &quot;number&quot;: 1
+}
+</code></pre>
+<h2 id="get-properties-in-a-dictionary">Get properties in a dictionary</h2>
+<p>Working with dictionary results, you can access properties from the top level with just the key. The <code>.</code> <strong>(subexpression)</strong> character is used to access properties of nested dictionaries. Before introducing queries, take a look at the unmodified output of the <code>pbicli workspace show</code> command:</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_bash" role="tab" aria-controls="tabpanel_bHGHmlrG6S_bash" data-tab="bash" tabindex="0" aria-selected="true">Bash</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_powershell" role="tab" aria-controls="tabpanel_bHGHmlrG6S_powershell" data-tab="powershell" tabindex="-1">PowerShell</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S_bash" role="tabpanel" data-tab="bash">
+
+<pre><code class="lang-bash">pbicli workspace show --workspace QueryDemo
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S_powershell" role="tabpanel" data-tab="powershell" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-powershell">pbicli workspace show --workspace QueryDemo
+</code></pre>
+</section>
+</div>
+
+<p>The command will output a array:</p>
+<pre><code class="lang-json">[
+    {
+        &quot;id&quot;: &quot;a4621d17-9dfd-4ed9-af64-404ce45e95a8&quot;,
+        &quot;isReadOnly&quot;: false,
+        &quot;isOnDedicatedCapacity&quot;: false,
+        &quot;type&quot;: &quot;Workspace&quot;,
+        &quot;name&quot;: &quot;QueryDemo&quot;
+    }
+]
+</code></pre>
+<p>The following command gets the name of the workspace by adding a query:</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-1">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-1_bash" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_bash" data-tab="bash" tabindex="0" aria-selected="true">Bash</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-1_powershell" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_powershell" data-tab="powershell" tabindex="-1">PowerShell</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-1_bash" role="tabpanel" data-tab="bash">
+
+<pre><code class="lang-bash">pbicli workspace show --workspace QueryDemo --query &quot;[0].name&quot;
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S-1_powershell" role="tabpanel" data-tab="powershell" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-powershell">pbicli workspace show --workspace QueryDemo --query &quot;[0].name&quot;
+</code></pre>
+</section>
+</div>
+
+<pre><code class="lang-json">&quot;QueryDemo&quot;
+</code></pre>
+<p>Note that query strings are case sensitive. For example, changing 'name' to 'Name' in the query above will not return the correct results.</p>
+<h2 id="get-multiple-values">Get multiple values</h2>
+<p>To get more than one property, put expressions separated by commas in square brackets <code>[ ]</code> <strong>(a multiselect list)</strong>. The following command gets from the first workspace name and id key all at once:</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-2">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-2_bash" role="tab" aria-controls="tabpanel_bHGHmlrG6S-2_bash" data-tab="bash" tabindex="0" aria-selected="true">Bash</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-2_powershell" role="tab" aria-controls="tabpanel_bHGHmlrG6S-2_powershell" data-tab="powershell" tabindex="-1">PowerShell</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-2_bash" role="tabpanel" data-tab="bash">
+
+<pre><code class="lang-bash">pbicli workspace list --query &quot;[0].[name,id]&quot;
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S-2_powershell" role="tabpanel" data-tab="powershell" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-powershell">pbicli workspace list --query &quot;[0].[name,id]&quot;
+</code></pre>
+</section>
+</div>
+
+<pre><code class="lang-json">[&quot;QueryDemo&quot;, &quot;a4621d17-9dfd-4ed9-af64-404ce45e95a8&quot;]
+</code></pre>
+<p>These values are listed in the result array in the order they were given in the query. Since the result is an array, there are no keys associated with the results. To get a dictionary instead of an array, see the section below.</p>
+<h2 id="rename-properties-in-a-query">Rename properties in a query</h2>
+<p>To get a dictionary instead of an array when querying for multiple values, use the <code>{ }</code> <strong>(multiselect hash)</strong> operator. The format for a multiselect hash is <code>{displayName:JMESPathExpression, ...}</code>. <code>displayName</code> will be the string shown in output, and <code>JMESPathExpression</code> is the JMESPath expression to evaluate. Modifying the example from the last section by changing the multiselect list to a hash:</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-3">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-3_bash" role="tab" aria-controls="tabpanel_bHGHmlrG6S-3_bash" data-tab="bash" tabindex="0" aria-selected="true">Bash</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-3_powershell" role="tab" aria-controls="tabpanel_bHGHmlrG6S-3_powershell" data-tab="powershell" tabindex="-1">PowerShell</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-3_bash" role="tabpanel" data-tab="bash">
+
+<pre><code class="lang-bash">pbicli workspace list --query &quot;[0].{Workspace:name,ID:id}&quot;
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S-3_powershell" role="tabpanel" data-tab="powershell" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-powershell">pbicli workspace list --query &quot;[0].{Workspace:name,ID:id}&quot;
+</code></pre>
+</section>
+</div>
+
+<pre><code class="lang-json">{
+    &quot;Workspace&quot;: &quot;QueryDemo&quot;,
+    &quot;ID&quot;: &quot;a4621d17-9dfd-4ed9-af64-404ce45e95a8&quot;
+}
+</code></pre>
+<h2 id="get-properties-in-an-array">Get properties in an array</h2>
+<p>An array has no properties of its own, but it can be indexed. This feature is shown in the last example with the expression <code>[0]</code>, which gets the first element of the array. There's no guarantee CLI output is ordered, so avoid using indexing unless you're sure of the order or don't care which element you get. To access the properties of elements in an array, you do one of two operations: <em>flattening</em> or <em>filtering</em>. This section covers how to flatten an array.</p>
+<p>Flattening an array is done with the <code>[]</code> JMESPath operator. All expressions after the <code>[]</code> operator are applied to each element in the current array. If <code>[]</code> appears at the start of the query, it flattens the CLI command result. The results of <code>pbicli workspace list</code> can be inspected with this feature. The following query gets the name, and id for each workspace:</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-4">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-4_bash" role="tab" aria-controls="tabpanel_bHGHmlrG6S-4_bash" data-tab="bash" tabindex="0" aria-selected="true">Bash</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-4_powershell" role="tab" aria-controls="tabpanel_bHGHmlrG6S-4_powershell" data-tab="powershell" tabindex="-1">PowerShell</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-4_bash" role="tabpanel" data-tab="bash">
+
+<pre><code class="lang-bash">pbicli workspace list --query &quot;[].{Name: name, ID: id}&quot;
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S-4_powershell" role="tabpanel" data-tab="powershell" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-powershell">pbicli workspace list --query &quot;[].{Name: name, ID: id}&quot;
+</code></pre>
+</section>
+</div>
+
+<pre><code class="lang-json">[
+    {
+        &quot;Name&quot;: &quot;QueryDemo&quot;,
+        &quot;ID&quot;: &quot;a4621d17-9dfd-4ed9-af64-404ce45e95a8&quot;
+    },
+    {
+        &quot;Name&quot;: &quot;QueryDemo 2&quot;,
+        &quot;ID&quot;: &quot;0f90ad11-c52e-4bfe-929d-4a438b90f978&quot;
+    }
+]
+</code></pre>
+<h2 id="filter-arrays-with-boolean-expressions">Filter arrays with boolean expressions</h2>
+<p>The other operation used to get data from an array is filtering. Filtering is done with the <code>[?...]</code> JMESPath operator. This operator takes a predicate as its contents. A predicate is any statement, including Boolean properties, that can be evaluated to either true or false. Expressions where the predicate evaluates to true are included in the output.</p>
+<p>The first query demonstrate how to list the names of all Power BI workspaces connected to a premium capacity (Premium per user, Premium per capacity or Embedded). The second and third queries show two different ways to list all workspaces without premium capacity.</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-5">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-5_bash" role="tab" aria-controls="tabpanel_bHGHmlrG6S-5_bash" data-tab="bash" tabindex="0" aria-selected="true">Bash</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-5_powershell" role="tab" aria-controls="tabpanel_bHGHmlrG6S-5_powershell" data-tab="powershell" tabindex="-1">PowerShell</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-5_bash" role="tabpanel" data-tab="bash">
+
+<pre><code class="lang-bash"># Boolean values are assumed to be true, so you can directly evaluate the isDefault property.
+pbicli workspace list --query [?isOnDedicatedCapacity]
+
+# To check if a Boolean property is false, you can use the comparison operator == or the logical operator !.
+pbicli workspace list --query '[?!isOnDedicatedCapacity].name'
+pbicli workspace list --query '[?isOnDedicatedCapacity==`false`]'
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S-5_powershell" role="tabpanel" data-tab="powershell" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-powershell"># Boolean values are assumed to be true, so you can directly evaluate the isDefault property.
+pbicli workspace list --query &quot;[?isOnDedicatedCapacity]&quot;
+
+# To check if a Boolean property is false, you can use the comparison operator == or the logical operator !.
+pbicli workspace list --query &quot;[?!isOnDedicatedCapacity].name&quot;
+pbicli workspace list --query '[?isOnDedicatedCapacity==``false``]'
+</code></pre>
+<p>Notice the extra escape characters (<code>`</code>) surrounding the value <code>false</code> in the command above. These extra escape characters are present because Power BI CLI commands are considered Command Prompt scripts, so both PowerShell and Command Prompt's parsing need to be taken into consideration. The Power BI CLI will only receive a symbol if it still exists after 2 rounds of parsing. For more information about other possible quoting issues please see <a href="https://github.com/Azure/azure-cli/blob/dev/doc/quoting-issues-with-powershell.md">Azure CLI: Quoting issues with PowerShell</a>.</p>
+</section>
+</div>
+
+<p>JMESPath offers the standard comparison and logical operators. These include <code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code>, <code>==</code>, and <code>!=</code>. JMESPath also supports logical and (<code>&amp;&amp;</code>), or (<code>||</code>), and not (<code>!</code>). Expressions can be grouped within parenthesis, allowing for more complex predicate expressions. For the full details on predicates and logical operations, see the <a href="http://jmespath.org/specification.html">JMESPath specification</a>.</p>
+<p>In the last section, you flattened an array to get the complete list of all VMs in a resource group. Using filters, this output can be restricted to only Linux VMs:</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-6">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-6_bash" role="tab" aria-controls="tabpanel_bHGHmlrG6S-6_bash" data-tab="bash" tabindex="0" aria-selected="true">Bash</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-6_powershell" role="tab" aria-controls="tabpanel_bHGHmlrG6S-6_powershell" data-tab="powershell" tabindex="-1">PowerShell</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-6_bash" role="tabpanel" data-tab="bash">
+
+<pre><code class="lang-bash">pbicli workspace list --query &quot;[?isOnDedicatedCapacity].{Name: name, ID: id}&quot;
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S-6_powershell" role="tabpanel" data-tab="powershell" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-powershell">pbicli workspace list --query &quot;[?isOnDedicatedCapacity].{Name: name, ID: id}&quot;
+</code></pre>
+</section>
+</div>
+
+<pre><code class="lang-json">[
+    {
+        &quot;Name&quot;: &quot;QueryDemo&quot;,
+        &quot;ID&quot;: &quot;a4621d17-9dfd-4ed9-af64-404ce45e95a8&quot;
+    },
+    {
+        &quot;Name&quot;: &quot;QueryDemo 2&quot;,
+        &quot;ID&quot;: &quot;0f90ad11-c52e-4bfe-929d-4a438b90f978&quot;
+    }
+]
+</code></pre>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>In JMESPath, strings are always surrounded by single quotes (<code>'</code>) or escape characters (<code>`</code>). If you use double quotes as part of a string in a filter predicate, you'll get empty output.</p>
+</div>
+<h2 id="jmespath-functions">JMESPath functions</h2>
+<p>JMESPath also has built-in functions that allow for more complex queries and for modifying query output. This section focuses on using JMESPath functions to create queries while the Manipulating output with functions section demonstrates how to use functions to modify the output.</p>
+<p>Expressions are evaluated before calling the function, so arguments themselves can be JMESPath expressions. The following examples demonstrates this by using <code>contains(string, substring)</code>, which checks to see if a string contains a substring. This command finds all workspaces with the name containing the subscring <em>Query</em>:</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-7">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-7_bash" role="tab" aria-controls="tabpanel_bHGHmlrG6S-7_bash" data-tab="bash" tabindex="0" aria-selected="true">Bash</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-7_powershell" role="tab" aria-controls="tabpanel_bHGHmlrG6S-7_powershell" data-tab="powershell" tabindex="-1">PowerShell</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-7_bash" role="tabpanel" data-tab="bash">
+
+<pre><code class="lang-bash">pbicli workspace list --query &quot;[?contains(name,'Query')].{Name: name, ID: id}&quot;
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S-7_powershell" role="tabpanel" data-tab="powershell" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-powershell">pbicli workspace list --query &quot;[?contains(name,'Query')].{Name: name, ID: id}&quot;
+</code></pre>
+</section>
+</div>
+
+<pre><code class="lang-json">[
+    {
+        &quot;Name&quot;: &quot;QueryDemo&quot;,
+        &quot;ID&quot;: &quot;a4621d17-9dfd-4ed9-af64-404ce45e95a8&quot;
+    },
+    {
+        &quot;Name&quot;: &quot;QueryDemo 2&quot;,
+        &quot;ID&quot;: &quot;0f90ad11-c52e-4bfe-929d-4a438b90f978&quot;
+    }
+]
+</code></pre>
+<h2 id="pipe-expressions">Pipe expressions</h2>
+<p>Similar to how <code>|</code> is used in the command line, <code>|</code> can be used in JMESPath queries to apply expressions to intermediate query results. We can also use <code>|</code> to break down complex queries into simpler subexpressions. To shorten the query from the previous section, use <code>|</code> to apply the filter after flattening and selecting data.</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-8">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-8_bash" role="tab" aria-controls="tabpanel_bHGHmlrG6S-8_bash" data-tab="bash" tabindex="0" aria-selected="true">Bash</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-8_powershell" role="tab" aria-controls="tabpanel_bHGHmlrG6S-8_powershell" data-tab="powershell" tabindex="-1">PowerShell</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-8_bash" role="tabpanel" data-tab="bash">
+
+<pre><code class="lang-bash">pbicli workspace list --query &quot;[].{Name: name, ID: id} | [? contains(name,'Query')]&quot;
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S-8_powershell" role="tabpanel" data-tab="powershell" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-powershell">pbicli workspace list --query &quot;[].{Name: name, ID: id} | [? contains(name,'Query')]&quot;
+</code></pre>
+</section>
+</div>
+
+<pre><code class="lang-json">[
+    {
+        &quot;Name&quot;: &quot;QueryDemo&quot;,
+        &quot;ID&quot;: &quot;a4621d17-9dfd-4ed9-af64-404ce45e95a8&quot;
+    },
+    {
+        &quot;Name&quot;: &quot;QueryDemo 2&quot;,
+        &quot;ID&quot;: &quot;0f90ad11-c52e-4bfe-929d-4a438b90f978&quot;
+    }
+]
+</code></pre>
+<p>See the <a href="http://jmespath.org/specification.html#built-in-functions">JMESPath specification - Built-in Functions</a> for the full list of functions.</p>
+<h2 id="manipulating-output-with-functions">Manipulating output with functions</h2>
+<p>JMESPath functions also have another purpose, which is to operate on the results of a query. Any function that returns a non-boolean value changes the result of an expression. For example, you can sort data by a property value with <code>sort_by(array, &amp;sort_expression)</code>. JMESPath uses a special operator, <code>&amp;</code>, for expressions that should be evaluated later as part of a function. The next example shows how to sort a VM list by OS disk size:</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-9">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-9_bash" role="tab" aria-controls="tabpanel_bHGHmlrG6S-9_bash" data-tab="bash" tabindex="0" aria-selected="true">Bash</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-9_powershell" role="tab" aria-controls="tabpanel_bHGHmlrG6S-9_powershell" data-tab="powershell" tabindex="-1">PowerShell</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-9_bash" role="tabpanel" data-tab="bash">
+
+<pre><code class="lang-bash">pbicli workspace list --query &quot;sort_by([].{Name: name, ID: id}, &amp;Name)&quot;
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S-9_powershell" role="tabpanel" data-tab="powershell" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-powershell">pbicli workspace list --query &quot;sort_by([].{Name: name, ID: id}, &amp;Name)&quot;
+</code></pre>
+</section>
+</div>
+
+<pre><code class="lang-json">[
+    {
+        &quot;Name&quot;: &quot;QueryDemo&quot;,
+        &quot;ID&quot;: &quot;a4621d17-9dfd-4ed9-af64-404ce45e95a8&quot;
+    },
+    {
+        &quot;Name&quot;: &quot;QueryDemo 2&quot;,
+        &quot;ID&quot;: &quot;0f90ad11-c52e-4bfe-929d-4a438b90f978&quot;
+    }
+]
+</code></pre>
+<p>See the <a href="http://jmespath.org/specification.html#built-in-functions">JMESPath specification - Built-in Functions</a> for the full list of functions.</p>
+<h2 id="formatting-query-results">Formatting query results</h2>
+<p>The Power BI CLI uses JSON as its default output format, however different output formats may better suit a query depending on its purpose and results. Note that queries are always run on the JSON output first and then formatted.</p>
+<p>This section will go over <code>tsv</code> formatting and some use cases for each format.</p>
+<h2 id="tsv-output-format">TSV output format</h2>
+<p>The <code>tsv</code> output format returns tab- and newline-separated values without additional formatting, keys, or other symbols. This is useful when the output is consumed by another command.</p>
+<p>One use case for <code>tsv</code> formatting is queries that retrieve a value out of a CLI command, such as an Power BI workspace ID, and store the value in a local environment variable. By default the results are returned in JSON format. This may be an issue when dealing with JSON strings which are enclosed in <code>&quot;</code> characters. The quotes may not be interpreted by the shell if the command output is directly assigned to the environment variable. This can be seen in the following example that assigns a query result to an environment variable:</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-10">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-10_bash" role="tab" aria-controls="tabpanel_bHGHmlrG6S-10_bash" data-tab="bash" tabindex="0" aria-selected="true">Bash</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-10_powershell" role="tab" aria-controls="tabpanel_bHGHmlrG6S-10_powershell" data-tab="powershell" tabindex="-1">PowerShell</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-10_bash" role="tabpanel" data-tab="bash">
+
+<pre><code class="lang-bash">WORKSPACE=(pbicli workspace show --workspace QueryDemo --query &quot;[0].name&quot;)
+echo $WORKSPACE
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S-10_powershell" role="tabpanel" data-tab="powershell" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-powershell">$WORKSPACE=$(pbicli workspace show --workspace QueryDemo --query &quot;[0].name&quot;)
+echo $WORKSPACE
+</code></pre>
+</section>
+</div>
+
+<pre><code class="lang-json">&quot;QueryDemo&quot;
+</code></pre>
+<p>To prevent enclosing return values with type information use <code>tsv</code> formatting as demonstrated in the following query:</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-11">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-11_bash" role="tab" aria-controls="tabpanel_bHGHmlrG6S-11_bash" data-tab="bash" tabindex="0" aria-selected="true">Bash</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-11_powershell" role="tab" aria-controls="tabpanel_bHGHmlrG6S-11_powershell" data-tab="powershell" tabindex="-1">PowerShell</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-11_bash" role="tabpanel" data-tab="bash">
+
+<pre><code class="lang-bash">WORKSPACE=(pbicli workspace show --workspace QueryDemo --query &quot;[0].name&quot; --output tsv)
+echo $WORKSPACE
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S-11_powershell" role="tabpanel" data-tab="powershell" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-powershell">$WORKSPACE=$(pbicli workspace show --workspace QueryDemo --query &quot;[0].name&quot;  --output tsv)
+echo $WORKSPACE
+</code></pre>
+</section>
+</div>
+
+<pre><code class="lang-json">QueryDemo
+</code></pre>
+<p>Another use case is to use multiple values form a Power BI CLI query in combination with the next series of commands. This is shown in the following example that assigns a query result with all the workspace ids to an environment variable and loops thru that environment variable to execute the next Power BI CLI command to retrieve all reports within the provided workspace id:</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-12">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-12_bash" role="tab" aria-controls="tabpanel_bHGHmlrG6S-12_bash" data-tab="bash" tabindex="0" aria-selected="true">Bash</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-12_powershell" role="tab" aria-controls="tabpanel_bHGHmlrG6S-12_powershell" data-tab="powershell" tabindex="-1">PowerShell</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-12_bash" role="tabpanel" data-tab="bash">
+
+<pre><code class="lang-bash"># Retrieve all workspace ids
+workspaces=`pbicli workspace list --query [*]id --output tsv`
+
+# Loop thru all the available workspaces
+for workspace in $workspaces
+do
+    pbicli report list --workspace $workspace
+done
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S-12_powershell" role="tabpanel" data-tab="powershell" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-powershell"># Retrieve all workspace ids
+$workspaces=$(pbicli workspace list --query [*]id --output tsv)
+
+# Loop thru all the available workspaces
+foreach ($workspace in $workspaces) {
+    pbicli report list --workspace $workspace
+}
+</code></pre>
+</section>
+</div>
+<h2 id="feedback">Feedback</h2>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/powerbi-cli/powerbi-cli.github.io/blob/live/content/howto-query.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/feedback.js"></script>
+    <script type="text/javascript" src="../styles/global.js"></script>
+  </body>
+</html>

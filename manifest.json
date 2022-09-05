@@ -1,0 +1,561 @@
+{
+  "sitemap": {
+    "baseUrl": "https://powerbi-cli.github.io/",
+    "changefreq": "weekly",
+    "priority": 0.8
+  },
+  "homepages": [],
+  "source_base_path": "D:/a/powerbi-cli.github.io/powerbi-cli.github.io",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "0LVgS8eWvW9kwLxFG91hj5o7sLVNmi3XorrU88esf2Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/getstarted.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/getstarted.html",
+          "hash": "gRh4D3MsSdMFI1JNQqdua1EKKVEZMa8xWBn25qYpkwk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/howto-azure-pipeline.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/howto-azure-pipeline.html",
+          "hash": "dhoyrSU4lJF32CFMFOqttBqeE6JAEfmaPY1lRBZ74TQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/howto-query.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/howto-query.html",
+          "hash": "gwabhkAFW5dQIeNgzgqPgr45CUZSXeEHLK21UW+Ajm0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/howto-quotes.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/howto-quotes.html",
+          "hash": "BRWlGAe3XvlA20l0p9vgb0EYQotr5D3KDPABcB0/z6E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/install.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/install.html",
+          "hash": "1eA8PuMt6aHzBhcvKLYUKeuHAjPWNAHiVPGMCpyh6/I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/privacy.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/privacy.html",
+          "hash": "Tj5eRZx3KkGBtBGQW/TQTmfWVkApxNISaIk0oNcFdm0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/reference-admin.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/reference-admin.html",
+          "hash": "I759PRzQ4euzbi0CxDGx/ooJ75RSNvdQ8h2OgSGFL3Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/reference-app.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/reference-app.html",
+          "hash": "oHsJSXwNvY9xmJogMg2xNtwG9+1XZJALMZoi4Hwmusg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/reference-capacity.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/reference-capacity.html",
+          "hash": "sy0LkCrkQa4py0SgDHsCwRNpy8buyk1KGKJ66+N1eYA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/reference-cloud.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/reference-cloud.html",
+          "hash": "ascrpYsjM2wVPOJTAgW6AfkwZUOyjL9B33VR5WLNXy0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/reference-configure.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/reference-configure.html",
+          "hash": "bkqieF9F/1WXRai8oG1tfzXzrxTvle+PILkuwiJa17E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/reference-dashboard.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/reference-dashboard.html",
+          "hash": "36pQDFGI4Dp0WZc/K4qR81gAZ4tLzAmQKq8kNsp6jqQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/reference-dataflow.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/reference-dataflow.html",
+          "hash": "z3+eMHQi8b8HG/xtNyjtPvGKyNLwXEGXOGCzipqof4Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/reference-dataset.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/reference-dataset.html",
+          "hash": "9ARX/MY+TRtjBOPEb0jmQ9GMCmaSoj6av3WOID34gXo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/reference-embedded.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/reference-embedded.html",
+          "hash": "zWVyqarSaKeZivB2WtLdue4bh0Xby3EppJ5TMByAfy4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/reference-feature.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/reference-feature.html",
+          "hash": "HJzEPKwp/jLbunQo7HEhRPpUmyFRE322CaaSpPRuXqc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/reference-gateway.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/reference-gateway.html",
+          "hash": "KGIuDIwX2DjGNmv8j4SuYwBXmIcZkN1TknuhM5+OJu4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/reference-import.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/reference-import.html",
+          "hash": "13wGcYQP577YKHipqU9gSat5O18TJ6zVsREjiaC6EsE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/reference-index.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/reference-index.html",
+          "hash": "0U5uG8PRtgvnzE2UDT7Ic+xhnNs0Lqmq4nLCfTule3k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/reference-pipeline.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/reference-pipeline.html",
+          "hash": "1XlWonI+pEAD88YXAKjKqPD5+i8H3eGTbor5xo7Z/m0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/reference-report.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/reference-report.html",
+          "hash": "03TABZHFrOj4jlJ0Lj6ibcRpN+tmBHcPrPNdaAE/WIk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/reference-scorecard.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/reference-scorecard.html",
+          "hash": "h/qmPbtwMFRopAed5rORjmZKscCRjjvpaRoZ/17Hc+o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/reference-user.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/reference-user.html",
+          "hash": "cbzJw+55K3l7c/biy0tvtgwGjzBd83dOBzKbfwx7BQY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/reference-workspace.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/reference-workspace.html",
+          "hash": "+2tzKqcy7Shl9TOBoPKEvXVsZcV5n/zFmQLqE0JHD/8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/reference-xmla.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/reference-xmla.html",
+          "hash": "yHEDdXXXEqGW0B/OvLPBXaBFt3LVx47qDg6FDnvQOuY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/releasenotes.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/releasenotes.html",
+          "hash": "Rl0vMyUla7H8pbSbXtow/JDg2Q38UyKTuFGi0kMo2IE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/samples-dataset.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/samples-dataset.html",
+          "hash": "hxzdCwbZ37qJMgp6sA8R0f2uVvs0t9SaO9Qu0AMZf68="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/samples-index.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/samples-index.html",
+          "hash": "jUf9OAIgpkdnjjULHObOU90KSoGIjSHlfTNsacqs3nE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/samples-report.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/samples-report.html",
+          "hash": "RhNY0r5i1k+Fw+EC/lbhvE6On2W9XuobfjViHSBzd0w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/samples-scorecard.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/samples-scorecard.html",
+          "hash": "1zW5rvKMXMQ0lJCGu0ofyaKWlWLw6QJySaZ/bIxIH9c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/samples-workspace.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/samples-workspace.html",
+          "hash": "sYJCq4GlLH8KAv1hGymqEgAqn7/Z7BSS4GjodnHiehw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/serviceprincipal.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/serviceprincipal.html",
+          "hash": "6Z4BMbxuicdwOjYOoTG8TyzRQTr6lm1aI/pWsz8sM7I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/signin.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/signin.html",
+          "hash": "BRFrwRL9BDjOA1pymHfzu3CVysglkeB+pCfY/MVg5yY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "content/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "content/toc.html",
+          "hash": "l1B4d9SsCjyvSTkmznzj072oipO84g7qjs23rQ0gzlc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/whatis.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/whatis.html",
+          "hash": "Z5TBHmUPQpmbfmf4XNLaQynyIZhSxSUp85t/gg5+O28="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "global.md",
+      "output": {
+        ".html": {
+          "relative_path": "global.html",
+          "hash": "nNWnVti6OK1B66QZkubwKBDPO0w4l98eHXqsv3qjwG4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/serviceprincipal-apipermission.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/serviceprincipal-apipermission.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/serviceprincipal-powerbiadminportal.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/serviceprincipal-powerbiadminportal.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "Vrpc1pP4Wt8QfB1GCuYqYMirRhJiw9Ewz6cabdmfXm4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "6vSyB652XzNDJSq8w4lSqcbJ3JAncKJ+YAph7C7j3Cg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 37,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

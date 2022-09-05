@@ -1,0 +1,111 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: global
+  name: global
+  href: global.html
+- uid: howto/azure-pipeline
+  name: 'How-to: Use the Azure Pipeline task'
+  href: content/howto-azure-pipeline.html
+- uid: howto/query
+  name: 'How-to: Query command output'
+  href: content/howto-query.html
+- uid: howto/quotes
+  name: 'How-to: Using quotes sucessfully'
+  href: content/howto-quotes.html
+- uid: index
+  name: Overview of the Power BI CLI
+  href: index.html
+- uid: install/install
+  name: Install the Power BI CLI
+  href: content/install.html
+- uid: install/serviceprincipal
+  name: Setup a Service Principal
+  href: content/serviceprincipal.html
+- uid: install/signin
+  name: Sign in with Power BI CLI
+  href: content/signin.html
+- uid: overview/getstarted
+  name: Get started with Power BI CLI
+  href: content/getstarted.html
+- uid: overview/privacy
+  name: Privicy policy
+  href: content/privacy.html
+- uid: overview/releasenotes
+  name: Power BI CLI release notes
+  href: content/releasenotes.html
+- uid: overview/whatis
+  name: What is Power BI CLI
+  href: content/whatis.html
+- uid: reference/admin
+  name: pbicli admin
+  href: content/reference-admin.html
+- uid: reference/app
+  name: pbicli app
+  href: content/reference-app.html
+- uid: reference/capacity
+  name: pbicli capacity
+  href: content/reference-capacity.html
+- uid: reference/cloud
+  name: pbicli cloud
+  href: content/reference-cloud.html
+- uid: reference/configure
+  name: pbicli configure
+  href: content/reference-configure.html
+- uid: reference/dashboard
+  name: pbicli dashboard
+  href: content/reference-dashboard.html
+- uid: reference/dataflow
+  name: pbicli dataflow
+  href: content/reference-dataflow.html
+- uid: reference/dataset
+  name: pbicli dataset
+  href: content/reference-dataset.html
+- uid: reference/embedded
+  name: pbicli embedded
+  href: content/reference-embedded.html
+- uid: reference/feature
+  name: pbicli feature
+  href: content/reference-feature.html
+- uid: reference/gateway
+  name: pbicli gateway
+  href: content/reference-gateway.html
+- uid: reference/import
+  name: pbicli import
+  href: content/reference-import.html
+- uid: reference/index
+  name: pbicli
+  href: content/reference-index.html
+- uid: reference/pipeline
+  name: pbicli pipeline
+  href: content/reference-pipeline.html
+- uid: reference/report
+  name: pbicli report
+  href: content/reference-report.html
+- uid: reference/scorecard
+  name: pbicli scorecard
+  href: content/reference-scorecard.html
+- uid: reference/user
+  name: pbicli user
+  href: content/reference-user.html
+- uid: reference/workspace
+  name: pbicli workspace
+  href: content/reference-workspace.html
+- uid: reference/xmla
+  name: pbicli xmla
+  href: content/reference-xmla.html
+- uid: samples/dataset
+  name: Power BI CLI Samples for Power BI datasets
+  href: content/samples-dataset.html
+- uid: samples/overview
+  name: Power BI CLI Samples
+  href: content/samples-index.html
+- uid: samples/report
+  name: Power BI CLI Samples for Power BI reports
+  href: content/samples-report.html
+- uid: samples/scorecard
+  name: Power BI CLI Samples for Power BI scorecards
+  href: content/samples-scorecard.html
+- uid: samples/workspace
+  name: Power BI CLI Samples for Power BI workspaces
+  href: content/samples-workspace.html

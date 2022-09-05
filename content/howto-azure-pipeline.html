@@ -1,0 +1,307 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>How-to: Use the Azure Pipeline task </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="How-to: Use the Azure Pipeline task ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:globalrel" content="/global.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  
+    <link rel="canonical" href="https://powerbi-cli.github.io/content/howto-azure-pipeline.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta property="og:image" content="https://powerbi-cli.github.io/logo.png">
+    <meta property="og:site_name" content="Azure BI">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="How-to: Use the Azure Pipeline task">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://powerbi-cli.github.io/content/howto-azure-pipeline.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="How-to: Use the Azure Pipeline task">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:url" content="https://powerbi-cli.github.io/content/howto-azure-pipeline.html">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Jan Pieter Posthuma">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:site" content="@jppp">
+    <meta name="twitter:creator" content="@jppp">
+  
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Azure BI",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://powerbi-cli.github.io/favicon.ico",
+                "width": 60,
+                "height": 60
+            }
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Jan Pieter Posthuma",
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://azurebi.jppp.org/content/images/2018/04/jppp-5-highres.jpg",
+                "width": 3300,
+                "height": 3300
+            },
+            "sameAs": [
+                "https://datascenarios.nl",
+                "https://twitter.com/jppp"
+            ]
+        },
+        "headline": "How-to: Use the Azure Pipeline task",
+        "url": "https://powerbi-cli.github.io/content/howto-azure-pipeline.html",
+        "keywords": "",
+        "description": "",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://powerbi-cli.github.io/"
+        }
+    }
+    </script>
+    <script type='text/javascript'>
+      const documentId = '45075bca-b639-433c-aab3-808ea7a417e7';
+      const documentUrl = 'https://powerbi-cli.github.io/content/howto-azure-pipeline.html';
+      const feedbackDocRepo = 'https://github.com/powerbi-cli/powerbi-cli'
+      const feedbackProductRepo = 'https://github.com/powerbi-cli/powerbi-cli';
+    </script>
+    <script type="text/javascript">
+      !function (T, l, y) { var S = T.location, k = "script", D = "instrumentationKey", C = "ingestionendpoint", I = "disableExceptionTracking", E = "ai.device.", b = "toLowerCase", w = "crossOrigin", N = "POST", e = "appInsightsSDK", t = y.name || "appInsights"; (y.name || T[e]) && (T[e] = t); var n = T[t] || function (d) { var g = !1, f = !1, m = { initialize: !0, queue: [], sv: "5", version: 2, config: d }; function v(e, t) { var n = {}, a = "Browser"; return n[E + "id"] = a[b](), n[E + "type"] = a, n["ai.operation.name"] = S && S.pathname || "_unknown_", n["ai.internal.sdkVersion"] = "javascript:snippet_" + (m.sv || m.version), { time: function () { var e = new Date; function t(e) { var t = "" + e; return 1 === t.length && (t = "0" + t), t } return e.getUTCFullYear() + "-" + t(1 + e.getUTCMonth()) + "-" + t(e.getUTCDate()) + "T" + t(e.getUTCHours()) + ":" + t(e.getUTCMinutes()) + ":" + t(e.getUTCSeconds()) + "." + ((e.getUTCMilliseconds() / 1e3).toFixed(3) + "").slice(2, 5) + "Z" }(), iKey: e, name: "Microsoft.ApplicationInsights." + e.replace(/-/g, "") + "." + t, sampleRate: 100, tags: n, data: { baseData: { ver: 2 } } } } var h = d.url || y.src; if (h) { function a(e) { var t, n, a, i, r, o, s, c, u, p, l; g = !0, m.queue = [], f || (f = !0, t = h, s = function () { var e = {}, t = d.connectionString; if (t) for (var n = t.split(";"), a = 0; a < n.length; a++) { var i = n[a].split("="); 2 === i.length && (e[i[0][b]()] = i[1]) } if (!e[C]) { var r = e.endpointsuffix, o = r ? e.location : null; e[C] = "https://" + (o ? o + "." : "") + "dc." + (r || "services.visualstudio.com") } return e }(), c = s[D] || d[D] || "", u = s[C], p = u ? u + "/v2/track" : d.endpointUrl, (l = []).push((n = "SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)", a = t, i = p, (o = (r = v(c, "Exception")).data).baseType = "ExceptionData", o.baseData.exceptions = [{ typeName: "SDKLoadFailed", message: n.replace(/\./g, "-"), hasFullStack: !1, stack: n + "\nSnippet failed to load [" + a + "] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: " + (S && S.pathname || "_unknown_") + "\nEndpoint: " + i, parsedStack: [] }], r)), l.push(function (e, t, n, a) { var i = v(c, "Message"), r = i.data; r.baseType = "MessageData"; var o = r.baseData; return o.message = 'AI (Internal): 99 message:"' + ("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) (" + n + ")").replace(/\"/g, "") + '"', o.properties = { endpoint: a }, i }(0, 0, t, p)), function (e, t) { if (JSON) { var n = T.fetch; if (n && !y.useXhr) n(t, { method: N, body: JSON.stringify(e), mode: "cors" }); else if (XMLHttpRequest) { var a = new XMLHttpRequest; a.open(N, t), a.setRequestHeader("Content-type", "application/json"), a.send(JSON.stringify(e)) } } }(l, p)) } function i(e, t) { f || setTimeout(function () { !t && m.core || a() }, 500) } var e = function () { var n = l.createElement(k); n.src = h; var e = y[w]; return !e && "" !== e || "undefined" == n[w] || (n[w] = e), n.onload = i, n.onerror = a, n.onreadystatechange = function (e, t) { "loaded" !== n.readyState && "complete" !== n.readyState || i(0, t) }, n }(); y.ld < 0 ? l.getElementsByTagName("head")[0].appendChild(e) : setTimeout(function () { l.getElementsByTagName(k)[0].parentNode.appendChild(e) }, y.ld || 0) } try { m.cookie = l.cookie } catch (p) { } function t(e) { for (; e.length;)!function (t) { m[t] = function () { var e = arguments; g || m.queue.push(function () { m[t].apply(m, e) }) } }(e.pop()) } var n = "track", r = "TrackPage", o = "TrackEvent"; t([n + "Event", n + "PageView", n + "Exception", n + "Trace", n + "DependencyData", n + "Metric", n + "PageViewPerformance", "start" + r, "stop" + r, "start" + o, "stop" + o, "addTelemetryInitializer", "setAuthenticatedUserContext", "clearAuthenticatedUserContext", "flush"]), m.SeverityLevel = { Verbose: 0, Information: 1, Warning: 2, Error: 3, Critical: 4 }; var s = (d.extensionConfig || {}).ApplicationInsightsAnalytics || {}; if (!0 !== d[I] && !0 !== s[I]) { var c = "onerror"; t(["_" + c]); var u = T[c]; T[c] = function (e, t, n, a, i) { var r = u && u(e, t, n, a, i); return !0 !== r && m["_" + c]({ message: e, url: t, lineNumber: n, columnNumber: a, error: i }), r }, d.autoExceptionInstrumented = !0 } return m }(y.cfg); function a() { y.onInit && y.onInit(n) } (T[t] = n).queue && 0 === n.queue.length ? (n.queue.push(a), n.trackPageView({})) : a() }(window, document, {
+          src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js", // The SDK URL Source
+          crossOrigin: "anonymous", // When supplied this will add the provided value as the cross origin attribute on the script tag
+          cfg: { // Application Insights Configuration
+              instrumentationKey: "08dfbb40-a119-40a1-bcc9-76225ede8c04"
+          }
+      });    
+    </script>
+    <meta name="google-site-verification" content="wVVhU305Yl9X20TELl13YXn37o9vu9cDLDskaoFH9pU">
+    <meta name="msvalidate.01" content="7ABDCD6E8CD2402845D5FDF35E6ADCC6">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="howto/azure-pipeline">
+<h1 id="how-to-use-the-azure-pipeline-task">How to use the Azure Pipeline task</h1>
+
+<p>You can use this task with an Azure Pipeline to enable the Power BI CLI within an pipeline.</p>
+<p>The task will execute the following steps during a pipeline run:</p>
+<ul>
+<li>select the Azure sovereign cloud if provided</li>
+<li>login for with the provided credentials of the service connection (<code>azureSubsciption</code>)</li>
+<li>run the script either loaded from a script file or via the provided inline script</li>
+</ul>
+<h2 id="yaml-snippet">YAML Snippet</h2>
+<pre><code class="lang-YAML">- task: pbicli@0
+  inputs:
+# Required
+    azureSubscription: &quot;string&quot;
+# Optional
+    cloud: &quot;public | china | gcc | gcchigh | dod | germany&quot;
+# Required
+    scriptType: &quot;bash | batch | ps | pscore&quot;
+# Required
+    scriptLocation: &quot;inlineScript | scriptPath&quot;
+# Required if scriptLocation = scriptPath
+    scriptPath: &quot;string&quot;
+# Required if scriptLocation = inlineScript
+    inlineScript: &quot;string&quot;
+# Optional
+    arguments: &quot;string&quot;
+# Optional if scriptType = ps or pscore
+    powerShellErrorActionPreference: &quot;stop | continue | silentlyContinue&quot;
+# Optional
+    version: &quot;string&quot;
+# Optional
+    workingDirectory: &quot;string&quot;
+# Optional
+    verbose: boolean
+# Optional
+    failOnStandardError: boolean
+</code></pre>
+<h2 id="arguments">Arguments</h2>
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>azureSubscription</code><br>Azure subscription</td>
+<td>Name of Azure Resource Manager service connection.</td>
+<td>✅</td>
+</tr>
+<tr>
+<td><code>cloud</code><br>Azure sovereign cloud</td>
+<td>Select which Azure sovereign cloud to sevice connection connects to</td>
+<td></td>
+</tr>
+<tr>
+<td><code>scriptType</code><br>Script Type</td>
+<td>Type of script: PowerShell/PowerShell Core/Bat/Shell script. Select Shell/PowerShell Core script when running on Linux agent or Batch/PowerShell/PowerShell Core script when running on Windows agent. PowerShell Core script can run on cross-platform agents (Linux, macOS, or Windows).</td>
+<td>✅</td>
+</tr>
+<tr>
+<td><code>scriptLocation</code><br>Script Location</td>
+<td>Path to script: <code>scriptPath</code> or <code>inlineScript</code></td>
+<td>✅</td>
+</tr>
+<tr>
+<td><code>scriptPath</code><br>Script Path</td>
+<td>Fully qualified path of the script(.ps1 or .bat or .cmd when using Windows based agent else .ps1 or .sh when using linux based agent) or a path relative to the the default working directory</td>
+<td>✅</td>
+</tr>
+<tr>
+<td><code>inlineScript</code><br>Inline Script</td>
+<td>You can write your scripts inline here. When using Windows agent, use PowerShell or PowerShell Core or batch scripting whereas use PowerShell Core or shell scripting when using Linux based agents. For batch files use the prefix &quot;call&quot; before every pbicli command. You can also pass predefined and custom variables to this script using arguments \n\n example for PowerShell/PowerShellCore/shell: \npbicli version \npbicli workspace list \n\n example for batch:\ncall pbicli version \ncall pbicli workspace list</td>
+<td>✅</td>
+</tr>
+<tr>
+<td><code>arguments</code><br>Script Arguments</td>
+<td>Arguments passed to the script</td>
+<td></td>
+</tr>
+<tr>
+<td><code>powerShellErrorActionPreference</code><br>ErrorActionPreference</td>
+<td>Prepends the line <code>$ErrorActionPreference = 'VALUE'</code> at the top of your powershell/powershell core script.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>version</code><br>Version of Power BI CLI</td>
+<td>The version of the Power BI CLI to use. If not specified, the 'latest' version will be used.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>workingDirectory</code><br>Working Directory</td>
+<td>Current working directory where the script is run. Empty is the root of the repo (build) or artifacts (release), which is $(System.DefaultWorkingDirectory)</td>
+<td></td>
+</tr>
+<tr>
+<td><code>verbose</code><br>Verbose logging</td>
+<td>If this is true, this task will print more information to the console on run</td>
+<td></td>
+</tr>
+<tr>
+<td><code>failOnStandardError</code><br>Fail on Standard Error</td>
+<td>If this is true, this task will fail when any errors are written to the StandardError stream. Unselect the checkbox to ignore standard errors and rely on exit codes to determine the status</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="example">Example</h2>
+<p>To list all the workspace the service provider has acces to, you can use the following yaml snippet:</p>
+<pre><code class="lang-YAML">- task: pbicli@1
+  inputs:
+    azureSubscription: 'Demos'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'pbicli workspace list'
+</code></pre>
+<h2 id="feedback">Feedback</h2>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/powerbi-cli/powerbi-cli.github.io/blob/live/content/howto-azure-pipeline.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/feedback.js"></script>
+    <script type="text/javascript" src="../styles/global.js"></script>
+  </body>
+</html>

@@ -1,0 +1,422 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>pbicli gateway </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="pbicli gateway ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:globalrel" content="/global.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  
+    <link rel="canonical" href="https://powerbi-cli.github.io/content/reference-gateway.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta property="og:image" content="https://powerbi-cli.github.io/logo.png">
+    <meta property="og:site_name" content="Azure BI">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="pbicli gateway">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://powerbi-cli.github.io/content/reference-gateway.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="pbicli gateway">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:url" content="https://powerbi-cli.github.io/content/reference-gateway.html">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Jan Pieter Posthuma">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:site" content="@jppp">
+    <meta name="twitter:creator" content="@jppp">
+  
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Azure BI",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://powerbi-cli.github.io/favicon.ico",
+                "width": 60,
+                "height": 60
+            }
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Jan Pieter Posthuma",
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://azurebi.jppp.org/content/images/2018/04/jppp-5-highres.jpg",
+                "width": 3300,
+                "height": 3300
+            },
+            "sameAs": [
+                "https://datascenarios.nl",
+                "https://twitter.com/jppp"
+            ]
+        },
+        "headline": "pbicli gateway",
+        "url": "https://powerbi-cli.github.io/content/reference-gateway.html",
+        "keywords": "",
+        "description": "",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://powerbi-cli.github.io/"
+        }
+    }
+    </script>
+    <script type='text/javascript'>
+      const documentId = 'b7c29e54-4160-4269-a18f-62d217310694';
+      const documentUrl = 'https://powerbi-cli.github.io/content/reference-gateway.html';
+      const feedbackDocRepo = 'https://github.com/powerbi-cli/powerbi-cli'
+      const feedbackProductRepo = 'https://github.com/powerbi-cli/powerbi-cli';
+    </script>
+    <script type="text/javascript">
+      !function (T, l, y) { var S = T.location, k = "script", D = "instrumentationKey", C = "ingestionendpoint", I = "disableExceptionTracking", E = "ai.device.", b = "toLowerCase", w = "crossOrigin", N = "POST", e = "appInsightsSDK", t = y.name || "appInsights"; (y.name || T[e]) && (T[e] = t); var n = T[t] || function (d) { var g = !1, f = !1, m = { initialize: !0, queue: [], sv: "5", version: 2, config: d }; function v(e, t) { var n = {}, a = "Browser"; return n[E + "id"] = a[b](), n[E + "type"] = a, n["ai.operation.name"] = S && S.pathname || "_unknown_", n["ai.internal.sdkVersion"] = "javascript:snippet_" + (m.sv || m.version), { time: function () { var e = new Date; function t(e) { var t = "" + e; return 1 === t.length && (t = "0" + t), t } return e.getUTCFullYear() + "-" + t(1 + e.getUTCMonth()) + "-" + t(e.getUTCDate()) + "T" + t(e.getUTCHours()) + ":" + t(e.getUTCMinutes()) + ":" + t(e.getUTCSeconds()) + "." + ((e.getUTCMilliseconds() / 1e3).toFixed(3) + "").slice(2, 5) + "Z" }(), iKey: e, name: "Microsoft.ApplicationInsights." + e.replace(/-/g, "") + "." + t, sampleRate: 100, tags: n, data: { baseData: { ver: 2 } } } } var h = d.url || y.src; if (h) { function a(e) { var t, n, a, i, r, o, s, c, u, p, l; g = !0, m.queue = [], f || (f = !0, t = h, s = function () { var e = {}, t = d.connectionString; if (t) for (var n = t.split(";"), a = 0; a < n.length; a++) { var i = n[a].split("="); 2 === i.length && (e[i[0][b]()] = i[1]) } if (!e[C]) { var r = e.endpointsuffix, o = r ? e.location : null; e[C] = "https://" + (o ? o + "." : "") + "dc." + (r || "services.visualstudio.com") } return e }(), c = s[D] || d[D] || "", u = s[C], p = u ? u + "/v2/track" : d.endpointUrl, (l = []).push((n = "SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)", a = t, i = p, (o = (r = v(c, "Exception")).data).baseType = "ExceptionData", o.baseData.exceptions = [{ typeName: "SDKLoadFailed", message: n.replace(/\./g, "-"), hasFullStack: !1, stack: n + "\nSnippet failed to load [" + a + "] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: " + (S && S.pathname || "_unknown_") + "\nEndpoint: " + i, parsedStack: [] }], r)), l.push(function (e, t, n, a) { var i = v(c, "Message"), r = i.data; r.baseType = "MessageData"; var o = r.baseData; return o.message = 'AI (Internal): 99 message:"' + ("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) (" + n + ")").replace(/\"/g, "") + '"', o.properties = { endpoint: a }, i }(0, 0, t, p)), function (e, t) { if (JSON) { var n = T.fetch; if (n && !y.useXhr) n(t, { method: N, body: JSON.stringify(e), mode: "cors" }); else if (XMLHttpRequest) { var a = new XMLHttpRequest; a.open(N, t), a.setRequestHeader("Content-type", "application/json"), a.send(JSON.stringify(e)) } } }(l, p)) } function i(e, t) { f || setTimeout(function () { !t && m.core || a() }, 500) } var e = function () { var n = l.createElement(k); n.src = h; var e = y[w]; return !e && "" !== e || "undefined" == n[w] || (n[w] = e), n.onload = i, n.onerror = a, n.onreadystatechange = function (e, t) { "loaded" !== n.readyState && "complete" !== n.readyState || i(0, t) }, n }(); y.ld < 0 ? l.getElementsByTagName("head")[0].appendChild(e) : setTimeout(function () { l.getElementsByTagName(k)[0].parentNode.appendChild(e) }, y.ld || 0) } try { m.cookie = l.cookie } catch (p) { } function t(e) { for (; e.length;)!function (t) { m[t] = function () { var e = arguments; g || m.queue.push(function () { m[t].apply(m, e) }) } }(e.pop()) } var n = "track", r = "TrackPage", o = "TrackEvent"; t([n + "Event", n + "PageView", n + "Exception", n + "Trace", n + "DependencyData", n + "Metric", n + "PageViewPerformance", "start" + r, "stop" + r, "start" + o, "stop" + o, "addTelemetryInitializer", "setAuthenticatedUserContext", "clearAuthenticatedUserContext", "flush"]), m.SeverityLevel = { Verbose: 0, Information: 1, Warning: 2, Error: 3, Critical: 4 }; var s = (d.extensionConfig || {}).ApplicationInsightsAnalytics || {}; if (!0 !== d[I] && !0 !== s[I]) { var c = "onerror"; t(["_" + c]); var u = T[c]; T[c] = function (e, t, n, a, i) { var r = u && u(e, t, n, a, i); return !0 !== r && m["_" + c]({ message: e, url: t, lineNumber: n, columnNumber: a, error: i }), r }, d.autoExceptionInstrumented = !0 } return m }(y.cfg); function a() { y.onInit && y.onInit(n) } (T[t] = n).queue && 0 === n.queue.length ? (n.queue.push(a), n.trackPageView({})) : a() }(window, document, {
+          src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js", // The SDK URL Source
+          crossOrigin: "anonymous", // When supplied this will add the provided value as the cross origin attribute on the script tag
+          cfg: { // Application Insights Configuration
+              instrumentationKey: "08dfbb40-a119-40a1-bcc9-76225ede8c04"
+          }
+      });    
+    </script>
+    <meta name="google-site-verification" content="wVVhU305Yl9X20TELl13YXn37o9vu9cDLDskaoFH9pU">
+    <meta name="msvalidate.01" content="7ABDCD6E8CD2402845D5FDF35E6ADCC6">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="reference/gateway">
+<h1 id="pbicli-gateway">pbicli gateway</h1>
+
+<h2 id="commands">Commands</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#pbicli-gateway-datasource-create">pbicli gateway datasource create</a></td>
+<td>Create a datasource at a Power BI gateway</td>
+</tr>
+<tr>
+<td><a href="#pbicli-gateway-datasource-delete">pbicli gateway datasource delete</a></td>
+<td>Deletes a datasource at a Power BI gateway</td>
+</tr>
+<tr>
+<td><a href="#pbicli-gateway-datasource-list">pbicli gateway datasource list</a></td>
+<td>List datasources of a Power BI gateway</td>
+</tr>
+<tr>
+<td><a href="#pbicli-gateway-datasource-show">pbicli gateway datasource show</a></td>
+<td>Get the detail of a datasource of a Power BI gateway</td>
+</tr>
+<tr>
+<td><a href="#pbicli-gateway-datasource-status">pbicli gateway datasource status</a></td>
+<td>Get the status details of a datasource of a Power BI gateway</td>
+</tr>
+<tr>
+<td><a href="#pbicli-gateway-datasource-update">pbicli gateway datasource update</a></td>
+<td>Update a datasource at a Power BI gateway</td>
+</tr>
+<tr>
+<td><a href="#pbicli-gateway-datasource-user-add">pbicli gateway datasource user add</a></td>
+<td>Add user to a datasource of a Power BI gateway</td>
+</tr>
+<tr>
+<td><a href="#pbicli-gateway-datasource-user-delete">pbicli gateway datasource user delete</a></td>
+<td>Delete user from the datasource of a Power BI gateway</td>
+</tr>
+<tr>
+<td><a href="#pbicli-gateway-datasource-user-list">pbicli gateway datasource user list</a></td>
+<td>Retrieve users for the datasource of a Power BI gateway</td>
+</tr>
+<tr>
+<td><a href="#pbicli-gateway-list">pbicli gateway list</a></td>
+<td>List Power BI gateways</td>
+</tr>
+<tr>
+<td><a href="#pbicli-gateway-show">pbicli gateway show</a></td>
+<td>Get the details of a Power BI gateway</td>
+</tr>
+</tbody>
+</table>
+<h2 id="pbicli-gateway-datasource-create">pbicli gateway datasource create</h2>
+<p>Create a datasource at a Power BI gateway</p>
+<pre><code class="lang-bash">pbicli gateway datasource create [--gateway] [-g]
+                                 [--datasource]
+                                 [--datasource-file]
+</code></pre>
+<h3 id="parameters">Parameters</h3>
+<ul>
+<li><p><code>--gateway -g &lt;gateway&gt;</code><br>Name or ID of the Power BI gateway</p>
+</li>
+<li><p><code>--datasource &lt;datasource&gt;</code><br>String with the datasource definition in JSON format. Use @{file} to load from a file</p>
+</li>
+<li><p><code>--datasource-file &lt;file&gt;</code><br>File with the datasource definition in JSON format. Deprecated: use --datasource @{file}</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-gateway-datasource-delete">pbicli gateway datasource delete</h2>
+<p>Deletes a datasource at a Power BI gateway</p>
+<pre><code class="lang-bash">pbicli gateway datasource delete [--gateway] [-g]
+                                 [--datasource] [-d]
+</code></pre>
+<h3 id="parameters-1">Parameters</h3>
+<ul>
+<li><p><code>--gateway -g &lt;gateway&gt;</code><br>Name or ID of the Power BI gateway</p>
+</li>
+<li><p><code>--datasource -d &lt;datasource&gt;</code><br>Name or ID of the datasource of the Power BI gateway</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-gateway-datasource-list">pbicli gateway datasource list</h2>
+<p>List datasources of a Power BI gateway</p>
+<pre><code class="lang-bash">pbicli gateway datasource list [--gateway] [-g]
+</code></pre>
+<h3 id="parameters-2">Parameters</h3>
+<ul>
+<li><code>--gateway -g &lt;gateway&gt;</code><br>Name or ID of the Power BI gateway</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-gateway-datasource-show">pbicli gateway datasource show</h2>
+<p>Get the detail of a datasource of a Power BI gateway</p>
+<pre><code class="lang-bash">pbicli gateway datasource show [--gateway] [-g]
+                               [--datasource] [-d]
+</code></pre>
+<h3 id="parameters-3">Parameters</h3>
+<ul>
+<li><p><code>--gateway -g &lt;gateway&gt;</code><br>Name or ID of the Power BI gateway</p>
+</li>
+<li><p><code>--datasource -d &lt;datasource&gt;</code><br>Name or ID of the datasource of the Power BI gateway</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-gateway-datasource-status">pbicli gateway datasource status</h2>
+<p>Get the status details of a datasource of a Power BI gateway</p>
+<pre><code class="lang-bash">pbicli gateway datasource status [--gateway] [-g]
+                                 [--datasource] [-d]
+</code></pre>
+<h3 id="parameters-4">Parameters</h3>
+<ul>
+<li><p><code>--gateway -g &lt;gateway&gt;</code><br>Name or ID of the Power BI gateway</p>
+</li>
+<li><p><code>--datasource -d &lt;datasource&gt;</code><br>Name or ID of the datasource of the Power BI gateway</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-gateway-datasource-update">pbicli gateway datasource update</h2>
+<p>Update a datasource at a Power BI gateway</p>
+<pre><code class="lang-bash">pbicli gateway datasource update [--gateway] [-g]
+                                 [--datasource] [-d]
+                                 [--credential]
+                                 [--credential-file]
+</code></pre>
+<h3 id="parameters-5">Parameters</h3>
+<ul>
+<li><p><code>--gateway -g &lt;gateway&gt;</code><br>Name or ID of the Power BI gateway</p>
+</li>
+<li><p><code>--datasource -d &lt;datasource&gt;</code><br>Name or ID of the datasource of the Power BI gateway</p>
+</li>
+<li><p><code>--credential &lt;credential&gt;</code><br>String with the datasource credential definition in JSON format. Use @{file} to load from a file</p>
+</li>
+<li><p><code>--credential-file &lt;file&gt;</code><br>File with the datasource credential definition in JSON format. Deprecated: use --credential @{file}</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-gateway-datasource-user-add">pbicli gateway datasource user add</h2>
+<p>Add user to a datasource of a Power BI gateway</p>
+<pre><code class="lang-bash">pbicli gateway datasource user add [--gateway] [-g]
+                                   [--datasource] [-d]
+                                   [--email]
+                                   [--identifier]
+                                   [--access-right]
+                                   [--principal-type]
+</code></pre>
+<h3 id="parameters-6">Parameters</h3>
+<ul>
+<li><p><code>--gateway -g &lt;gateway&gt;</code><br>Name or ID of the Power BI gateway</p>
+</li>
+<li><p><code>--datasource -d &lt;datasource&gt;</code><br>Name or ID of the datasource of the Power BI gateway</p>
+</li>
+<li><p><code>--email &lt;email&gt;</code><br>Email address of the user</p>
+</li>
+<li><p><code>--identifier &lt;identifier&gt;</code><br>Identifier of the principal</p>
+</li>
+<li><p><code>--access-right &lt;right&gt;</code><br>Access right. Allowed values: None, Read, ReadOverrideEffectiveIdentity</p>
+</li>
+<li><p><code>--principal-type &lt;type&gt;</code><br>Type of pricipal. Allowed values: App, User, Group, None</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-gateway-datasource-user-delete">pbicli gateway datasource user delete</h2>
+<p>Delete user from the datasource of a Power BI gateway</p>
+<pre><code class="lang-bash">pbicli gateway datasource user delete [--gateway] [-g]
+                                      [--datasource] [-d]
+                                      [--email]
+                                      [--identifier]
+</code></pre>
+<h3 id="parameters-7">Parameters</h3>
+<ul>
+<li><p><code>--gateway -g &lt;gateway&gt;</code><br>Name or ID of the Power BI gateway</p>
+</li>
+<li><p><code>--datasource -d &lt;datasource&gt;</code><br>Name or ID of the datasource of the Power BI gateway</p>
+</li>
+<li><p><code>--email &lt;email&gt;</code><br>Email address of the user</p>
+</li>
+<li><p><code>--identifier &lt;identifier&gt;</code><br>Identifier of the principal</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-gateway-datasource-user-list">pbicli gateway datasource user list</h2>
+<p>Retrieve users for the datasource of a Power BI gateway</p>
+<pre><code class="lang-bash">pbicli gateway datasource user list [--gateway] [-g]
+                                    [--datasource] [-d]
+</code></pre>
+<h3 id="parameters-8">Parameters</h3>
+<ul>
+<li><p><code>--gateway -g &lt;gateway&gt;</code><br>Name or ID of the Power BI gateway</p>
+</li>
+<li><p><code>--datasource -d &lt;datasource&gt;</code><br>Name or ID of the datasource of the Power BI gateway</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-gateway-list">pbicli gateway list</h2>
+<p>List Power BI gateways</p>
+<pre><code class="lang-bash">pbicli gateway list
+</code></pre>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-gateway-show">pbicli gateway show</h2>
+<p>Get the details of a Power BI gateway</p>
+<pre><code class="lang-bash">pbicli gateway show [--gateway] [-g]
+</code></pre>
+<h3 id="parameters-9">Parameters</h3>
+<ul>
+<li><code>--gateway -g &lt;gateway&gt;</code><br>Name or ID of the Power BI gateway</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="feedback">Feedback</h2>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/powerbi-cli/powerbi-cli.github.io/blob/live/content/reference-gateway.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/feedback.js"></script>
+    <script type="text/javascript" src="../styles/global.js"></script>
+  </body>
+</html>

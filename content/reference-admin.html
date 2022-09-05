@@ -1,0 +1,1142 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>pbicli admin </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="pbicli admin ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:globalrel" content="/global.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  
+    <link rel="canonical" href="https://powerbi-cli.github.io/content/reference-admin.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta property="og:image" content="https://powerbi-cli.github.io/logo.png">
+    <meta property="og:site_name" content="Azure BI">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="pbicli admin">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://powerbi-cli.github.io/content/reference-admin.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="pbicli admin">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:url" content="https://powerbi-cli.github.io/content/reference-admin.html">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Jan Pieter Posthuma">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:site" content="@jppp">
+    <meta name="twitter:creator" content="@jppp">
+  
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Azure BI",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://powerbi-cli.github.io/favicon.ico",
+                "width": 60,
+                "height": 60
+            }
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Jan Pieter Posthuma",
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://azurebi.jppp.org/content/images/2018/04/jppp-5-highres.jpg",
+                "width": 3300,
+                "height": 3300
+            },
+            "sameAs": [
+                "https://datascenarios.nl",
+                "https://twitter.com/jppp"
+            ]
+        },
+        "headline": "pbicli admin",
+        "url": "https://powerbi-cli.github.io/content/reference-admin.html",
+        "keywords": "",
+        "description": "",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://powerbi-cli.github.io/"
+        }
+    }
+    </script>
+    <script type='text/javascript'>
+      const documentId = 'acde4004-8731-4463-9ae4-2948ab3ba288';
+      const documentUrl = 'https://powerbi-cli.github.io/content/reference-admin.html';
+      const feedbackDocRepo = 'https://github.com/powerbi-cli/powerbi-cli'
+      const feedbackProductRepo = 'https://github.com/powerbi-cli/powerbi-cli';
+    </script>
+    <script type="text/javascript">
+      !function (T, l, y) { var S = T.location, k = "script", D = "instrumentationKey", C = "ingestionendpoint", I = "disableExceptionTracking", E = "ai.device.", b = "toLowerCase", w = "crossOrigin", N = "POST", e = "appInsightsSDK", t = y.name || "appInsights"; (y.name || T[e]) && (T[e] = t); var n = T[t] || function (d) { var g = !1, f = !1, m = { initialize: !0, queue: [], sv: "5", version: 2, config: d }; function v(e, t) { var n = {}, a = "Browser"; return n[E + "id"] = a[b](), n[E + "type"] = a, n["ai.operation.name"] = S && S.pathname || "_unknown_", n["ai.internal.sdkVersion"] = "javascript:snippet_" + (m.sv || m.version), { time: function () { var e = new Date; function t(e) { var t = "" + e; return 1 === t.length && (t = "0" + t), t } return e.getUTCFullYear() + "-" + t(1 + e.getUTCMonth()) + "-" + t(e.getUTCDate()) + "T" + t(e.getUTCHours()) + ":" + t(e.getUTCMinutes()) + ":" + t(e.getUTCSeconds()) + "." + ((e.getUTCMilliseconds() / 1e3).toFixed(3) + "").slice(2, 5) + "Z" }(), iKey: e, name: "Microsoft.ApplicationInsights." + e.replace(/-/g, "") + "." + t, sampleRate: 100, tags: n, data: { baseData: { ver: 2 } } } } var h = d.url || y.src; if (h) { function a(e) { var t, n, a, i, r, o, s, c, u, p, l; g = !0, m.queue = [], f || (f = !0, t = h, s = function () { var e = {}, t = d.connectionString; if (t) for (var n = t.split(";"), a = 0; a < n.length; a++) { var i = n[a].split("="); 2 === i.length && (e[i[0][b]()] = i[1]) } if (!e[C]) { var r = e.endpointsuffix, o = r ? e.location : null; e[C] = "https://" + (o ? o + "." : "") + "dc." + (r || "services.visualstudio.com") } return e }(), c = s[D] || d[D] || "", u = s[C], p = u ? u + "/v2/track" : d.endpointUrl, (l = []).push((n = "SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)", a = t, i = p, (o = (r = v(c, "Exception")).data).baseType = "ExceptionData", o.baseData.exceptions = [{ typeName: "SDKLoadFailed", message: n.replace(/\./g, "-"), hasFullStack: !1, stack: n + "\nSnippet failed to load [" + a + "] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: " + (S && S.pathname || "_unknown_") + "\nEndpoint: " + i, parsedStack: [] }], r)), l.push(function (e, t, n, a) { var i = v(c, "Message"), r = i.data; r.baseType = "MessageData"; var o = r.baseData; return o.message = 'AI (Internal): 99 message:"' + ("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) (" + n + ")").replace(/\"/g, "") + '"', o.properties = { endpoint: a }, i }(0, 0, t, p)), function (e, t) { if (JSON) { var n = T.fetch; if (n && !y.useXhr) n(t, { method: N, body: JSON.stringify(e), mode: "cors" }); else if (XMLHttpRequest) { var a = new XMLHttpRequest; a.open(N, t), a.setRequestHeader("Content-type", "application/json"), a.send(JSON.stringify(e)) } } }(l, p)) } function i(e, t) { f || setTimeout(function () { !t && m.core || a() }, 500) } var e = function () { var n = l.createElement(k); n.src = h; var e = y[w]; return !e && "" !== e || "undefined" == n[w] || (n[w] = e), n.onload = i, n.onerror = a, n.onreadystatechange = function (e, t) { "loaded" !== n.readyState && "complete" !== n.readyState || i(0, t) }, n }(); y.ld < 0 ? l.getElementsByTagName("head")[0].appendChild(e) : setTimeout(function () { l.getElementsByTagName(k)[0].parentNode.appendChild(e) }, y.ld || 0) } try { m.cookie = l.cookie } catch (p) { } function t(e) { for (; e.length;)!function (t) { m[t] = function () { var e = arguments; g || m.queue.push(function () { m[t].apply(m, e) }) } }(e.pop()) } var n = "track", r = "TrackPage", o = "TrackEvent"; t([n + "Event", n + "PageView", n + "Exception", n + "Trace", n + "DependencyData", n + "Metric", n + "PageViewPerformance", "start" + r, "stop" + r, "start" + o, "stop" + o, "addTelemetryInitializer", "setAuthenticatedUserContext", "clearAuthenticatedUserContext", "flush"]), m.SeverityLevel = { Verbose: 0, Information: 1, Warning: 2, Error: 3, Critical: 4 }; var s = (d.extensionConfig || {}).ApplicationInsightsAnalytics || {}; if (!0 !== d[I] && !0 !== s[I]) { var c = "onerror"; t(["_" + c]); var u = T[c]; T[c] = function (e, t, n, a, i) { var r = u && u(e, t, n, a, i); return !0 !== r && m["_" + c]({ message: e, url: t, lineNumber: n, columnNumber: a, error: i }), r }, d.autoExceptionInstrumented = !0 } return m }(y.cfg); function a() { y.onInit && y.onInit(n) } (T[t] = n).queue && 0 === n.queue.length ? (n.queue.push(a), n.trackPageView({})) : a() }(window, document, {
+          src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js", // The SDK URL Source
+          crossOrigin: "anonymous", // When supplied this will add the provided value as the cross origin attribute on the script tag
+          cfg: { // Application Insights Configuration
+              instrumentationKey: "08dfbb40-a119-40a1-bcc9-76225ede8c04"
+          }
+      });    
+    </script>
+    <meta name="google-site-verification" content="wVVhU305Yl9X20TELl13YXn37o9vu9cDLDskaoFH9pU">
+    <meta name="msvalidate.01" content="7ABDCD6E8CD2402845D5FDF35E6ADCC6">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="reference/admin">
+<h1 id="pbicli-admin">pbicli admin</h1>
+
+<h2 id="commands">Commands</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#pbicli-admin-activity">pbicli admin activity</a></td>
+<td>Returns a list of audit activity events for a tenant</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-app-list">pbicli admin app list</a></td>
+<td>Returns a list of apps in the organization</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-app-list-user">pbicli admin app list-user</a></td>
+<td>Returns a list of users that have access to the specified app</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-capacity-assign">pbicli admin capacity assign</a></td>
+<td>Assigns the provided workspaces to the specified capacity</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-capacity-list">pbicli admin capacity list</a></td>
+<td>Returns a list of capacities for the organization</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-capacity-list-user">pbicli admin capacity list-user</a></td>
+<td>Returns a list of users that have access to the specified dashboard</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-capacity-unassign">pbicli admin capacity unassign</a></td>
+<td>Unassigns the provided workspaces from capacity</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-capacity-update">pbicli admin capacity update</a></td>
+<td>Changes the specific capacity information.</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-dashboard-list">pbicli admin dashboard list</a></td>
+<td>Returns a list of dashboards for the organization</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-dashboard-list-user">pbicli admin dashboard list-user</a></td>
+<td>Returns a list of users that have access to the specified dashboard</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-dashboard-subscription">pbicli admin dashboard subscription</a></td>
+<td>Returns a list of subscriptions within the specified dashboard</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-dashboard-tile">pbicli admin dashboard tile</a></td>
+<td>Returns a list of tiles within the specified dashboard</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-dataflow-datasource">pbicli admin dataflow datasource</a></td>
+<td>Returns a list of datasources for the specified dataflow</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-dataflow-export">pbicli admin dataflow export</a></td>
+<td>Exports the specified dataflow definition</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-dataflow-list">pbicli admin dataflow list</a></td>
+<td>Returns a list of dataflows for the organization</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-dataflow-list-user">pbicli admin dataflow list-user</a></td>
+<td>Returns a list of users that have access to the specified dataflow</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-dataflow-upstream">pbicli admin dataflow upstream</a></td>
+<td>Returns a list of upstream dataflows for the specified dataflow in a Power BI workspace</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-dataset-dataflow">pbicli admin dataset dataflow</a></td>
+<td>Returns a list of upstream dataflows in a Power BI workspace</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-dataset-datasource">pbicli admin dataset datasource</a></td>
+<td>Returns a list of datasources for the specified dataset</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-dataset-list">pbicli admin dataset list</a></td>
+<td>Returns a list of datasets for the organization</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-dataset-list-user">pbicli admin dataset list-user</a></td>
+<td>Returns a list of users that have access to the specified dataset</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-import">pbicli admin import</a></td>
+<td>Returns a list of imports for the organization</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-key-add">pbicli admin key add</a></td>
+<td>Adds an encryption key for Power BI workspaces assigned to a capacity</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-key-list">pbicli admin key list</a></td>
+<td>Returns the encryption keys for the tenant</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-key-rotate">pbicli admin key rotate</a></td>
+<td>Adds an encryption key for Power BI workspaces assigned to a capacity</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-label-remove">pbicli admin label remove</a></td>
+<td>Remove sensitivity labels from artifacts</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-label-set">pbicli admin label set</a></td>
+<td>Set sensitivity labels from artifacts</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-pipeline-delete-user">pbicli admin pipeline delete-user</a></td>
+<td>Removes user permissions to the specified workspace</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-pipeline-list">pbicli admin pipeline list</a></td>
+<td>Returns a list of workspaces for the organization</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-pipeline-list-user">pbicli admin pipeline list-user</a></td>
+<td>Returns a list of users that have access to the specified workspace</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-pipeline-update-user">pbicli admin pipeline update-user</a></td>
+<td>Updates the specified workspace properties</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-refresh">pbicli admin refresh</a></td>
+<td>Returns a list of imports for the organization</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-report-list">pbicli admin report list</a></td>
+<td>Returns a list of reports for the organization</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-report-list-user">pbicli admin report list-user</a></td>
+<td>Returns a list of users that have access to the specified dataset</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-report-subscription">pbicli admin report subscription</a></td>
+<td>Returns a list of users that have access to the specified dataset</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-shared">pbicli admin shared</a></td>
+<td>Returns a list of Power BI items that are shared</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-user-artifact">pbicli admin user artifact</a></td>
+<td>Returns a list of apps in the organization</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-user-subscription">pbicli admin user subscription</a></td>
+<td>Returns a list of subscriptions that the given user has subscribed to</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-workspace-add-user">pbicli admin workspace add-user</a></td>
+<td>Grants user permissions to the specified workspace</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-workspace-delete-user">pbicli admin workspace delete-user</a></td>
+<td>Removes user permissions to the specified workspace</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-workspace-list">pbicli admin workspace list</a></td>
+<td>Returns a list of workspaces for the organization</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-workspace-list-user">pbicli admin workspace list-user</a></td>
+<td>Returns a list of users that have access to the specified workspace</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-workspace-modified">pbicli admin workspace modified</a></td>
+<td>Gets a list of workspace IDs in the organization</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-workspace-restore">pbicli admin workspace restore</a></td>
+<td>Restores a deleted workspace</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-workspace-result">pbicli admin workspace result</a></td>
+<td>Gets the scan result for the specified scan</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-workspace-scan">pbicli admin workspace scan</a></td>
+<td>Initiates a scan to receive metadata for the requested list of workspaces</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-workspace-status">pbicli admin workspace status</a></td>
+<td>Gets the scan status for the specified scan</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-workspace-unused">pbicli admin workspace unused</a></td>
+<td>Returns a list of artifacts that have not been used within 30 days for the specified workspace</td>
+</tr>
+<tr>
+<td><a href="#pbicli-admin-workspace-update-user">pbicli admin workspace update-user</a></td>
+<td>Updates the specified workspace properties</td>
+</tr>
+</tbody>
+</table>
+<h2 id="pbicli-admin-activity">pbicli admin activity</h2>
+<p>Returns a list of audit activity events for a tenant</p>
+<pre><code class="lang-bash">pbicli admin activity [--filter]
+                      [--continuation-token]
+                      [--date]
+                      [--start-time]
+                      [--end-time]
+</code></pre>
+<h3 id="parameters">Parameters</h3>
+<ul>
+<li><p><code>--filter &lt;filter&gt;</code><br>Filters the results based on a boolean condition, using 'Activity', 'UserId', or both properties. Supports only 'eq' and 'and' operators</p>
+</li>
+<li><p><code>--continuation-token &lt;token&gt;</code><br>Token required to get the next chunk of the result set</p>
+</li>
+<li><p><code>--date &lt;date&gt;</code><br>Date for audit event results. Used with (optional) time values</p>
+</li>
+<li><p><code>--start-time &lt;time&gt;</code><br>Start UTC time of the window for audit event results. If not provided '00:00:00' will be used</p>
+</li>
+<li><p><code>--end-time &lt;time&gt;</code><br>End UTC time of the window for audit event results. If not provided '23:59:59' will be used</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-app-list">pbicli admin app list</h2>
+<p>Returns a list of apps in the organization</p>
+<pre><code class="lang-bash">pbicli admin app list [--top]
+</code></pre>
+<h3 id="parameters-1">Parameters</h3>
+<ul>
+<li><code>--top &lt;number&gt;</code><br>Returns only the first <number> results. Default: 5000</number></li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-app-list-user">pbicli admin app list-user</h2>
+<p>Returns a list of users that have access to the specified app</p>
+<pre><code class="lang-bash">pbicli admin app list-user [--app] [-a]
+</code></pre>
+<h3 id="parameters-2">Parameters</h3>
+<ul>
+<li><code>--app -a &lt;name&gt;</code><br>Name or ID of the Power BI app</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-capacity-assign">pbicli admin capacity assign</h2>
+<p>Assigns the provided workspaces to the specified capacity</p>
+<pre><code class="lang-bash">pbicli admin capacity assign [--capacity] [-c]
+                             [--workspace] [-w]
+</code></pre>
+<h3 id="parameters-3">Parameters</h3>
+<ul>
+<li><p><code>--capacity -c &lt;name&gt;</code><br>Name or ID of the Power BI capacity</p>
+</li>
+<li><p><code>--workspace -w &lt;name&gt;</code><br>Name(s) or ID(s) of the Power BI workspace. Use comma seperated if multiple</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-capacity-list">pbicli admin capacity list</h2>
+<p>Returns a list of capacities for the organization</p>
+<pre><code class="lang-bash">pbicli admin capacity list [--expand]
+</code></pre>
+<h3 id="parameters-4">Parameters</h3>
+<ul>
+<li><code>--expand &lt;entity&gt;</code><br>Expands related entities inline. Allowed values: tenantKey</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-capacity-list-user">pbicli admin capacity list-user</h2>
+<p>Returns a list of users that have access to the specified dashboard</p>
+<pre><code class="lang-bash">pbicli admin capacity list-user [--dashboard] [-d]
+</code></pre>
+<h3 id="parameters-5">Parameters</h3>
+<ul>
+<li><code>--dashboard -d &lt;name&gt;</code><br>Name or ID of the Power BI dashboard</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-capacity-unassign">pbicli admin capacity unassign</h2>
+<p>Unassigns the provided workspaces from capacity</p>
+<pre><code class="lang-bash">pbicli admin capacity unassign [--workspace] [-w]
+</code></pre>
+<h3 id="parameters-6">Parameters</h3>
+<ul>
+<li><code>--workspace -w &lt;name&gt;</code><br>Name(s) or ID(s) of the Power BI workspace. Use comma seperated if multiple</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-capacity-update">pbicli admin capacity update</h2>
+<p>Changes the specific capacity information.</p>
+<pre><code class="lang-bash">pbicli admin capacity update [--capacity] [-c]
+                             [--tenant-key]
+</code></pre>
+<h3 id="parameters-7">Parameters</h3>
+<ul>
+<li><p><code>--capacity -c &lt;name&gt;</code><br>Name or ID of the Power BI capacity</p>
+</li>
+<li><p><code>--tenant-key &lt;key&gt;</code><br>The id of the encryption key</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-dashboard-list">pbicli admin dashboard list</h2>
+<p>Returns a list of dashboards for the organization</p>
+<pre><code class="lang-bash">pbicli admin dashboard list [--workspace] [-w]
+                            [--expand]
+                            [--filter]
+                            [--top]
+                            [--skip]
+</code></pre>
+<h3 id="parameters-8">Parameters</h3>
+<ul>
+<li><p><code>--workspace -w &lt;name&gt;</code><br>Name or ID of the Power BI workspace</p>
+</li>
+<li><p><code>--expand &lt;entity&gt;</code><br>Expands related entities inline, receives a comma-separated list of data types. Allowed values: tiles. Not used if --workspace is provided</p>
+</li>
+<li><p><code>--filter &lt;filter&gt;</code><br>Filters the results based on a boolean condition</p>
+</li>
+<li><p><code>--top &lt;number&gt;</code><br>Returns only the first <number> results. Default: 5000<p>
+</number></li>
+<li><p><code>--skip &lt;number&gt;</code><br>Skips the first <number> results<p>
+</number></li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-dashboard-list-user">pbicli admin dashboard list-user</h2>
+<p>Returns a list of users that have access to the specified dashboard</p>
+<pre><code class="lang-bash">pbicli admin dashboard list-user [--dashboard] [-d]
+</code></pre>
+<h3 id="parameters-9">Parameters</h3>
+<ul>
+<li><code>--dashboard -d &lt;name&gt;</code><br>Name or ID of the Power BI dashboard</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-dashboard-subscription">pbicli admin dashboard subscription</h2>
+<p>Returns a list of subscriptions within the specified dashboard</p>
+<pre><code class="lang-bash">pbicli admin dashboard subscription [--dashboard] [-d]
+</code></pre>
+<h3 id="parameters-10">Parameters</h3>
+<ul>
+<li><code>--dashboard -d &lt;name&gt;</code><br>Name or ID of the Power BI dashboard</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-dashboard-tile">pbicli admin dashboard tile</h2>
+<p>Returns a list of tiles within the specified dashboard</p>
+<pre><code class="lang-bash">pbicli admin dashboard tile [--dashboard] [-d]
+</code></pre>
+<h3 id="parameters-11">Parameters</h3>
+<ul>
+<li><code>--dashboard -d &lt;name&gt;</code><br>Name or ID of the Power BI dashboard</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-dataflow-datasource">pbicli admin dataflow datasource</h2>
+<p>Returns a list of datasources for the specified dataflow</p>
+<pre><code class="lang-bash">pbicli admin dataflow datasource [--dataflow] [-d]
+</code></pre>
+<h3 id="parameters-12">Parameters</h3>
+<ul>
+<li><code>--dataflow -d &lt;name&gt;</code><br>Name or ID of the Power BI dataflow</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-dataflow-export">pbicli admin dataflow export</h2>
+<p>Exports the specified dataflow definition</p>
+<pre><code class="lang-bash">pbicli admin dataflow export [--dataflow] [-d]
+</code></pre>
+<h3 id="parameters-13">Parameters</h3>
+<ul>
+<li><code>--dataflow -d &lt;name&gt;</code><br>Name or ID of the Power BI dataflow</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-dataflow-list">pbicli admin dataflow list</h2>
+<p>Returns a list of dataflows for the organization</p>
+<pre><code class="lang-bash">pbicli admin dataflow list [--workspace] [-w]
+                           [--filter]
+                           [--top]
+                           [--skip]
+</code></pre>
+<h3 id="parameters-14">Parameters</h3>
+<ul>
+<li><p><code>--workspace -w &lt;name&gt;</code><br>Name or ID of the Power BI workspace</p>
+</li>
+<li><p><code>--filter &lt;filter&gt;</code><br>Filters the results based on a boolean condition</p>
+</li>
+<li><p><code>--top &lt;number&gt;</code><br>Returns only the first <number> results. Default: 5000<p>
+</number></li>
+<li><p><code>--skip &lt;number&gt;</code><br>Skips the first <number> results<p>
+</number></li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-dataflow-list-user">pbicli admin dataflow list-user</h2>
+<p>Returns a list of users that have access to the specified dataflow</p>
+<pre><code class="lang-bash">pbicli admin dataflow list-user [--dataflow] [-d]
+</code></pre>
+<h3 id="parameters-15">Parameters</h3>
+<ul>
+<li><code>--dataflow -d &lt;name&gt;</code><br>Name or ID of the Power BI dataflow</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-dataflow-upstream">pbicli admin dataflow upstream</h2>
+<p>Returns a list of upstream dataflows for the specified dataflow in a Power BI workspace</p>
+<pre><code class="lang-bash">pbicli admin dataflow upstream [--workspace] [-w]
+                               [--dataflow] [-d]
+</code></pre>
+<h3 id="parameters-16">Parameters</h3>
+<ul>
+<li><p><code>--workspace -w &lt;name&gt;</code><br>Name or ID of the Power BI workspace</p>
+</li>
+<li><p><code>--dataflow -d &lt;name&gt;</code><br>Name or ID of the Power BI dataflow</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-dataset-dataflow">pbicli admin dataset dataflow</h2>
+<p>Returns a list of upstream dataflows in a Power BI workspace</p>
+<pre><code class="lang-bash">pbicli admin dataset dataflow [--workspace] [-w]
+</code></pre>
+<h3 id="parameters-17">Parameters</h3>
+<ul>
+<li><code>--workspace -w &lt;name&gt;</code><br>Name or ID of the Power BI workspace</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-dataset-datasource">pbicli admin dataset datasource</h2>
+<p>Returns a list of datasources for the specified dataset</p>
+<pre><code class="lang-bash">pbicli admin dataset datasource [--dataset] [-d]
+</code></pre>
+<h3 id="parameters-18">Parameters</h3>
+<ul>
+<li><code>--dataset -d &lt;name&gt;</code><br>Name or ID of the Power BI dataset</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-dataset-list">pbicli admin dataset list</h2>
+<p>Returns a list of datasets for the organization</p>
+<pre><code class="lang-bash">pbicli admin dataset list [--workspace] [-w]
+                          [--filter]
+                          [--top]
+                          [--skip]
+</code></pre>
+<h3 id="parameters-19">Parameters</h3>
+<ul>
+<li><p><code>--workspace -w &lt;name&gt;</code><br>Name or ID of the Power BI workspace</p>
+</li>
+<li><p><code>--filter &lt;filter&gt;</code><br>Filters the results based on a boolean condition</p>
+</li>
+<li><p><code>--top &lt;number&gt;</code><br>Returns only the first <number> results. Default: 5000<p>
+</number></li>
+<li><p><code>--skip &lt;number&gt;</code><br>Skips the first <number> results<p>
+</number></li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-dataset-list-user">pbicli admin dataset list-user</h2>
+<p>Returns a list of users that have access to the specified dataset</p>
+<pre><code class="lang-bash">pbicli admin dataset list-user [--dataset] [-d]
+</code></pre>
+<h3 id="parameters-20">Parameters</h3>
+<ul>
+<li><code>--dataset -d &lt;name&gt;</code><br>Name or ID of the Power BI dataset</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-import">pbicli admin import</h2>
+<p>Returns a list of imports for the organization</p>
+<pre><code class="lang-bash">pbicli admin import [--expand]
+                    [--filter]
+                    [--top]
+                    [--skip]
+</code></pre>
+<h3 id="parameters-21">Parameters</h3>
+<ul>
+<li><p><code>--expand &lt;entity&gt;</code><br>Expands related entities inline, receives a comma-separated list of data types. Allowed values: datasets, reports</p>
+</li>
+<li><p><code>--filter &lt;filter&gt;</code><br>Filters the results based on a boolean condition</p>
+</li>
+<li><p><code>--top &lt;number&gt;</code><br>Returns only the first <number> results. Default: 5000<p>
+</number></li>
+<li><p><code>--skip &lt;number&gt;</code><br>Skips the first <number> results<p>
+</number></li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-key-add">pbicli admin key add</h2>
+<p>Adds an encryption key for Power BI workspaces assigned to a capacity</p>
+<pre><code class="lang-bash">pbicli admin key add [--name]
+                     [--keyVaultURI]
+                     [--active]
+                     [--default]
+</code></pre>
+<h3 id="parameters-22">Parameters</h3>
+<ul>
+<li><p><code>--name &lt;name&gt;</code><br>The name of the encryption key</p>
+</li>
+<li><p><code>--keyVaultURI &lt;uri&gt;</code><br>Uri to the version of the Azure Key Vault key to be used</p>
+</li>
+<li><p><code>--active</code><br>Indicates to activate any inactivated capacities to use this key for its encryption</p>
+</li>
+<li><p><code>--default</code><br>Indicates that this key is set as default for the entire tenant. Any new capacity creation will inherit this key upon creation</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-key-list">pbicli admin key list</h2>
+<p>Returns the encryption keys for the tenant</p>
+<pre><code class="lang-bash">pbicli admin key list
+</code></pre>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-key-rotate">pbicli admin key rotate</h2>
+<p>Adds an encryption key for Power BI workspaces assigned to a capacity</p>
+<pre><code class="lang-bash">pbicli admin key rotate [--key]
+                        [--keyVaultURI]
+</code></pre>
+<h3 id="parameters-23">Parameters</h3>
+<ul>
+<li><p><code>--key &lt;id&gt;</code><br>ID of the encryption key</p>
+</li>
+<li><p><code>--keyVaultURI &lt;uri&gt;</code><br>Uri to the version of the Azure Key Vault key to be used</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-label-remove">pbicli admin label remove</h2>
+<p>Remove sensitivity labels from artifacts</p>
+<pre><code class="lang-bash">pbicli admin label remove [--label-file]
+</code></pre>
+<h3 id="parameters-24">Parameters</h3>
+<ul>
+<li><code>--label-file &lt;file&gt;</code><br>File with the artifact IDs to remove the sensitivity labels in JSON format</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-label-set">pbicli admin label set</h2>
+<p>Set sensitivity labels from artifacts</p>
+<pre><code class="lang-bash">pbicli admin label set [--label-file]
+</code></pre>
+<h3 id="parameters-25">Parameters</h3>
+<ul>
+<li><code>--label-file &lt;file&gt;</code><br>File with the artifact IDs to add the sensitivity labels in JSON format</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-pipeline-delete-user">pbicli admin pipeline delete-user</h2>
+<p>Removes user permissions to the specified workspace</p>
+<pre><code class="lang-bash">pbicli admin pipeline delete-user [--pipeline] [-p]
+                                  [--identifier]
+</code></pre>
+<h3 id="parameters-26">Parameters</h3>
+<ul>
+<li><p><code>--pipeline -p &lt;name&gt;</code><br>Name or ID of the Power BI pipeline</p>
+</li>
+<li><p><code>--identifier &lt;identifier&gt;</code><br>Identifier of the user or principal</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-pipeline-list">pbicli admin pipeline list</h2>
+<p>Returns a list of workspaces for the organization</p>
+<pre><code class="lang-bash">pbicli admin pipeline list [--expand]
+                           [--filter]
+                           [--top]
+                           [--skip]
+</code></pre>
+<h3 id="parameters-27">Parameters</h3>
+<ul>
+<li><p><code>--expand &lt;entity&gt;</code><br>Expands related entities inline, receives a comma-separated list of data types. Allowed values: users, stages</p>
+</li>
+<li><p><code>--filter &lt;filter&gt;</code><br>Filters the results based on a boolean condition</p>
+</li>
+<li><p><code>--top &lt;number&gt;</code><br>Returns only the first <number> results. Default: 5000<p>
+</number></li>
+<li><p><code>--skip &lt;number&gt;</code><br>Skips the first <number> results<p>
+</number></li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-pipeline-list-user">pbicli admin pipeline list-user</h2>
+<p>Returns a list of users that have access to the specified workspace</p>
+<pre><code class="lang-bash">pbicli admin pipeline list-user [--pipeline] [-p]
+</code></pre>
+<h3 id="parameters-28">Parameters</h3>
+<ul>
+<li><code>--pipeline -p &lt;name&gt;</code><br>Name or ID of the Power BI pipeline</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-pipeline-update-user">pbicli admin pipeline update-user</h2>
+<p>Updates the specified workspace properties</p>
+<pre><code class="lang-bash">pbicli admin pipeline update-user [--pipeline] [-p]
+                                  [--identifier]
+                                  [--access-right]
+                                  [--principal-type]
+</code></pre>
+<h3 id="parameters-29">Parameters</h3>
+<ul>
+<li><p><code>--pipeline -p &lt;name&gt;</code><br>Name or ID of the Power BI pipeline</p>
+</li>
+<li><p><code>--identifier &lt;identifier&gt;</code><br>Identifier of the user or principal</p>
+</li>
+<li><p><code>--access-right &lt;right&gt;</code><br>Access right. Allowed values: Admin</p>
+</li>
+<li><p><code>--principal-type &lt;type&gt;</code><br>Type of pricipal. Allowed values: App, User, Group, None</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-refresh">pbicli admin refresh</h2>
+<p>Returns a list of imports for the organization</p>
+<pre><code class="lang-bash">pbicli admin refresh [--capacity] [-c]
+                     [--refreshable-id]
+                     [--expand]
+                     [--filter]
+                     [--top]
+                     [--skip]
+</code></pre>
+<h3 id="parameters-30">Parameters</h3>
+<ul>
+<li><p><code>--capacity -c &lt;name&gt;</code><br>Name or ID of the Power BI capacity</p>
+</li>
+<li><p><code>--refreshable-id &lt;refreshId&gt;</code><br>The refreshable id</p>
+</li>
+<li><p><code>--expand &lt;entity&gt;</code><br>Expands related entities inline, receives a comma-separated list of data types. Allowed values: capacity, workspace</p>
+</li>
+<li><p><code>--filter &lt;filter&gt;</code><br>Filters the results based on a boolean condition</p>
+</li>
+<li><p><code>--top &lt;number&gt;</code><br>Returns only the first <number> results. Default: 5000<p>
+</number></li>
+<li><p><code>--skip &lt;number&gt;</code><br>Skips the first <number> results<p>
+</number></li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-report-list">pbicli admin report list</h2>
+<p>Returns a list of reports for the organization</p>
+<pre><code class="lang-bash">pbicli admin report list [--workspace] [-w]
+                         [--filter]
+                         [--top]
+                         [--skip]
+</code></pre>
+<h3 id="parameters-31">Parameters</h3>
+<ul>
+<li><p><code>--workspace -w &lt;name&gt;</code><br>Name or ID of the Power BI workspace</p>
+</li>
+<li><p><code>--filter &lt;filter&gt;</code><br>Filters the results based on a boolean condition</p>
+</li>
+<li><p><code>--top &lt;number&gt;</code><br>Returns only the first <number> results. Default: 5000<p>
+</number></li>
+<li><p><code>--skip &lt;number&gt;</code><br>Skips the first <number> results<p>
+</number></li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-report-list-user">pbicli admin report list-user</h2>
+<p>Returns a list of users that have access to the specified dataset</p>
+<pre><code class="lang-bash">pbicli admin report list-user [--report] [-r]
+</code></pre>
+<h3 id="parameters-32">Parameters</h3>
+<ul>
+<li><code>--report -r &lt;report&gt;</code><br>Name or ID of the Power BI report</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-report-subscription">pbicli admin report subscription</h2>
+<p>Returns a list of users that have access to the specified dataset</p>
+<pre><code class="lang-bash">pbicli admin report subscription [--report] [-r]
+</code></pre>
+<h3 id="parameters-33">Parameters</h3>
+<ul>
+<li><code>--report -r &lt;report&gt;</code><br>Name or ID of the Power BI report</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-shared">pbicli admin shared</h2>
+<p>Returns a list of Power BI items that are shared</p>
+<pre><code class="lang-bash">pbicli admin shared [--public]
+                    [--continuation-token]
+</code></pre>
+<h3 id="parameters-34">Parameters</h3>
+<ul>
+<li><p><code>--public</code><br>Returns only items that are shared via 'published to the web'</p>
+</li>
+<li><p><code>--continuation-token &lt;token&gt;</code><br>Token required to get the next chunk of the result set</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-user-artifact">pbicli admin user artifact</h2>
+<p>Returns a list of apps in the organization</p>
+<pre><code class="lang-bash">pbicli admin user artifact [--user]
+                           [--continuation-token]
+</code></pre>
+<h3 id="parameters-35">Parameters</h3>
+<ul>
+<li><p><code>--user &lt;UPN&gt;</code><br>The user principal name (UPN) or Graph ID of the user</p>
+</li>
+<li><p><code>--continuation-token &lt;token&gt;</code><br>Token to get the next chunk of the result set</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-user-subscription">pbicli admin user subscription</h2>
+<p>Returns a list of subscriptions that the given user has subscribed to</p>
+<pre><code class="lang-bash">pbicli admin user subscription [--user]
+                               [--continuation-token]
+</code></pre>
+<h3 id="parameters-36">Parameters</h3>
+<ul>
+<li><p><code>--user &lt;UPN&gt;</code><br>The user principal name (UPN) or Graph ID of the user</p>
+</li>
+<li><p><code>--continuation-token &lt;token&gt;</code><br>Token to get the next chunk of the result set</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-workspace-add-user">pbicli admin workspace add-user</h2>
+<p>Grants user permissions to the specified workspace</p>
+<pre><code class="lang-bash">pbicli admin workspace add-user [--workspace] [-w]
+                                [--email]
+                                [--identifier]
+                                [--access-right]
+                                [--principal-type]
+</code></pre>
+<h3 id="parameters-37">Parameters</h3>
+<ul>
+<li><p><code>--workspace -w &lt;name&gt;</code><br>Name or ID of the Power BI workspace</p>
+</li>
+<li><p><code>--email &lt;email&gt;</code><br>Email address of the user</p>
+</li>
+<li><p><code>--identifier &lt;identifier&gt;</code><br>Identifier of the principal</p>
+</li>
+<li><p><code>--access-right &lt;right&gt;</code><br>Access right. Allowed values: Admin, Contributor, Member, Viewer</p>
+</li>
+<li><p><code>--principal-type &lt;type&gt;</code><br>Type of pricipal. Allowed values: App, User, Group, None</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-workspace-delete-user">pbicli admin workspace delete-user</h2>
+<p>Removes user permissions to the specified workspace</p>
+<pre><code class="lang-bash">pbicli admin workspace delete-user [--workspace] [-w]
+                                   [--user]
+</code></pre>
+<h3 id="parameters-38">Parameters</h3>
+<ul>
+<li><p><code>--workspace -w &lt;name&gt;</code><br>Name or ID of the Power BI workspace</p>
+</li>
+<li><p><code>--user &lt;UPN&gt;</code><br>The user principal name (UPN) of the user to remove</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-workspace-list">pbicli admin workspace list</h2>
+<p>Returns a list of workspaces for the organization</p>
+<pre><code class="lang-bash">pbicli admin workspace list [--expand]
+                            [--filter]
+                            [--top]
+                            [--skip]
+</code></pre>
+<h3 id="parameters-39">Parameters</h3>
+<ul>
+<li><p><code>--expand &lt;entity&gt;</code><br>Expands related entities inline, receives a comma-separated list of data types. Allowed values: dashboards, datasets, dataflows, reports, users, workbooks</p>
+</li>
+<li><p><code>--filter &lt;filter&gt;</code><br>Filters the results based on a boolean condition</p>
+</li>
+<li><p><code>--top &lt;number&gt;</code><br>Returns only the first <number> results. Default: 5000<p>
+</number></li>
+<li><p><code>--skip &lt;number&gt;</code><br>Skips the first <number> results<p>
+</number></li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-workspace-list-user">pbicli admin workspace list-user</h2>
+<p>Returns a list of users that have access to the specified workspace</p>
+<pre><code class="lang-bash">pbicli admin workspace list-user [--workspace] [-w]
+</code></pre>
+<h3 id="parameters-40">Parameters</h3>
+<ul>
+<li><code>--workspace -w &lt;name&gt;</code><br>Name or ID of the Power BI workspace</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-workspace-modified">pbicli admin workspace modified</h2>
+<p>Gets a list of workspace IDs in the organization</p>
+<pre><code class="lang-bash">pbicli admin workspace modified [--modified]
+                                [--personal-workspaces]
+</code></pre>
+<h3 id="parameters-41">Parameters</h3>
+<ul>
+<li><p><code>--modified &lt;datetime&gt;</code><br>Last modified date (must be in ISO 8601 compliant UTC format)</p>
+</li>
+<li><p><code>--personal-workspaces</code><br>Include personal workspaces</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-workspace-restore">pbicli admin workspace restore</h2>
+<p>Restores a deleted workspace</p>
+<pre><code class="lang-bash">pbicli admin workspace restore [--workspace] [-w]
+                               [--owner]
+                               [--name]
+</code></pre>
+<h3 id="parameters-42">Parameters</h3>
+<ul>
+<li><p><code>--workspace -w &lt;name&gt;</code><br>Name or ID of the Power BI workspace</p>
+</li>
+<li><p><code>--owner &lt;email&gt;</code><br>The email address of the owner of the group to be restored</p>
+</li>
+<li><p><code>--name [name]</code><br>The optional new name of the group to be restored</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-workspace-result">pbicli admin workspace result</h2>
+<p>Gets the scan result for the specified scan</p>
+<pre><code class="lang-bash">pbicli admin workspace result [--scan-id]
+</code></pre>
+<h3 id="parameters-43">Parameters</h3>
+<ul>
+<li><code>--scan-id &lt;scanId&gt;</code><br>The scan ID for the triggered scan</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-workspace-scan">pbicli admin workspace scan</h2>
+<p>Initiates a scan to receive metadata for the requested list of workspaces</p>
+<pre><code class="lang-bash">pbicli admin workspace scan [--dataset-expressions]
+                            [--dataset-schema]
+                            [--datasource-details]
+                            [--artifact-users	]
+                            [--lineage]
+                            [--workspace-file]
+</code></pre>
+<h3 id="parameters-44">Parameters</h3>
+<ul>
+<li><p><code>--dataset-expressions</code><br>Whether to return dataset expressions (Dax query and Mashup)</p>
+</li>
+<li><p><code>--dataset-schema</code><br>Whether to return dataset schema (Tables, Columns and Measures)</p>
+</li>
+<li><p><code>--datasource-details</code><br>Whether to return datasource details</p>
+</li>
+<li><p><code>--artifact-users </code><br>Whether to return artifact user details (Permission level)</p>
+</li>
+<li><p><code>--lineage</code><br>Whether to return lineage info (upstream dataflows, tiles, datasource IDs)</p>
+</li>
+<li><p><code>--workspace-file &lt;file&gt;</code><br>File with the workspace IDs to add to the scan in JSON format</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-workspace-status">pbicli admin workspace status</h2>
+<p>Gets the scan status for the specified scan</p>
+<pre><code class="lang-bash">pbicli admin workspace status [--scan-id]
+</code></pre>
+<h3 id="parameters-45">Parameters</h3>
+<ul>
+<li><code>--scan-id &lt;scanId&gt;</code><br>The scan ID for the triggered scan</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-workspace-unused">pbicli admin workspace unused</h2>
+<p>Returns a list of artifacts that have not been used within 30 days for the specified workspace</p>
+<pre><code class="lang-bash">pbicli admin workspace unused [--workspace] [-w]
+                              [--continuation-token]
+</code></pre>
+<h3 id="parameters-46">Parameters</h3>
+<ul>
+<li><p><code>--workspace -w &lt;name&gt;</code><br>Name or ID of the Power BI workspace</p>
+</li>
+<li><p><code>--continuation-token &lt;token&gt;</code><br>Token to get the next chunk of the result set</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="pbicli-admin-workspace-update-user">pbicli admin workspace update-user</h2>
+<p>Updates the specified workspace properties</p>
+<pre><code class="lang-bash">pbicli admin workspace update-user [--workspace] [-w]
+                                   [--update-details]
+                                   [--update-details-file]
+</code></pre>
+<h3 id="parameters-47">Parameters</h3>
+<ul>
+<li><p><code>--workspace -w &lt;name&gt;</code><br>Name or ID of the Power BI workspace</p>
+</li>
+<li><p><code>--update-details &lt;data&gt;</code><br>String with the update details in JSON format. Use @{file} to load from a file</p>
+</li>
+<li><p><code>--update-details-file &lt;file&gt;</code><br>File with the update details in JSON format. Deprecated: use --update-details @{file}</p>
+</li>
+</ul>
+<div class="global-parameters">
+<p><a class="xref" href="../global.html">Global Parameters</a></p>
+</div>
+<h2 id="feedback">Feedback</h2>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/powerbi-cli/powerbi-cli.github.io/blob/live/content/reference-admin.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/feedback.js"></script>
+    <script type="text/javascript" src="../styles/global.js"></script>
+  </body>
+</html>
